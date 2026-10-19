@@ -22,7 +22,7 @@
 
 ## Author correction (2026-10-19, Bezali Kwame Danso)
 
-- USGS Duluth sample `MCRG-S2-1002826`: the source file reports Pd = 123,000 ppb with Pt = 123 ppb (Pd/Pt about 1,000). The author judged this a transcription error and normalized Pd to **123 ppb**. The original source value (123000) stays in `value_source`, the row carries the flag `AUTHOR_CORRECTED`, and the correction is listed in `docs/corrections.csv`. The USGS data contact (Heather L. Parks, doi:10.5066/P13UFQYF) can be asked to confirm in v1.1.
+- USGS Duluth sample `MCRG-S2-1002826`: the source file reports Pd = 123,000 ppb with Pt = 123 ppb (Pd/Pt about 1,000). The author judged this a transcription error and normalized Pd to **123 ppb**. The original source value (123000) stays in `value_source`, the row carries the flag `AUTHOR_CORRECTED`, and the correction is listed in `docs/corrections.csv`. The USGS data contact (Heather L. Parks, doi:10.5066/P13UFQYF) should be asked to confirm: four other NorthMet west-pit samples in the same release also have Pd far above Pt (e.g. 1002841: Pd 10,200 ppb, Pt <5 ppb), so the published value may be genuine. Revert by deleting the row in docs/corrections.csv and rebuilding.
 
 ## Verification
 

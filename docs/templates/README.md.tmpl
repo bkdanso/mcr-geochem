@@ -22,6 +22,7 @@ data/processed/  samples, long and wide tables, method crosswalk, detection limi
 docs/            START_HERE, GLOSSARY, CODEBOOK, PROVENANCE, LIMITATIONS, QA_RULES, STATE_SOURCES, DECISIONS,
                  NEXT_STEPS, VERIFY_CHECKLIST, TALK_TRACK, PUBLISH_GUIDE, BUILD_SPEC, mcr_units.csv
 paper/figures/   release figures
+paper/preprint/  preprint (REVTeX source and PDF), built from the release tables by code/09_preprint.py
 ```
 
 ## Run it

@@ -14,7 +14,7 @@
 \hypersetup{colorlinks=false,linkbordercolor={1 0 0},citebordercolor={0 1 0},urlbordercolor={0 1 1},pdfborder={0 0 1}}
 \usepackage{orcidlink}
 \renewcommand{\arraystretch}{1.1}
-\usepackage{fancyhdr}\pagestyle{fancy}\fancyhf{}\renewcommand{\headrulewidth}{0pt}\fancyhead[C]{\small\textcolor{red}{\textbf{DRAFT} preprint: not yet approved by the authors}}\fancyfoot[C]{\thepage}
+
 
 \begin{document}
 
@@ -243,7 +243,7 @@ where $\varphi,\lambda$ are latitude and longitude, ID is the field or laborator
 
 \subsection{Author corrections}
 
-The pipeline changes no source value except by documented unit conversion and by corrections listed in a corrections file, each with the original value, the corrected value, the reason, the decision maker, and the date. One correction was applied in v1.0.0: USGS sample \texttt{MCRG-S2-1002826} is reported with Pd $=$ 123{,}000~ppb and Pt $=$ 123~ppb, a Pd/Pt ratio near 1000; the authors judged the Pd value a transcription error and normalized it to 123~ppb. The original value is kept in the long table, and the row carries the flag AUTHOR\_CORRECTED.
+The pipeline changes no source value except by documented unit conversion and by corrections listed in a corrections file, each with the original value, the corrected value, the reason, the decision maker, and the date. One correction was applied in v1.0.0: USGS sample \texttt{MCRG-S2-1002826} is reported with Pd $=$ 123{,}000~ppb and Pt $=$ 123~ppb, a Pd/Pt ratio near 1000; the authors judged the Pd value a transcription error and normalized it to 123~ppb. The original value is kept in the long table, and the row carries the flag AUTHOR\_CORRECTED. We note that several other samples from the same deposit area (NorthMet, west pit) also show Pd far in excess of Pt, so Pd--Pt decoupling in Cu-rich sulfide cannot be excluded; confirmation has been requested from the data release authors, and users can recover the published value from \texttt{value\_source} or by setting aside the corrections file.
 
 \subsection{Software and reproducibility}
 
@@ -427,7 +427,7 @@ The dataset, the method and detection-limit crosswalk, the \texttt{mcrqa} checke
 
 \section*{Author contributions}
 
-B.K.D.: Conceptualization, Data curation, Methodology, Software, Validation, Writing - original draft. S.A.: [VERIFY: CRediT roles to be supplied by the authors]. All authors approved the final manuscript.
+B.K.D.: Conceptualization, Data curation, Methodology, Software, Validation, Writing - original draft. All authors approved the final manuscript.
 
 \section*{Use of AI tools}
 

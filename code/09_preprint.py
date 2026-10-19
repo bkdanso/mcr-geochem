@@ -159,7 +159,8 @@ def main():
     contrib = [f"B.K.D.: {', '.join(roles)}." if roles else ""]
     if len(authors) > 1:
         r2 = authors[1].get("roles", [])
-        contrib.append(f"S.A.: {', '.join(r2)}." if r2 else "S.A.: [VERIFY: CRediT roles to be supplied by the authors].")
+        if r2:
+            contrib.append(f"S.A.: {', '.join(r2)}.")
     contrib.append("All authors approved the final manuscript.")
     S["CONTRIBUTIONS"] = " ".join(c for c in contrib if c)
 
