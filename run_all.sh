@@ -11,4 +11,5 @@ python code/05_figures.py "$@"
 python code/06_provenance.py
 python code/07_docs.py
 python -m pytest -q tests
+python code/09_preprint.py
 python code/08_package.py
