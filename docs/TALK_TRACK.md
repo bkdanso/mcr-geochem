@@ -1,0 +1,25 @@
+# Talking about MCR-GeoChem
+
+*Plain-language note: a short script you can say out loud, for an attorney, a colleague, or a LinkedIn post. Every number matches `data/processed/stats.json`. Do not use it until you have finished the verification checklist.*
+
+## 60-second version
+
+**The problem.** The rocks around Lake Superior, from the 1.1-billion-year-old Midcontinent Rift, hold nickel, copper, cobalt, and platinum-group metals. All four are on the 2025 U.S. critical minerals list. Decades of chemical analyses exist, but they are scattered across federal and international databases. Each uses its own units, lab-method codes, and way of writing "too small to measure." Anyone who wants one clean table has to rebuild it by hand.
+
+**What I built** (with co-author Saadatu Abdullah). MCR-GeoChem is one open, versioned table of 3,524 rift samples and 168,748 measurements from Michigan, Minnesota, and Wisconsin. It merges the USGS National Geochemical Database, two USGS Duluth Complex releases, GEOROC, and EarthChem. I also built a crosswalk that translates 89 lab-method codes into one vocabulary, and a free checker program that flags below-detection values, unit errors, altered rocks, and duplicates.
+
+**What it shows.** Much of the legacy platinum data cannot be used as it stands. For 501 of 1,304 platinum results, the "below detection" limit is so high that it says almost nothing about the rock. About 17% of igneous samples (488 of 2,821) show signs of alteration. Without flags, those problems pass silently into mineral-potential studies.
+
+**Who can use it.** USGS and state survey geologists, university researchers, and exploration teams working on critical minerals in the Lake Superior region.
+
+**Where it is.** On GitHub and Zenodo with a permanent DOI: pending first Zenodo release.
+
+## Two-sentence version
+
+I built MCR-GeoChem, an open, quality-flagged geochemistry table for the Midcontinent Rift in Michigan, Minnesota, and Wisconsin. It holds 3,524 samples from USGS, GEOROC, and EarthChem sources, plus a free QA checker, and supports critical-mineral research on nickel, copper, cobalt, and platinum-group metals.
+
+## Questions you may be asked
+
+1. **Where does the data come from?** Public sources only: the USGS National Geochemical Database (1962 to 2023 release), two USGS Duluth Complex releases, the GEOROC database at Göttingen University, and an EarthChem dataset. Every file is logged with its web address, download date, and checksum.
+2. **What are its limits?** State survey reports are not in v1.0; they come in v1.1. About a quarter of the measurements use 1960s-80s semi-quantitative methods, and GEOROC files do not record lab methods. All of these are flagged, not hidden. See LIMITATIONS.md.
+3. **Why does this matter for the United States?** Nickel, copper, cobalt, and the platinum-group metals are federal critical minerals. The Lake Superior rift is one of the largest U.S. resources of them, and the USGS Earth Mapping Resources Initiative is funding mapping there. An open, checked starting table saves every team from rebuilding the same data and lowers the risk of errors.

@@ -1,0 +1,15 @@
+# raw inputs are re-downloaded by code/01_fetch.py (and archived on Zenodo)
+data/raw/**
+!data/raw/provenance_log.csv
+!data/raw/georoc/
+!data/raw/georoc/georoc_minerals_scan_manifest.csv
+# intermediate files
+data/processed/_stage_*
+# large CSV twin of the parquet file (full CSV is in the Zenodo record)
+data/processed/mcr_geochem_analyses_long.csv
+release/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+*.token

@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcrqa"
+version = "1.0.0"
+description = "Open QA checker for whole-rock and mineral geochemistry: below-detection values, unit errors, altered samples, duplicates."
+readme = "mcrqa/README.md"
+license = {text = "MIT"}
+authors = [{name = "Bezali Kwame Danso", email = "dansobez@msu.edu"}, {name = "Saadatu Abdullah"}]
+requires-python = ">=3.9"
+dependencies = ["pandas>=1.5", "numpy>=1.22"]
+keywords = ["geochemistry", "quality assurance", "detection limit", "Midcontinent Rift", "critical minerals"]
+
+[project.optional-dependencies]
+parquet = ["pyarrow>=10"]
+excel = ["openpyxl>=3"]
+test = ["pytest>=7"]
+
+[project.scripts]
+mcrqa = "mcrqa.cli:main"
+
+[tool.setuptools]
+packages = ["mcrqa"]

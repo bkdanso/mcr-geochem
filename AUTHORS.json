@@ -1,0 +1,34 @@
+{
+  "_comment": "Author block for MCR-GeoChem. Every document, citation file, Zenodo record and commit reads from here. Order is author order.",
+  "authors": [
+    {
+      "name": "Bezali Kwame Danso",
+      "family": "Danso",
+      "given": "Bezali Kwame",
+      "orcid": "0009-0006-1201-4129",
+      "email": "dansobez@msu.edu",
+      "affiliation": "Independent Researcher, East Lansing, Michigan, USA",
+      "roles": [
+        "Conceptualization",
+        "Data curation",
+        "Methodology",
+        "Software",
+        "Validation",
+        "Writing - original draft"
+      ],
+      "corresponding": true,
+      "github": "bkdanso"
+    },
+    {
+      "name": "Saadatu Abdullah",
+      "family": "Abdullah",
+      "given": "Saadatu",
+      "orcid": "",
+      "email": "",
+      "affiliation": "Independent Researcher, Athens, Georgia, US",
+      "roles": [],
+      "corresponding": false
+    }
+  ],
+  "collaborators": []
+}

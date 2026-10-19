@@ -1,0 +1,953 @@
+source_id,method_code_source,analyte,unit,n_determinations,n_above_upper,dl_min_observed,dl_max_observed,n_distinct_dl,n_censored,pct_censored,documented_lld_source_units,usgs_bestvalue_rank,technique,extent
+S1,AA_CV,Hg,ppm,286,0,0.001,0.5,5.0,81,28.3,0.01 - 0.02 ppm (Hg),01,"AAS, cold vapor (CVAAS)",total
+S1,AA_CV_WO,Hg,ppm,16,0,,,,0,0.0,,,"AAS, cold vapor (CVAAS)",total
+S1,AA_FE,K2O,wt%,105,0,,,,0,0.0,0.01 - 0.025 pct (K),07,"AAS, flame emission",total
+S1,AA_F_AZ_H2O2_P,Ag,ppm,2,0,,,,0,0.0,0.1 ppm (Ag),P05,"AAS, flame (FAAS)",partial
+S1,AA_F_Fuse,CaO,wt%,128,0,,,,0,0.0,na pct (Ca),06,"AAS, flame (FAAS)",total
+S1,AA_F_Fuse,K2O,wt%,23,0,,,,0,0.0,0.01 pct (K),08,"AAS, flame (FAAS)",total
+S1,AA_F_Fuse,MgO,wt%,128,0,,,,0,0.0,na pct (Mg),06,"AAS, flame (FAAS)",total
+S1,AA_F_Fuse,Na2O,wt%,23,0,,,,0,0.0,0.025 - 0.08 pct (Na),04,"AAS, flame (FAAS)",total
+S1,AA_F_HBr,Au,ppb,49,0,20.0,5000.0,4.0,43,87.8,0.02 - 0.5 ppm (Au),18,"AAS, flame (FAAS)",partial
+S1,AA_F_HBr,Te,ppm,1,0,0.1,0.1,1.0,1,100.0,0.05 - 0.5 ppm (Te),09,"AAS, flame (FAAS)",partial
+S1,AA_F_HF,Co,ppm,96,0,2.0,5.0,2.0,57,59.4,1.0 ppm (Co),20,"AAS, flame (FAAS)",near-total
+S1,AA_F_HF,Cr,ppm,229,0,10.0,50.0,2.0,9,3.9,na ppm (Cr),25,"AAS, flame (FAAS)",near-total
+S1,AA_F_HF,Cu,ppm,211,0,10.0,10.0,1.0,5,2.4,na ppm (Cu),16,"AAS, flame (FAAS)",near-total
+S1,AA_F_HF,In,ppm,1,0,,,,0,0.0,0.2 ppm (In),05,"AAS, flame (FAAS)",near-total
+S1,AA_F_HF,Mo,ppm,2,0,10.0,10.0,1.0,2,100.0,na ppm (Mo),22,"AAS, flame (FAAS)",near-total
+S1,AA_F_HF,Ni,ppm,315,0,2.0,10.0,2.0,47,14.9,na ppm (Ni),19,"AAS, flame (FAAS)",near-total
+S1,AA_F_HF,Pb,ppm,2,0,,,,0,0.0,na ppm (Pb),18,"AAS, flame (FAAS)",near-total
+S1,AA_F_HF,Sb,ppm,2,0,,,,0,0.0,na ppm (Sb),19,"AAS, flame (FAAS)",near-total
+S1,AA_F_HF,Sn,ppm,27,0,1.0,1.0,1.0,5,18.5,2.0 ppm (Sn),28,"AAS, flame (FAAS)",near-total
+S1,AA_F_HF,Te,ppm,10,0,0.1,0.1,1.0,4,40.0,0.05 - 0.5 ppm (Te),08,"AAS, flame (FAAS)",near-total
+S1,AA_F_HF,Tl,ppm,11,0,0.1,0.1,1.0,1,9.1,0.05 - 0.2 ppm (Tl),12,"AAS, flame (FAAS)",near-total
+S1,AA_F_HF,Zn,ppm,18,0,,,,0,0.0,10 ppm (Zn),07,"AAS, flame (FAAS)",near-total
+S1,AA_F_HNO3_P,Cu,ppm,1,0,,,,0,0.0,5.0 ppm (Cu),P07,"AAS, flame (FAAS)",partial
+S1,AA_F_HNO3_P,Zn,ppm,14,0,,,,0,0.0,5.0 - 20 ppm (Zn),P10,"AAS, flame (FAAS)",partial
+S1,AA_GF_HBr,Au,ppb,398,0,1.0,2.0,2.0,166,41.7,0.0005 - 0.002 ppm (Au),17,"AAS, graphite furnace (GFAAS)",partial
+S1,AA_GF_HF,Au,ppb,10,0,5.0,5.0,1.0,3,30.0,0.0005 - 0.002 ppm (Au),15,"AAS, graphite furnace (GFAAS)",near-total
+S1,AA_HG_HF,Se,ppm,79,0,0.2,0.5,2.0,24,30.4,0.05 - 0.2 ppm (Se),02,"AAS, hydride generation (HGAAS)",near-total
+S1,AA_HG_ST,As,ppm,110,0,0.5,0.6,2.0,23,20.9,0.6 ppm (As),02,"AAS, hydride generation (HGAAS)",total
+S1,AA_HG_ST,Sb,ppm,9,0,0.6,0.6,1.0,5,55.6,0.6 ppm (Sb),01,"AAS, hydride generation (HGAAS)",total
+S1,AA_TR,Hg,ppm,16,0,0.02,0.02,1.0,9,56.2,0.01 - 0.2 ppm (Hg),11,"AAS, trace (solvent extraction)",total
+S1,AES_AZ_P,Cu,ppm,162,0,5.0,5.0,1.0,1,0.6,0.05 ppm (Cu),P01,ICP-AES/OES,partial
+S1,AES_Fuse,Al2O3,wt%,65,0,,,,0,0.0,0.01 pct (Al),05,ICP-AES/OES,total
+S1,AES_Fuse,Ba,ppm,1,0,,,,0,0.0,10 ppm (Ba),09,ICP-AES/OES,total
+S1,AES_Fuse,CaO,wt%,65,0,,,,0,0.0,0.01 pct (Ca),07,ICP-AES/OES,total
+S1,AES_Fuse,Cr,ppm,1,0,,,,0,0.0,100 ppm (Cr),09,ICP-AES/OES,total
+S1,AES_Fuse,Fe2O3,wt%,64,0,,,,0,0.0,0.01 pct (Fe2O3),04,ICP-AES/OES,total
+S1,AES_Fuse,Fe2O3T,wt%,1,0,,,,0,0.0,0.01 pct (Fe),11,ICP-AES/OES,total
+S1,AES_Fuse,K2O,wt%,65,0,,,,0,0.0,0.01 pct (K),10,ICP-AES/OES,total
+S1,AES_Fuse,MgO,wt%,65,0,,,,0,0.0,0.01 pct (Mg),05,ICP-AES/OES,total
+S1,AES_Fuse,MnO,wt%,65,0,,,,0,0.0,0.01 pct (Mn),08,ICP-AES/OES,total
+S1,AES_Fuse,Na2O,wt%,64,0,,,,0,0.0,0.01 pct (Na),10,ICP-AES/OES,total
+S1,AES_Fuse,Nb,ppm,1,0,,,,0,0.0,10 ppm (Nb),10,ICP-AES/OES,total
+S1,AES_Fuse,P2O5,wt%,65,0,,,,0,0.0,0.01 pct (P),04,ICP-AES/OES,total
+S1,AES_Fuse,SiO2,wt%,65,0,,,,0,0.0,0.01 pct (Si),05,ICP-AES/OES,total
+S1,AES_Fuse,Sr,ppm,1,0,,,,0,0.0,10 ppm (Sr),07,ICP-AES/OES,total
+S1,AES_Fuse,TiO2,wt%,65,0,,,,0,0.0,0.01 pct (Ti),05,ICP-AES/OES,total
+S1,AES_Fuse,Y,ppm,1,0,,,,0,0.0,10 ppm (Y),08,ICP-AES/OES,total
+S1,AES_Fuse,Zr,ppm,1,0,,,,0,0.0,10 ppm (Zr),08,ICP-AES/OES,total
+S1,AES_HF,Ag,ppm,299,0,2.0,4.0,2.0,277,92.6,2.0 ppm (Ag),18,ICP-AES/OES,near-total
+S1,AES_HF,Al2O3,wt%,431,0,,,,0,0.0,0.005 - 0.05 pct (Al),17,ICP-AES/OES,near-total
+S1,AES_HF,As,ppm,299,0,10.0,20.0,2.0,264,88.3,10 ppm (As),21,ICP-AES/OES,near-total
+S1,AES_HF,Au,ppb,299,0,8000.0,20000.0,2.0,299,100.0,8.0 ppm (Au),26,ICP-AES/OES,near-total
+S1,AES_HF,Ba,ppm,431,0,,,,0,0.0,1.0 - 5.0 ppm (Ba),19,ICP-AES/OES,near-total
+S1,AES_HF,Be,ppm,370,0,1.0,2.0,2.0,154,41.6,1.0 ppm (Be),02,ICP-AES/OES,near-total
+S1,AES_HF,Bi,ppm,299,0,10.0,50.0,3.0,245,81.9,5.0 - 50 ppm (Bi),13,ICP-AES/OES,near-total
+S1,AES_HF,CaO,wt%,431,0,,,,0,0.0,0.005 - 0.05 pct (Ca),15,ICP-AES/OES,near-total
+S1,AES_HF,Cd,ppm,299,0,2.0,4.0,2.0,294,98.3,2.0 ppm (Cd),18,ICP-AES/OES,near-total
+S1,AES_HF,Ce,ppm,299,0,5.0,8.0,2.0,8,2.7,1.0 - 5.0 ppm (Ce),16,ICP-AES/OES,near-total
+S1,AES_HF,Co,ppm,320,0,2.0,2.0,1.0,4,1.2,1.0 - 2.0 ppm (Co),14,ICP-AES/OES,near-total
+S1,AES_HF,Cr,ppm,431,0,1.0,2.0,2.0,11,2.6,1.0 - 2.0 ppm (Cr),22,ICP-AES/OES,near-total
+S1,AES_HF,Cu,ppm,452,0,2.0,2.0,1.0,3,0.7,0.5 - 2.0 ppm (Cu),08,ICP-AES/OES,near-total
+S1,AES_HF,Eu,ppm,299,0,2.0,4.0,2.0,141,47.2,2.0 ppm (Eu),13,ICP-AES/OES,near-total
+S1,AES_HF,Fe2O3T,wt%,431,0,,,,0,0.0,0.005 - 0.05 pct (Fe),19,ICP-AES/OES,near-total
+S1,AES_HF,Ga,ppm,299,0,4.0,8.0,2.0,10,3.3,1.0 - 4.0 ppm (Ga),14,ICP-AES/OES,near-total
+S1,AES_HF,Ho,ppm,299,0,4.0,8.0,2.0,256,85.6,4.0 ppm (Ho),11,ICP-AES/OES,near-total
+S1,AES_HF,K2O,wt%,431,0,0.006023,0.012046,2.0,7,1.6,0.005 - 0.1 pct (K),17,ICP-AES/OES,near-total
+S1,AES_HF,La,ppm,299,0,2.0,4.0,2.0,18,6.0,2.0 ppm (La),18,ICP-AES/OES,near-total
+S1,AES_HF,Li,ppm,431,0,2.0,2.0,1.0,2,0.5,1.0 - 4.0 ppm (Li),04,ICP-AES/OES,near-total
+S1,AES_HF,MgO,wt%,431,8,,,,0,0.0,0.005 - 0.05 pct (Mg),15,ICP-AES/OES,near-total
+S1,AES_HF,MnO,wt%,431,0,,,,0,0.0,0.0004 - 0.001 pct (Mn),15,ICP-AES/OES,near-total
+S1,AES_HF,Mo,ppm,299,0,2.0,4.0,2.0,230,76.9,2.0 ppm (Mo),20,ICP-AES/OES,near-total
+S1,AES_HF,Na2O,wt%,431,0,,,,0,0.0,0.01 - 0.1 pct (Na),14,ICP-AES/OES,near-total
+S1,AES_HF,Nb,ppm,373,0,4.0,8.0,2.0,69,18.5,2.0 - 4.0 ppm (Nb),16,ICP-AES/OES,near-total
+S1,AES_HF,Nd,ppm,299,0,8.0,9.0,2.0,60,20.1,4.0 - 20 ppm (Nd),14,ICP-AES/OES,near-total
+S1,AES_HF,Ni,ppm,452,0,2.0,4.0,3.0,16,3.5,2.0 - 3.0 ppm (Ni),16,ICP-AES/OES,near-total
+S1,AES_HF,P2O5,wt%,431,0,0.011457,0.022914,2.0,8,1.9,0.005 - 0.01 pct (P),11,ICP-AES/OES,near-total
+S1,AES_HF,Pb,ppm,299,0,4.0,8.0,2.0,142,47.5,4.0 ppm (Pb),12,ICP-AES/OES,near-total
+S1,AES_HF,S,wt%,132,0,0.01,0.01,1.0,8,6.1,0.01 pct (S),08,ICP-AES/OES,near-total
+S1,AES_HF,Sc,ppm,370,0,2.0,2.0,1.0,2,0.5,2.0 ppm (Sc),14,ICP-AES/OES,near-total
+S1,AES_HF,Sn,ppm,299,0,5.0,50.0,3.0,194,64.9,2.0 - 50 ppm (Sn),26,ICP-AES/OES,near-total
+S1,AES_HF,Sr,ppm,431,0,,,,0,0.0,0.5 - 15 ppm (Sr),15,ICP-AES/OES,near-total
+S1,AES_HF,Ta,ppm,299,0,40.0,80.0,2.0,293,98.0,40 ppm (Ta),15,ICP-AES/OES,near-total
+S1,AES_HF,Th,ppm,299,0,4.0,8.0,3.0,180,60.2,2.0 - 10 ppm (Th),16,ICP-AES/OES,near-total
+S1,AES_HF,TiO2,wt%,431,0,,,,0,0.0,0.005 - 0.01 pct (Ti),12,ICP-AES/OES,near-total
+S1,AES_HF,U,ppm,299,0,100.0,200.0,2.0,299,100.0,10 - 100 ppm (U),19,ICP-AES/OES,near-total
+S1,AES_HF,V,ppm,431,0,,,,0,0.0,1.0 - 2.0 ppm (V),05,ICP-AES/OES,near-total
+S1,AES_HF,Y,ppm,299,0,2.0,4.0,2.0,6,2.0,2.0 - 4.0 ppm (Y),16,ICP-AES/OES,near-total
+S1,AES_HF,Yb,ppm,299,0,1.0,2.0,2.0,25,8.4,1.0 ppm (Yb),13,ICP-AES/OES,near-total
+S1,AES_HF,Zn,ppm,431,0,2.0,2.0,1.0,1,0.2,1.0 - 4.0 ppm (Zn),12,ICP-AES/OES,near-total
+S1,AES_HF,Zr,ppm,71,0,,,,0,0.0,2.0 - 10 ppm (Zr),19,ICP-AES/OES,near-total
+S1,AES_HFST,Al2O3,wt%,4,0,,,,0,0.0,0.01 pct (Al),08,ICP-AES/OES,near-total
+S1,AES_HFST,Ba,ppm,4,0,,,,0,0.0,0.1 ppm (Ba),16,ICP-AES/OES,near-total
+S1,AES_HFST,Be,ppm,4,0,,,,0,0.0,0.5 ppm (Be),09,ICP-AES/OES,near-total
+S1,AES_HFST,CaO,wt%,4,0,,,,0,0.0,0.01 pct (Ca),10,ICP-AES/OES,near-total
+S1,AES_HFST,Cr,ppm,4,0,,,,0,0.0,10 ppm (Cr),14,ICP-AES/OES,near-total
+S1,AES_HFST,Cu,ppm,4,0,,,,0,0.0,5 ppm (Cu),06,ICP-AES/OES,near-total
+S1,AES_HFST,Fe2O3T,wt%,4,0,,,,0,0.0,0.01 pct (Fe),16,ICP-AES/OES,near-total
+S1,AES_HFST,K2O,wt%,4,0,,,,0,0.0,0.01 pct (K),13,ICP-AES/OES,near-total
+S1,AES_HFST,Li,ppm,4,0,10.0,10.0,1.0,1,25.0,10 ppm (Li),02,ICP-AES/OES,near-total
+S1,AES_HFST,MgO,wt%,4,0,,,,0,0.0,0.01 pct (Mg),10,ICP-AES/OES,near-total
+S1,AES_HFST,MnO,wt%,4,0,,,,0,0.0,0.001 pct (Mn),05,ICP-AES/OES,near-total
+S1,AES_HFST,Ni,ppm,4,0,,,,0,0.0,5 ppm (Ni),07,ICP-AES/OES,near-total
+S1,AES_HFST,P2O5,wt%,4,0,,,,0,0.0,0.01 pct (P),06,ICP-AES/OES,near-total
+S1,AES_HFST,S,wt%,4,0,,,,0,0.0,0.01 pct (S),06,ICP-AES/OES,near-total
+S1,AES_HFST,Sc,ppm,4,0,,,,0,0.0,0.5 ppm (Sc),07,ICP-AES/OES,near-total
+S1,AES_HFST,Sr,ppm,4,0,,,,0,0.0,0.1 ppm (Sr),09,ICP-AES/OES,near-total
+S1,AES_HFST,TiO2,wt%,4,0,,,,0,0.0,0.01 pct (Ti),07,ICP-AES/OES,near-total
+S1,AES_HFST,V,ppm,4,0,,,,0,0.0,5 ppm (V),01,ICP-AES/OES,near-total
+S1,AES_HFST,Zn,ppm,4,0,,,,0,0.0,5 ppm (Zn),09,ICP-AES/OES,near-total
+S1,AES_HFST,Zr,ppm,4,0,,,,0,0.0,0.1 ppm (Zr),09,ICP-AES/OES,near-total
+S1,AES_IE,Mo,ppm,46,0,1.0,1.0,1.0,35,76.1,0.5 - 1.0 ppm (Mo),07,ICP-AES/OES,total
+S1,AES_IE,Nb,ppm,226,0,,,,0,0.0,0.5 - 1.0 ppm (Nb),11,ICP-AES/OES,total
+S1,AES_IE,W,ppm,46,0,1.0,1.0,1.0,41,89.1,1.0 ppm (W),15,ICP-AES/OES,total
+S1,AES_ST,Al2O3,wt%,311,0,,,,0,0.0,0.01 - 0.05 pct (Al),09,ICP-AES/OES,total
+S1,AES_ST,B,ppm,163,0,10.0,10.0,1.0,15,9.2,10 ppm (B),02,ICP-AES/OES,total
+S1,AES_ST,Ba,ppm,311,0,,,,0,0.0,0.5 ppm (Ba),17,ICP-AES/OES,total
+S1,AES_ST,Be,ppm,311,0,5.0,5.0,1.0,311,100.0,5.0 ppm (Be),10,ICP-AES/OES,total
+S1,AES_ST,CaO,wt%,311,0,,,,0,0.0,0.01 pct (Ca),11,ICP-AES/OES,total
+S1,AES_ST,Cr,ppm,311,0,,,,0,0.0,10 ppm (Cr),15,ICP-AES/OES,total
+S1,AES_ST,Cu,ppm,311,0,,,,0,0.0,5.0 ppm (Cu),18,ICP-AES/OES,total
+S1,AES_ST,Fe2O3T,wt%,311,0,,,,0,0.0,0.01 pct (Fe),17,ICP-AES/OES,total
+S1,AES_ST,K2O,wt%,311,0,,,,0,0.0,0.01 - 0.5 pct (K),14,ICP-AES/OES,total
+S1,AES_ST,Li,ppm,311,0,10.0,10.0,1.0,82,26.4,10 ppm (Li),10,ICP-AES/OES,total
+S1,AES_ST,MgO,wt%,311,0,,,,0,0.0,0.01 - 0.02 pct (Mg),11,ICP-AES/OES,total
+S1,AES_ST,MnO,wt%,311,0,,,,0,0.0,0.001 pct (Mn),06,ICP-AES/OES,total
+S1,AES_ST,Ni,ppm,311,0,,,,0,0.0,5.0 ppm (Ni),08,ICP-AES/OES,total
+S1,AES_ST,P2O5,wt%,311,0,0.022914,0.022914,1.0,6,1.9,0.01 pct (P),07,ICP-AES/OES,total
+S1,AES_ST,S,wt%,129,0,0.1,0.1,1.0,67,51.9,0.01 pct (S),12,ICP-AES/OES,total
+S1,AES_ST,Sc,ppm,311,0,5.0,5.0,1.0,15,4.8,5.0 ppm (Sc),08,ICP-AES/OES,total
+S1,AES_ST,SiO2,wt%,163,0,,,,0,0.0,0.3 pct (Si),08,ICP-AES/OES,total
+S1,AES_ST,Sr,ppm,311,0,,,,0,0.0,0.1 ppm (Sr),10,ICP-AES/OES,total
+S1,AES_ST,TiO2,wt%,311,0,,,,0,0.0,0.01 pct (Ti),08,ICP-AES/OES,total
+S1,AES_ST,V,ppm,311,0,,,,0,0.0,5.0 ppm (V),03,ICP-AES/OES,total
+S1,AES_ST,Zn,ppm,311,0,,,,0,0.0,5.0 ppm (Zn),10,ICP-AES/OES,total
+S1,AES_ST,Zr,ppm,311,0,,,,0,0.0,0.5 - 20 ppm (Zr),10,ICP-AES/OES,total
+S1,CB_IRC,C,wt%,359,0,0.01,0.01,1.0,11,3.1,0.01 - 0.05 pct (C),01,"Combustion, infrared (C, S)",total
+S1,CB_IRC,CO2,wt%,80,0,,,,0,0.0,0.01 pct (CO2),02,"Combustion, infrared (C, S)",total
+S1,CB_IRC,C_org,wt%,1,0,,,,0,0.0,< 0.81 pct (Corg),01,"Combustion, infrared (C, S)",total
+S1,CB_IRC,S,wt%,689,0,0.003,0.05,4.0,351,50.9,0.05 pct (S),01,"Combustion, infrared (C, S)",total
+S1,CB_TC,C,wt%,16,0,,,,0,0.0,0.01 - 0.05 pct (C),03,"Combustion, thermal conductivity",total
+S1,CB_TT,S,wt%,16,0,,,,0,0.0,0.001 - 0.005 pct (S),02,"Combustion, titration",total
+S1,CM_Acid,As,ppm,16,0,,,,0,0.0,,,Colorimetry/spectrophotometry,partial
+S1,CM_Acid_P,As,ppm,15,0,10.0,10.0,1.0,9,60.0,1.0 - 10 ppm (As),P09,Colorimetry/spectrophotometry,partial
+S1,CM_Fuse,Al2O3,wt%,128,0,,,,0,0.0,0.01 - 0.1 pct (Al),04,Colorimetry/spectrophotometry,total
+S1,CM_Fuse,Fe2O3,wt%,128,0,,,,0,0.0,0.01 pct (Fe2O3),03,Colorimetry/spectrophotometry,total
+S1,CM_Fuse,MnO,wt%,128,0,0.012912,0.012912,1.0,1,0.8,0.01 pct (Mn),03,Colorimetry/spectrophotometry,total
+S1,CM_Fuse,P2O5,wt%,23,0,,,,0,0.0,na pct (P),03,Colorimetry/spectrophotometry,total
+S1,CM_Fuse,SiO2,wt%,128,0,,,,0,0.0,na pct (Si),04,Colorimetry/spectrophotometry,total
+S1,CM_Fuse,TiO2,wt%,128,0,,,,0,0.0,0.01 - 0.02 pct (Ti),04,Colorimetry/spectrophotometry,total
+S1,CM_Fuse_P,Sb,ppm,15,0,1.0,1.0,1.0,14,93.3,1.0 ppm (Sb),P11,Colorimetry/spectrophotometry,partial
+S1,CM_HF,P2O5,wt%,220,0,0.011457,0.011457,1.0,1,0.5,na pct (P),12,Colorimetry/spectrophotometry,near-total
+S1,CM_HF,V,ppm,1,0,,,,0,0.0,na ppm (V),19,Colorimetry/spectrophotometry,near-total
+S1,CM_HSF,F,ppm,10,0,,,,0,0.0,0.005 pct (F),04,Colorimetry/spectrophotometry,near-total
+S1,CM_ST,Cl,ppm,96,0,10.0,100.0,3.0,19,19.8,0.1 pct (Cl),04,Colorimetry/spectrophotometry,total
+S1,CM_ST_P,W,ppm,1,0,20.0,20.0,1.0,1,100.0,10 - 20 ppm (W),P5,Colorimetry/spectrophotometry,partial
+S1,CP,C_org,wt%,272,0,0.01,0.1,2.0,27,9.9,0.01 - 0.04 pct (Corg),04,Coulometry,total
+S1,CP,H2O,wt%,34,0,,,,0,0.0,,,Coulometry,total
+S1,CP,H2O+,wt%,81,0,,,,0,0.0,,03,Coulometry,total
+S1,DN,Th,ppm,53,0,1.3,34.0,7.0,10,18.9,1.0 ppm (Th),05,Delayed neutron counting,total
+S1,DN,U,ppm,53,0,,,,0,0.0,0.1 - 1.0 ppm (U),05,Delayed neutron counting,total
+S1,EDX,Ba,ppm,579,0,,,,0,0.0,5.0 - 30 ppm (Ba),05,"XRF, energy dispersive (EDXRF)",total
+S1,EDX,Ce,ppm,579,0,30.0,30.0,1.0,34,5.9,5.0 - 30 ppm (Ce),17,"XRF, energy dispersive (EDXRF)",total
+S1,EDX,Cr,ppm,332,0,20.0,20.0,1.0,128,38.6,5.0 - 20 ppm (Cr),07,"XRF, energy dispersive (EDXRF)",total
+S1,EDX,Cu,ppm,524,0,2.0,10.0,3.0,33,6.3,2.0 - 10 ppm (Cu),04,"XRF, energy dispersive (EDXRF)",total
+S1,EDX,La,ppm,579,0,2.0,30.0,3.0,121,20.9,5. 0 - 30 ppm (La),14,"XRF, energy dispersive (EDXRF)",total
+S1,EDX,Nb,ppm,590,0,5.0,10.0,2.0,161,27.3,2.0 - 10 ppm (Nb),01,"XRF, energy dispersive (EDXRF)",total
+S1,EDX,Ni,ppm,524,0,5.0,10.0,2.0,76,14.5,2.0 - 10 ppm (Ni),22,"XRF, energy dispersive (EDXRF)",total
+S1,EDX,Rb,ppm,590,0,2.0,10.0,3.0,33,5.6,2.0 - 10 ppm (Rb),05,"XRF, energy dispersive (EDXRF)",total
+S1,EDX,Sr,ppm,590,0,10.0,10.0,1.0,1,0.2,2.0 - 10 ppm (Sr),04,"XRF, energy dispersive (EDXRF)",total
+S1,EDX,Y,ppm,590,2,2.0,2.0,1.0,8,1.4,2.0 - 10 ppm (Y),09,"XRF, energy dispersive (EDXRF)",total
+S1,EDX,Zn,ppm,524,0,2.0,2.0,1.0,1,0.2,2.0 - 10 ppm (Zn),24,"XRF, energy dispersive (EDXRF)",total
+S1,EDX,Zr,ppm,590,0,,,,0,0.0,2.0 - 10 ppm (Zr),04,"XRF, energy dispersive (EDXRF)",total
+S1,ES_Q,Co,ppm,181,0,5.0,5.0,1.0,1,0.6,1.0 - 5.0 ppm (Co),23,"Emission spectrography, quantitative",total
+S1,ES_Q,Mo,ppm,86,0,1.0,1.0,1.0,61,70.9,2.0 - 10 ppm (Mo),24,"Emission spectrography, quantitative",total
+S1,ES_Q,Nb,ppm,10,0,,,,0,0.0,10 - 40 ppm (Nb),17,"Emission spectrography, quantitative",total
+S1,ES_Q,Sn,ppm,59,0,1.0,1.0,1.0,4,6.8,2.0 - 20 ppm (Sn),20,"Emission spectrography, quantitative",total
+S1,ES_Q,TiO2,wt%,179,0,,,,0,0.0,0.001 - 0.02 pct (Ti),17,"Emission spectrography, quantitative",total
+S1,ES_SQ,Ag,ppm,970,0,0.1,1.0,4.0,841,86.7,0.1 - 4.0 ppm (Ag),29,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Al2O3,wt%,553,9,,,,0,0.0,0.001 - 0.25 pct (Al),23,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,As,ppm,968,0,68.1,1000.0,5.0,964,99.6,100 - 2000 ppm (As),33,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Au,ppb,968,0,6810.0,20000.0,4.0,968,100.0,7.0 - 20 ppm (Au),28,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,B,ppm,969,0,3.2,20.0,7.0,737,76.1,7.0 - 50 ppm (B),15,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Ba,ppm,970,1,20.0,32.0,2.0,3,0.3,1.0 - 20 ppm (Ba),26,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Be,ppm,998,0,0.68,1.47,3.0,788,79.0,1.0 - 4.0 ppm (Be),17,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Bi,ppm,998,0,1.0,22.0,5.0,997,99.9,1.0 - 50 ppm (Bi),21,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,CaO,wt%,968,5,,,,0,0.0,0.001 - 0.05 pct (Ca),26,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Cd,ppm,998,0,2.0,50.0,7.0,997,99.9,2.0 - 100 ppm (Cd),22,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Ce,ppm,553,0,20.0,500.0,9.0,486,87.9,20 - 500 ppm (Ce),22,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Co,ppm,998,0,1.0,10.0,5.0,32,3.2,1.0 - 10 ppm (Co),25,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Cr,ppm,998,0,1.0,10.0,3.0,19,1.9,1.0 - 10 ppm (Cr),30,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Cs,ppm,96,0,3160.0,3160.0,1.0,95,99.0,3.0 - 20000 ppm (Cs),17,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Cu,ppm,998,19,5.0,10.0,2.0,8,0.8,0.5 - 5.0 ppm (Cu),30,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Dy,ppm,396,0,3.16,50.0,7.0,336,84.8,3.16 - 500 ppm (Dy),17,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Er,ppm,396,0,2.15,50.0,5.0,396,100.0,2.15 - 50 ppm (Er),12,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Eu,ppm,489,0,1.0,100.0,5.0,440,90.0,1.0 - 500 ppm (Eu),17,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Fe2O3T,wt%,968,5,0.071485,0.071485,1.0,1,0.1,0.001 - 0.05 pct (Fe),30,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Ga,ppm,563,0,2.15,10.0,3.0,15,2.7,1.0 - 10 ppm (Ga),18,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Gd,ppm,338,0,3.16,50.0,7.0,294,87.0,3.16 - 60 ppm (Gd),17,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Ge,ppm,512,0,1.0,10.0,6.0,508,99.2,1.0 - 100 ppm (Ge),15,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Hf,ppm,501,0,10.0,100.0,5.0,500,99.8,10 - 500 ppm (Hf),14,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Hg,ppm,150,0,147.0,500.0,2.0,150,100.0,147 - 1000 ppm (Hg),21,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Ho,ppm,396,0,1.0,20.0,5.0,394,99.5,1.0 - 100 ppm (Ho),15,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,In,ppm,491,0,2.0,10.0,4.0,491,100.0,2.0 - 20 ppm (In),13,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Ir,ppb,376,0,6810.0,320000.0,4.0,376,100.0,6.81 - 300 ppm (Ir),11,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,K2O,wt%,551,34,0.0819128,0.8432199999999999,4.0,48,8.7,0.068 - 0.7 pct (K),24,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,La,ppm,997,0,10.0,50.0,5.0,762,76.4,10 - 50 ppm (La),23,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Li,ppm,492,0,31.6,200.0,5.0,483,98.2,32 - 300 ppm (Li),20,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Lu,ppm,391,0,3.16,30.0,4.0,390,99.7,3.16 - 100 ppm (Lu),17,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,MgO,wt%,968,0,,,,0,0.0,0.0005 - 0.1 pct (Mg),24,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,MnO,wt%,970,0,0.025824,0.025824,1.0,4,0.4,0.0001 - 0.02 pct (Mn),25,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Mo,ppm,998,0,1.0,10.0,8.0,850,85.2,1.0 - 20 ppm (Mo),27,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Na2O,wt%,562,0,0.20220000000000002,0.20220000000000002,1.0,16,2.8,0.0005 - 0.2 pct (Na),23,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Nb,ppm,998,0,2.15,25.0,7.0,655,65.6,2.15 - 40 ppm (Nb),20,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Nd,ppm,439,0,14.7,100.0,6.0,411,93.6,14.7 - 100 ppm (Nd),19,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Ni,ppm,998,17,1.0,5.0,2.0,5,0.5,1.0 - 7.0 ppm (Ni),29,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Os,ppb,376,0,1000.0,68000.0,6.0,376,100.0,1.0 - 1000 ppm (Os),07,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,P2O5,wt%,562,0,0.045828,1.1457,8.0,385,68.5,0.02 - 0.5 pct (P),22,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Pb,ppm,998,1,1.0,20.0,6.0,518,51.9,1.0 - 20 ppm (Pb),24,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Pd,ppb,502,0,220.0,2000.0,5.0,502,100.0,0.22 - 10 ppm (Pd),12,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Pr,ppm,429,0,2.15,100.0,5.0,355,82.8,2.15 - 500 ppm (Pr),12,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Pt,ppb,502,0,2150.0,50000.0,8.0,501,99.8,2.0 - 80 ppm (Pt),12,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Rb,ppm,96,0,21.0,14700.0,2.0,96,100.0,"3.0 - 100,000 ppm (Rb)",22,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Re,ppb,553,0,10000.0,50000.0,2.0,553,100.0,10 - 400 ppm (Re),10,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Rh,ppb,376,0,100.0,2200.0,4.0,376,100.0,0.1 - 50 ppm (Rh),09,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Ru,ppb,376,0,460.0,4600.0,5.0,376,100.0,0.46 - 100 ppm (Ru),09,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Sb,ppm,998,0,21.5,200.0,7.0,990,99.2,50 - 300 ppm (Sb),25,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Sc,ppm,998,0,1.0,10.0,3.0,71,7.1,1.0 - 10 ppm (Sc),19,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Se,ppm,52,0,200.0,200.0,1.0,52,100.0,200 ppm (Se),21,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,SiO2,wt%,553,151,,,,0,0.0,0.002 - 1.0 pct (Si),12,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Sm,ppm,441,0,4.64,200.0,5.0,436,98.9,4.64 - 200 ppm (Sm),17,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Sn,ppm,997,0,1.5,14.7,5.0,951,95.4,3.16 - 20 ppm (Sn),32,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Sr,ppm,981,0,46.4,100.0,2.0,19,1.9,0.46 - 100 ppm (Sr),24,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Ta,ppm,501,0,50.0,500.0,7.0,501,100.0,50 - 1000 ppm (Ta),19,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Tb,ppm,396,0,6.81,300.0,5.0,396,100.0,6.81 - 1000 ppm (Tb),16,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Te,ppm,326,0,50.0,2000.0,5.0,326,100.0,50 - 2000 ppm (Te),18,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Th,ppm,510,0,2.0,200.0,6.0,510,100.0,22 - 500 ppm (Th),25,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,TiO2,wt%,970,22,0.0033362,0.0033362,1.0,1,0.1,0.0002 - 0.02 pct (Ti),21,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Tl,ppm,553,0,3.16,50.0,5.0,549,99.3,3.16 - 400 ppm (Tl),15,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Tm,ppm,396,0,2.15,20.0,5.0,396,100.0,5.0 - 100 ppm (Tm),17,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,U,ppm,501,0,215.0,500.0,4.0,501,100.0,215 - 800 ppm (U),24,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,V,ppm,998,0,10.0,10.0,1.0,6,0.6,1.0 - 10 ppm (V),24,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,W,ppm,996,0,10.0,200.0,6.0,996,100.0,10 - 500 ppm (W),22,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Y,ppm,998,0,1.5,10.0,3.0,208,20.8,1.0 - 20 ppm (Y),21,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Yb,ppm,501,0,0.15,1.0,2.0,65,13.0,0.15 - 5.0 ppm (Yb),17,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Zn,ppm,998,0,15.0,300.0,6.0,598,59.9,50 - 300 ppm (Zn),30,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,ES_SQ,Zr,ppm,998,1,10.0,10.0,1.0,59,5.9,3.0 - 20 ppm (Zr),24,"Emission spectrography, semi-quantitative (DC-arc)",semi-quantitative
+S1,FA_AA,Ag,ppm,41,0,2.0,2.0,1.0,33,80.5,0.1 - 6.86 ppm (Ag),03,"Fire assay, AAS finish",total
+S1,FA_AA,Au,ppb,10,0,10.0,10.0,1.0,10,100.0,0.005 - 0.05 ppm (Au),02,"Fire assay, AAS finish",total
+S1,FA_AA,Pd,ppb,60,0,0.5,0.5,1.0,18,30.0,0.001 - 0.006 ppm (Pd),06,"Fire assay, AAS finish",total
+S1,FA_AA,Pt,ppb,60,0,1.0,1.0,1.0,15,25.0,0.006 - 0.01 ppm (Pt),03,"Fire assay, AAS finish",total
+S1,FA_AA,Rh,ppb,60,0,0.5,0.5,1.0,39,65.0,na ppm (Rh),03,"Fire assay, AAS finish",total
+S1,FA_ES,Ir,ppb,15,0,20.0,20.0,1.0,15,100.0,0.02 - 0.1 ppm (Ir),05,"Fire assay, emission spectrography finish",total
+S1,FA_ES,Ru,ppb,15,0,100.0,100.0,1.0,15,100.0,0.1 ppm (Ru),06,"Fire assay, emission spectrography finish",total
+S1,FA_MS,Au,ppb,220,0,1.0,1.0,1.0,5,2.3,0.001 ppm (Au),07,"Fire assay, ICP-MS finish",total
+S1,FA_MS,Ir,ppb,180,0,0.5,5.0,4.0,132,73.3,0.0005 ppm (Ir),01,"Fire assay, ICP-MS finish",total
+S1,FA_MS,Pd,ppb,363,0,0.5,3.0,4.0,66,18.2,0.001 - 0.0015 ppm (Pd),01,"Fire assay, ICP-MS finish",total
+S1,FA_MS,Pt,ppb,363,0,0.5,5.0,4.0,138,38.0,0.0005 - 0.0015 ppm (Pt),02,"Fire assay, ICP-MS finish",total
+S1,FA_MS,Rh,ppb,180,0,0.5,5.0,4.0,129,71.7,0.0005 ppm (Rh),01,"Fire assay, ICP-MS finish",total
+S1,FA_MS,Ru,ppb,180,0,0.5,5.0,4.0,134,74.4,0.0005 ppm (Ru),01,"Fire assay, ICP-MS finish",total
+S1,FL_ST_P,Se,ppm,1,0,,,,0,0.0,,,Fluorimetry,partial
+S1,GV,H2O-,wt%,739,0,0.05,0.1,2.0,11,1.5,0.01 - 0.05 pct (H2Om),01,Gravimetry,total
+S1,GV,LOI,wt%,772,0,0.009,1.054,32.0,93,12.0,0.01 - 0.05 pct (LOI),01,Gravimetry,total
+S1,GV_Flux,H2O,wt%,140,0,,,,0,0.0,0.01 - 0.1 pct (H2O),01,Gravimetry,total
+S1,GV_Flux,H2O+,wt%,285,0,,,,0,0.0,0.01 - 0.1 pct (H2Ob),01,Gravimetry,total
+S1,ISE_Fuse,Cl,ppm,115,0,100.0,100.0,1.0,7,6.1,0.002 pct (Cl),02,Ion-selective electrode,total
+S1,ISE_Fuse,F,ppm,120,0,80.0,100.0,2.0,37,30.8,0.002 - 0.01 pct (F),02,Ion-selective electrode,total
+S1,MS_HF,Ag,ppm,132,0,1.0,1.0,1.0,46,34.8,0.5 - 2.0 ppm (Ag),17,ICP-MS,near-total
+S1,MS_HF,As,ppm,132,0,1.0,1.0,1.0,38,28.8,1.0 ppm (As),20,ICP-MS,near-total
+S1,MS_HF,Be,ppm,61,0,0.1,0.1,1.0,1,1.6,0.03 - 0.1 ppm (Be),03,ICP-MS,near-total
+S1,MS_HF,Bi,ppm,132,0,0.01,0.04,2.0,30,22.7,0.04 - 1.0 ppm (Bi),05,ICP-MS,near-total
+S1,MS_HF,Cd,ppm,132,0,0.1,0.1,1.0,23,17.4,0.1 - 0.2 ppm (Cd),07,ICP-MS,near-total
+S1,MS_HF,Ce,ppm,132,0,,,,0,0.0,0.05 - 1.0 ppm (Ce),15,ICP-MS,near-total
+S1,MS_HF,Co,ppm,132,0,,,,0,0.0,0.03 - 1 ppm (Co),10,ICP-MS,near-total
+S1,MS_HF,Cs,ppm,132,0,5.0,5.0,1.0,60,45.5,0.05 - 0.1 ppm (Cs),13,ICP-MS,near-total
+S1,MS_HF,Ga,ppm,132,0,,,,0,0.0,0.02 - 1.0 ppm (Ga),05,ICP-MS,near-total
+S1,MS_HF,Hf,ppm,71,0,,,,0,0.0,na ppm (Hf),11,ICP-MS,near-total
+S1,MS_HF,In,ppm,132,0,0.02,0.02,1.0,2,1.5,0.02 ppm (In),08,ICP-MS,near-total
+S1,MS_HF,La,ppm,132,0,0.5,0.5,1.0,1,0.8,0.05 - 1.0 ppm (La),17,ICP-MS,near-total
+S1,MS_HF,Lu,ppm,71,0,,,,0,0.0,na ppm (Lu),12,ICP-MS,near-total
+S1,MS_HF,Mo,ppm,132,0,0.05,0.05,1.0,1,0.8,0.05 - 0.5 ppm (Mo),19,ICP-MS,near-total
+S1,MS_HF,Nb,ppm,132,0,0.1,0.1,1.0,3,2.3,0.1 - 4.0 ppm (Nb),14,ICP-MS,near-total
+S1,MS_HF,Pb,ppm,132,0,0.5,0.5,1.0,2,1.5,0.4 - 1.0 ppm (Pb),04,ICP-MS,near-total
+S1,MS_HF,Rb,ppm,132,0,,,,0,0.0,0.01 - 0.5 ppm (Rb),14,ICP-MS,near-total
+S1,MS_HF,Sb,ppm,132,0,0.05,0.05,1.0,43,32.6,0.04 - 0.1 ppm (Sb),17,ICP-MS,near-total
+S1,MS_HF,Sc,ppm,61,0,,,,0,0.0,0.04 - 2.0 ppm (Sc),15,ICP-MS,near-total
+S1,MS_HF,Se,ppm,71,0,,,,0,0.0,1.0 ppm (Se),13,ICP-MS,near-total
+S1,MS_HF,Sn,ppm,132,0,0.1,0.2,2.0,5,3.8,0.1 - 1.0 ppm (Sn),24,ICP-MS,near-total
+S1,MS_HF,Ta,ppm,71,0,,,,0,0.0,1.0 ppm (Ta),14,ICP-MS,near-total
+S1,MS_HF,Tb,ppm,71,0,,,,0,0.0,na ppm (Tb),12,ICP-MS,near-total
+S1,MS_HF,Te,ppm,132,0,0.01,0.1,2.0,63,47.7,0.1 ppm (Te),03,ICP-MS,near-total
+S1,MS_HF,Th,ppm,132,0,0.2,0.2,1.0,7,5.3,0.1 - 1.0 ppm (Th),14,ICP-MS,near-total
+S1,MS_HF,Tl,ppm,132,0,0.1,0.1,1.0,40,30.3,0.08 - 1.0 ppm (Tl),03,ICP-MS,near-total
+S1,MS_HF,U,ppm,132,0,0.1,0.1,1.0,9,6.8,0.02 - 0.1 ppm (U),16,ICP-MS,near-total
+S1,MS_HF,W,ppm,132,0,0.1,0.1,1.0,24,18.2,0.1 ppm (W),18,ICP-MS,near-total
+S1,MS_HF,Y,ppm,132,0,,,,0,0.0,0.05 - 1.0 ppm (Y),13,ICP-MS,near-total
+S1,MS_HF,Yb,ppm,71,0,,,,0,0.0,1.0 ppm (Yb),12,ICP-MS,near-total
+S1,MS_HFST,Ag,ppm,4,0,,,,0,0.0,0.1 ppm (Ag),11,ICP-MS,near-total
+S1,MS_HFST,As,ppm,4,0,,,,0,0.0,1 ppm (As),18,ICP-MS,near-total
+S1,MS_HFST,Bi,ppm,4,0,0.1,0.1,1.0,1,25.0,0.1 ppm (Bi),03,ICP-MS,near-total
+S1,MS_HFST,Cd,ppm,4,0,,,,0,0.0,0.2 ppm (Cd),05,ICP-MS,near-total
+S1,MS_HFST,Ce,ppm,4,0,,,,0,0.0,0.1 ppm (Ce),08,ICP-MS,near-total
+S1,MS_HFST,Co,ppm,4,0,,,,0,0.0,0.5 ppm (Co),08,ICP-MS,near-total
+S1,MS_HFST,Cs,ppm,4,0,,,,0,0.0,0.1 ppm (Cs),09,ICP-MS,near-total
+S1,MS_HFST,Dy,ppm,4,0,,,,0,0.0,0.05 ppm (Dy),08,ICP-MS,near-total
+S1,MS_HFST,Er,ppm,4,0,,,,0,0.0,0.05 ppm (Er),04,ICP-MS,near-total
+S1,MS_HFST,Eu,ppm,4,0,,,,0,0.0,0.05 ppm (Eu),08,ICP-MS,near-total
+S1,MS_HFST,Ga,ppm,4,0,,,,0,0.0,0.01 ppm (Ga),01,ICP-MS,near-total
+S1,MS_HFST,Gd,ppm,4,0,,,,0,0.0,0.05 ppm (Gd),08,ICP-MS,near-total
+S1,MS_HFST,Ge,ppm,4,0,0.1,0.1,1.0,2,50.0,0.1 ppm (Ge),01,ICP-MS,near-total
+S1,MS_HFST,Hf,ppm,4,0,,,,0,0.0,0.1 ppm (Hf),08,ICP-MS,near-total
+S1,MS_HFST,Ho,ppm,4,0,,,,0,0.0,0.05 ppm (Ho),06,ICP-MS,near-total
+S1,MS_HFST,In,ppm,4,0,0.2,0.2,1.0,4,100.0,0.2 ppm (In),01,ICP-MS,near-total
+S1,MS_HFST,La,ppm,4,0,,,,0,0.0,0.1 ppm (La),10,ICP-MS,near-total
+S1,MS_HFST,Lu,ppm,4,0,,,,0,0.0,0.05 ppm (Lu),08,ICP-MS,near-total
+S1,MS_HFST,Mo,ppm,4,0,,,,0,0.0,0.2 ppm (Mo),14,ICP-MS,near-total
+S1,MS_HFST,Nb,ppm,4,0,,,,0,0.0,0.1 ppm (Nb),07,ICP-MS,near-total
+S1,MS_HFST,Nd,ppm,4,0,,,,0,0.0,0.1 ppm (Nd),08,ICP-MS,near-total
+S1,MS_HFST,Pb,ppm,4,0,,,,0,0.0,0.5 ppm (Pb),02,ICP-MS,near-total
+S1,MS_HFST,Pr,ppm,4,0,,,,0,0.0,0.05 ppm (Pr),04,ICP-MS,near-total
+S1,MS_HFST,Rb,ppm,4,0,,,,0,0.0,0.2 ppm (Rb),09,ICP-MS,near-total
+S1,MS_HFST,Sb,ppm,4,0,,,,0,0.0,0.1 ppm (Sb),12,ICP-MS,near-total
+S1,MS_HFST,Se,ppm,4,0,5.0,5.0,1.0,4,100.0,0.1 ppm (Se),11,ICP-MS,near-total
+S1,MS_HFST,Sm,ppm,4,0,,,,0,0.0,0.1 ppm (Sm),08,ICP-MS,near-total
+S1,MS_HFST,Sn,ppm,4,0,,,,0,0.0,0.1 ppm (Sn),05,ICP-MS,near-total
+S1,MS_HFST,Ta,ppm,4,0,,,,0,0.0,0.1 ppm (Ta),09,ICP-MS,near-total
+S1,MS_HFST,Tb,ppm,4,0,,,,0,0.0,0.05 ppm (Tb),08,ICP-MS,near-total
+S1,MS_HFST,Te,ppm,4,0,,,,0,0.0,0.1 ppm (Te),01,ICP-MS,near-total
+S1,MS_HFST,Th,ppm,4,0,,,,0,0.0,0.1 ppm (Th),09,ICP-MS,near-total
+S1,MS_HFST,Tl,ppm,4,0,,,,0,0.0,0.1 ppm (Tl),01,ICP-MS,near-total
+S1,MS_HFST,Tm,ppm,4,0,,,,0,0.0,0.05 ppm (Tm),08,ICP-MS,near-total
+S1,MS_HFST,U,ppm,4,0,,,,0,0.0,0.05 ppm (U),12,ICP-MS,near-total
+S1,MS_HFST,W,ppm,4,0,,,,0,0.0,0.1 ppm (W),12,ICP-MS,near-total
+S1,MS_HFST,Y,ppm,4,0,,,,0,0.0,0.1 ppm (Y),05,ICP-MS,near-total
+S1,MS_HFST,Yb,ppm,4,0,,,,0,0.0,0.1 ppm (Yb),08,ICP-MS,near-total
+S1,MS_ST,Ag,ppm,311,0,1.0,1.0,1.0,245,78.8,1.0 ppm (Ag),13,ICP-MS,total
+S1,MS_ST,As,ppm,311,0,5.0,30.0,2.0,283,91.0,30 ppm (As),22,ICP-MS,total
+S1,MS_ST,Bi,ppm,311,0,0.1,0.1,1.0,105,33.8,0.1 ppm (Bi),06,ICP-MS,total
+S1,MS_ST,Cd,ppm,311,0,0.2,1.0,2.0,211,67.8,0.2 ppm (Cd),08,ICP-MS,total
+S1,MS_ST,Ce,ppm,311,0,,,,0,0.0,0.1 - 3.0 ppm (Ce),11,ICP-MS,total
+S1,MS_ST,Co,ppm,311,0,,,,0,0.0,0.5 ppm (Co),11,ICP-MS,total
+S1,MS_ST,Cs,ppm,311,0,0.1,0.1,1.0,11,3.5,0.1 ppm (Cs),10,ICP-MS,total
+S1,MS_ST,Dy,ppm,311,0,,,,0,0.0,0.05 - 0.2 ppm (Dy),09,ICP-MS,total
+S1,MS_ST,Er,ppm,307,0,,,,0,0.0,0.05 - 0.2 ppm (Er),05,ICP-MS,total
+S1,MS_ST,Eu,ppm,311,0,,,,0,0.0,0.05 - 0.2 ppm (Eu),09,ICP-MS,total
+S1,MS_ST,Ga,ppm,311,0,,,,0,0.0,1.0 ppm (Ga),02,ICP-MS,total
+S1,MS_ST,Gd,ppm,311,0,,,,0,0.0,0.05 - 1.0 ppm (Gd),09,ICP-MS,total
+S1,MS_ST,Ge,ppm,311,0,1.0,1.0,1.0,6,1.9,1.0 ppm (Ge),04,ICP-MS,total
+S1,MS_ST,Hf,ppm,311,0,1.0,1.0,1.0,46,14.8,1.0 ppm (Hf),09,ICP-MS,total
+S1,MS_ST,Ho,ppm,311,0,0.05,0.05,1.0,3,1.0,0.05 - 0.5 ppm (Ho),07,ICP-MS,total
+S1,MS_ST,In,ppm,311,0,0.2,0.2,1.0,306,98.4,0.2 ppm (In),02,ICP-MS,total
+S1,MS_ST,La,ppm,311,0,,,,0,0.0,0.1 ppm (La),11,ICP-MS,total
+S1,MS_ST,Lu,ppm,311,0,0.05,0.05,1.0,11,3.5,0.05 ppm (Lu),09,ICP-MS,total
+S1,MS_ST,Mo,ppm,311,0,2.0,10.0,2.0,264,84.9,2.0 ppm (Mo),15,ICP-MS,total
+S1,MS_ST,Nb,ppm,311,0,0.1,0.1,1.0,4,1.3,1.0 ppm (Nb),08,ICP-MS,total
+S1,MS_ST,Nd,ppm,311,0,,,,0,0.0,0.1 - 2.0 ppm (Nd),09,ICP-MS,total
+S1,MS_ST,Pb,ppm,311,0,5.0,50.0,2.0,105,33.8,5.0 ppm (Pb),06,ICP-MS,total
+S1,MS_ST,Pr,ppm,311,0,,,,0,0.0,0.05 - 0.5 ppm (Pr),05,ICP-MS,total
+S1,MS_ST,Rb,ppm,311,0,,,,0,0.0,0.2 ppm (Rb),10,ICP-MS,total
+S1,MS_ST,Sb,ppm,311,0,0.1,0.1,1.0,89,28.6,0.1 ppm (Sb),13,ICP-MS,total
+S1,MS_ST,Se,ppm,163,0,5.0,5.0,1.0,130,79.8,0.8 ppm (Se),14,ICP-MS,total
+S1,MS_ST,Sm,ppm,311,0,,,,0,0.0,0.1 - 0.5 ppm (Sm),09,ICP-MS,total
+S1,MS_ST,Sn,ppm,311,0,1.0,1.0,1.0,82,26.4,1.0 ppm (Sn),06,ICP-MS,total
+S1,MS_ST,Ta,ppm,311,0,0.5,0.5,1.0,92,29.6,0.5 - 1.0 ppm (Ta),10,ICP-MS,total
+S1,MS_ST,Tb,ppm,311,0,0.05,0.05,1.0,5,1.6,0.05 - 0.5 ppm (Tb),09,ICP-MS,total
+S1,MS_ST,Te,ppm,163,0,0.5,0.5,1.0,134,82.2,1.0 ppm (Te),11,ICP-MS,total
+S1,MS_ST,Th,ppm,311,0,0.1,0.1,1.0,4,1.3,0.1 ppm (Th),10,ICP-MS,total
+S1,MS_ST,Tl,ppm,311,0,0.5,0.5,1.0,204,65.6,0.5 ppm (Tl),04,ICP-MS,total
+S1,MS_ST,Tm,ppm,311,0,0.05,0.05,1.0,12,3.9,0.05 - 0.5 ppm (Tm),09,ICP-MS,total
+S1,MS_ST,U,ppm,311,0,0.05,0.05,1.0,13,4.2,0.05 ppm (U),13,ICP-MS,total
+S1,MS_ST,W,ppm,311,0,1.0,1.0,1.0,146,46.9,1.0 ppm (W),13,ICP-MS,total
+S1,MS_ST,Y,ppm,311,0,,,,0,0.0,0.5 ppm (Y),06,ICP-MS,total
+S1,MS_ST,Yb,ppm,311,0,0.1,0.1,1.0,1,0.3,0.1 - 0.5 ppm (Yb),09,ICP-MS,total
+S1,NA_LC,As,ppm,413,0,0.4,8.0,26.0,174,42.1,0.1 - 1.0 ppm (As),06,Neutron activation (INAA),total
+S1,NA_LC,Au,ppb,341,0,0.39,27.0,45.0,278,81.5,0.0005 ppm (Au),09,Neutron activation (INAA),total
+S1,NA_LC,Ba,ppm,424,0,32.0,120.0,3.0,3,0.7,10 - 100 ppm (Ba),02,Neutron activation (INAA),total
+S1,NA_LC,CaO,wt%,386,0,0.293832,11.1936,36.0,109,28.2,0.1 pct (Ca),17,Neutron activation (INAA),total
+S1,NA_LC,Ce,ppm,424,0,,,,0,0.0,0.1 - 100 ppm (Ce),02,Neutron activation (INAA),total
+S1,NA_LC,Co,ppm,425,0,0.4,0.7,4.0,6,1.4,0.05 - 1.0 ppm (Co),01,Neutron activation (INAA),total
+S1,NA_LC,Cr,ppm,423,0,0.4,7.0,17.0,35,8.3,0.1 - 3.0 ppm (Cr),01,Neutron activation (INAA),total
+S1,NA_LC,Cs,ppm,423,0,0.11,1.1,16.0,30,7.1,0.05 - 3.0 ppm (Cs),01,Neutron activation (INAA),total
+S1,NA_LC,Eu,ppm,424,0,,,,0,0.0,0.01 - 1.0 ppm (Eu),02,Neutron activation (INAA),total
+S1,NA_LC,Fe2O3T,wt%,424,0,,,,0,0.0,0.001 - 0.1 pct (Fe),04,Neutron activation (INAA),total
+S1,NA_LC,Gd,ppm,61,0,7.0,40.0,16.0,29,47.5,0.5 - 10 ppm (Gd),02,Neutron activation (INAA),total
+S1,NA_LC,Hf,ppm,424,0,,,,0,0.0,0.01 - 10 ppm (Hf),01,Neutron activation (INAA),total
+S1,NA_LC,Ho,ppm,13,0,,,,0,0.0,,01,Neutron activation (INAA),total
+S1,NA_LC,K2O,wt%,404,0,0.228874,36.138,45.0,86,21.3,0.01 - 0.1 pct (K),04,Neutron activation (INAA),total
+S1,NA_LC,La,ppm,423,0,,,,0,0.0,0.01 ppm (La),02,Neutron activation (INAA),total
+S1,NA_LC,Lu,ppm,424,0,,,,0,0.0,0.01 - 10 ppm (Lu),02,Neutron activation (INAA),total
+S1,NA_LC,Na2O,wt%,423,0,,,,0,0.0,0.0001 - 0.01 pct (Na),01,Neutron activation (INAA),total
+S1,NA_LC,Nd,ppm,424,0,12.0,12.0,1.0,1,0.2,0.5 - 100 ppm (Nd),02,Neutron activation (INAA),total
+S1,NA_LC,Ni,ppm,422,0,3.0,140.0,33.0,164,38.9,10 ppm (Ni),01,Neutron activation (INAA),total
+S1,NA_LC,Rb,ppm,423,0,5.0,30.0,6.0,12,2.8,0.5 - 100 ppm (Rb),01,Neutron activation (INAA),total
+S1,NA_LC,Sb,ppm,419,0,0.012,1.1,29.0,146,34.8,0.05 - 5.0 ppm (Sb),06,Neutron activation (INAA),total
+S1,NA_LC,Sc,ppm,424,0,,,,0,0.0,0.01 ppm (Sc),01,Neutron activation (INAA),total
+S1,NA_LC,Sm,ppm,424,0,,,,0,0.0,0.05 - 30 ppm (Sm),02,Neutron activation (INAA),total
+S1,NA_LC,Sr,ppm,417,0,18.0,500.0,27.0,78,18.7,10 ppm (Sr),01,Neutron activation (INAA),total
+S1,NA_LC,Ta,ppm,424,0,,,,0,0.0,0.01 - 1.0 ppm (Ta),01,Neutron activation (INAA),total
+S1,NA_LC,Tb,ppm,424,0,,,,0,0.0,0.01 - 3.0 ppm (Tb),02,Neutron activation (INAA),total
+S1,NA_LC,Th,ppm,423,0,0.1,0.1,1.0,1,0.2,0.05 - 1.0 ppm (Th),01,Neutron activation (INAA),total
+S1,NA_LC,Tm,ppm,57,0,0.6,4.0,18.0,29,50.9,0.1 - 10 ppm (Tm),02,Neutron activation (INAA),total
+S1,NA_LC,U,ppm,424,0,0.11,2.4,18.0,34,8.0,0.05 - 0.1 ppm (U),01,Neutron activation (INAA),total
+S1,NA_LC,W,ppm,13,0,,,,0,0.0,0.1 - 1.0 ppm (W),01,Neutron activation (INAA),total
+S1,NA_LC,Yb,ppm,424,0,,,,0,0.0,0.05 - 10 ppm (Yb),02,Neutron activation (INAA),total
+S1,NA_LC,Zn,ppm,424,0,,,,0,0.0,1.0 ppm (Zn),01,Neutron activation (INAA),total
+S1,NA_LC,Zr,ppm,422,0,40.0,400.0,18.0,31,7.3,10 - 100 ppm (Zr),01,Neutron activation (INAA),total
+S1,NA_REE,Ba,ppm,5,0,,,,0,0.0,na ppm (Ba),01,Neutron activation (INAA),total
+S1,NA_REE,Ce,ppm,5,0,,,,0,0.0,na ppm (Ce),01,Neutron activation (INAA),total
+S1,NA_REE,Dy,ppm,5,0,,,,0,0.0,0.082 ppm (Dy),01,Neutron activation (INAA),total
+S1,NA_REE,Eu,ppm,5,0,,,,0,0.0,na ppm (Eu),01,Neutron activation (INAA),total
+S1,NA_REE,Gd,ppm,5,0,,,,0,0.0,na ppm (Gd),01,Neutron activation (INAA),total
+S1,NA_REE,La,ppm,5,0,,,,0,0.0,na ppm (La),01,Neutron activation (INAA),total
+S1,NA_REE,Lu,ppm,5,0,,,,0,0.0,< 0.026 ppm (Lu),01,Neutron activation (INAA),total
+S1,NA_REE,Nd,ppm,5,0,,,,0,0.0,< 0.76 ppm (Nd),01,Neutron activation (INAA),total
+S1,NA_REE,Sm,ppm,5,0,,,,0,0.0,< 0.061 ppm (Sm),01,Neutron activation (INAA),total
+S1,NA_REE,Tb,ppm,5,0,,,,0,0.0,< 0.0338 ppm (Tb),01,Neutron activation (INAA),total
+S1,NA_REE,Tm,ppm,5,0,,,,0,0.0,na ppm (Tm),01,Neutron activation (INAA),total
+S1,NA_REE,Yb,ppm,5,0,,,,0,0.0,na ppm (Yb),01,Neutron activation (INAA),total
+S1,NA_SC,As,ppm,65,0,0.12,1.0,2.0,2,3.1,1.0 ppm (As),08,Neutron activation (INAA),total
+S1,NA_SC,Au,ppb,71,0,0.06999999999999999,7.1000000000000005,39.0,49,69.0,0.005 ppm (Au),11,Neutron activation (INAA),total
+S1,NA_SC,Ba,ppm,74,0,,,,0,0.0,10 - 100 ppm (Ba),04,Neutron activation (INAA),total
+S1,NA_SC,Ce,ppm,74,0,,,,0,0.0,0.1 - 3.9 ppm (Ce),04,Neutron activation (INAA),total
+S1,NA_SC,Co,ppm,74,0,,,,0,0.0,0.1 - 0.13 ppm (Co),04,Neutron activation (INAA),total
+S1,NA_SC,Cr,ppm,74,0,4.0,4.0,1.0,1,1.4,0.1 - 3.0 ppm (Cr),03,Neutron activation (INAA),total
+S1,NA_SC,Cs,ppm,74,0,0.02,0.043,2.0,2,2.7,0.1 - 0.26 ppm (Cs),03,Neutron activation (INAA),total
+S1,NA_SC,Eu,ppm,74,0,,,,0,0.0,0.01 - 0.1 ppm (Eu),03,Neutron activation (INAA),total
+S1,NA_SC,Fe2O3T,wt%,74,0,,,,0,0.0,0.001 - 0.04 pct (Fe),07,Neutron activation (INAA),total
+S1,NA_SC,Gd,ppm,63,0,0.15,0.15,1.0,1,1.6,,,Neutron activation (INAA),total
+S1,NA_SC,Hf,ppm,74,0,,,,0,0.0,0.01 - 0.18 ppm (Hf),03,Neutron activation (INAA),total
+S1,NA_SC,La,ppm,74,0,,,,0,0.0,0.01 ppm (La),04,Neutron activation (INAA),total
+S1,NA_SC,Lu,ppm,74,0,,,,0,0.0,0.01 - 0.06 ppm (Lu),04,Neutron activation (INAA),total
+S1,NA_SC,Na2O,wt%,74,0,,,,0,0.0,0.0001 - 0.0125 pct (Na),03,Neutron activation (INAA),total
+S1,NA_SC,Nd,ppm,74,0,,,,0,0.0,1.0 - 10 ppm (Nd),04,Neutron activation (INAA),total
+S1,NA_SC,Ni,ppm,73,0,3.4,6.0,4.0,4,5.5,10 - 22 ppm (Ni),03,Neutron activation (INAA),total
+S1,NA_SC,Rb,ppm,73,0,,,,0,0.0,1.0 - 12 ppm (Rb),03,Neutron activation (INAA),total
+S1,NA_SC,Sb,ppm,74,0,0.2,0.2,1.0,1,1.4,0.1 ppm (Sb),09,Neutron activation (INAA),total
+S1,NA_SC,Sc,ppm,74,0,,,,0,0.0,0.01 - 0.07 ppm (Sc),04,Neutron activation (INAA),total
+S1,NA_SC,Sm,ppm,74,0,,,,0,0.0,0.07 - 0.1 ppm (Sm),04,Neutron activation (INAA),total
+S1,NA_SC,Sr,ppm,68,0,8.5,60.0,2.0,16,23.5,10 - 98 ppm (Sr),03,Neutron activation (INAA),total
+S1,NA_SC,Ta,ppm,74,0,,,,0,0.0,0.01 - 1.0 ppm (Ta),04,Neutron activation (INAA),total
+S1,NA_SC,Tb,ppm,74,0,,,,0,0.0,0.01 - 0.15 ppm (Tb),04,Neutron activation (INAA),total
+S1,NA_SC,Th,ppm,74,0,0.04,0.1,2.0,8,10.8,0.05 - 1.0 ppm (Th),04,Neutron activation (INAA),total
+S1,NA_SC,Tm,ppm,50,0,0.2,0.9,2.0,2,4.0,,,Neutron activation (INAA),total
+S1,NA_SC,U,ppm,74,0,0.04,0.28,3.0,7,9.5,0.1 - 0.58 ppm (U),04,Neutron activation (INAA),total
+S1,NA_SC,W,ppm,38,0,0.31,0.92,4.0,4,10.5,0.1 - 1.0 ppm (W),03,Neutron activation (INAA),total
+S1,NA_SC,Yb,ppm,74,0,,,,0,0.0,0.1 - 0.65 ppm (Yb),04,Neutron activation (INAA),total
+S1,NA_SC,Zn,ppm,68,0,,,,0,0.0,1.0 - 2.0 ppm (Zn),03,Neutron activation (INAA),total
+S1,NA_SC,Zr,ppm,74,0,10.0,10.0,1.0,1,1.4,10 - 126 ppm (Zr),03,Neutron activation (INAA),total
+S1,TT_Flux,H2O,wt%,84,0,,,,0,0.0,0.05 pct (H2O),02,Titration,total
+S1,TT_Flux,H2O+,wt%,373,0,,,,0,0.0,0.05 pct (H2Ob),02,Titration,total
+S1,TT_HCl,CO2,wt%,672,0,0.01,0.05,2.0,81,12.1,0.01 - 0.04 pct (CO2),01,Titration,partial
+S1,TT_HCl,C_carb,wt%,379,0,0.003,0.003,1.0,11,2.9,0.01 - 0.04 pct (CCO3),01,Titration,partial
+S1,TT_HF,FeO,wt%,801,0,0.01,0.02,2.0,36,4.5,0.01 pct (FeO),01,Titration,near-total
+S1,VOL_Acid,C_carb,wt%,16,0,0.01,0.01,1.0,1,6.2,,,Volumetric (gasometric),partial
+S1,VOL_HCl,CO2,wt%,192,0,0.05,0.05,1.0,19,9.9,0.01 pct (CO2),03,Volumetric (gasometric),partial
+S1,WDX_Fuse,Al2O3,wt%,799,0,,,,0,0.0,0.01 - 0.1 pct (Al),01,"XRF, wavelength dispersive (WDXRF)",total
+S1,WDX_Fuse,Ba,ppm,194,0,100.0,100.0,1.0,37,19.1,6.0 ppm (Ba),06,"XRF, wavelength dispersive (WDXRF)",total
+S1,WDX_Fuse,CaO,wt%,799,0,0.027984000000000002,0.027984000000000002,1.0,4,0.5,0.01 - 0.02 pct (Ca),01,"XRF, wavelength dispersive (WDXRF)",total
+S1,WDX_Fuse,Cr,ppm,362,0,100.0,100.0,1.0,81,22.4,na ppm (Cr),08,"XRF, wavelength dispersive (WDXRF)",total
+S1,WDX_Fuse,Fe2O3T,wt%,799,0,,,,0,0.0,0.01 - 0.04 pct (Fe),01,"XRF, wavelength dispersive (WDXRF)",total
+S1,WDX_Fuse,K2O,wt%,799,0,,,,0,0.0,0.003 - 0.02 pct (K),01,"XRF, wavelength dispersive (WDXRF)",total
+S1,WDX_Fuse,MgO,wt%,799,0,0.16583000000000003,0.16583000000000003,1.0,22,2.8,0.01 - 0.1 pct (Mg),01,"XRF, wavelength dispersive (WDXRF)",total
+S1,WDX_Fuse,MnO,wt%,799,0,0.012912,0.025824,2.0,19,2.4,0.002 - 0.01 pct (Mn),01,"XRF, wavelength dispersive (WDXRF)",total
+S1,WDX_Fuse,Na2O,wt%,904,0,0.20220000000000002,0.20220000000000002,1.0,8,0.9,0.01 - 0.15 pct (Na),06,"XRF, wavelength dispersive (WDXRF)",total
+S1,WDX_Fuse,Ni,ppm,41,0,,,,0,0.0,4.0 ppm (Ni),21,"XRF, wavelength dispersive (WDXRF)",total
+S1,WDX_Fuse,P2O5,wt%,904,0,0.11457,0.11457,1.0,56,6.2,0.01 - 0.05 pct (P),01,"XRF, wavelength dispersive (WDXRF)",total
+S1,WDX_Fuse,SiO2,wt%,799,0,,,,0,0.0,0.01 - 0.1 pct (Si),01,"XRF, wavelength dispersive (WDXRF)",total
+S1,WDX_Fuse,Sr,ppm,194,0,100.0,100.0,1.0,37,19.1,6.0 ppm (Sr),05,"XRF, wavelength dispersive (WDXRF)",total
+S1,WDX_Fuse,TiO2,wt%,799,0,,,,0,0.0,0.002 - 0.02 pct (Ti),01,"XRF, wavelength dispersive (WDXRF)",total
+S1,WDX_Fuse,V,ppm,194,0,100.0,100.0,1.0,9,4.6,2.0 - 10 - 100 ppm (V),13,"XRF, wavelength dispersive (WDXRF)",total
+S1,calculated,Fe2O3T,wt%,28,0,,,,0,0.0,,,,
+S2,C_CO2-CARB,CO2,wt%,34,0,,,,0,0.0,,,"Combustion, infrared (carbonate C)",total
+S2,C_CO2-CARB,C_carb,wt%,34,0,,,,0,0.0,,,"Combustion, infrared (carbonate C)",total
+S2,C_CVAAS-HG,Hg,ppm,34,0,0.001,0.001,1.0,6,17.6,,,"AAS, cold vapor (CVAAS)",near-total
+S2,C_FA_AU-PD-PT,Au,ppb,112,0,1.0,2.0,2.0,30,26.8,,,"Fire assay (Pb), ICP-OES/MS finish",total
+S2,C_FA_AU-PD-PT,Pd,ppb,112,0,1.0,2.0,2.0,62,55.4,,,"Fire assay (Pb), ICP-OES/MS finish",total
+S2,C_FA_AU-PD-PT,Pt,ppb,112,0,0.1,5.0,3.0,47,42.0,,,"Fire assay (Pb), ICP-OES/MS finish",total
+S2,C_FA_TRACE_AU-PD-PT,Au,ppb,34,0,,,,0,0.0,,,"Fire assay (Pb), ICP-MS finish",total
+S2,C_FA_TRACE_AU-PD-PT,Pd,ppb,34,0,,,,0,0.0,,,"Fire assay (Pb), ICP-MS finish",total
+S2,C_FA_TRACE_AU-PD-PT,Pt,ppb,34,0,5.0,5.0,1.0,11,32.4,,,"Fire assay (Pb), ICP-MS finish",total
+S2,C_HGAAS-AS,As,ppm,34,0,0.5,0.5,1.0,14,41.2,,,"AAS, hydride generation (HGAAS)",total
+S2,C_HGAAS-SE,Se,ppm,34,0,0.5,0.5,1.0,11,32.4,,,"AAS, hydride generation (HGAAS)",near-total
+S2,C_ICPAES_MS_55,Ag,ppm,58,0,1.0,1.0,1.0,58,100.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Al2O3,wt%,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,As,ppm,58,0,30.0,30.0,1.0,58,100.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,B,ppm,58,0,10.0,10.0,1.0,41,70.7,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Ba,ppm,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Be,ppm,58,0,5.0,5.0,1.0,55,94.8,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Bi,ppm,58,0,0.1,0.1,1.0,55,94.8,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,CaO,wt%,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Cd,ppm,58,0,0.2,0.2,1.0,42,72.4,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Ce,ppm,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Co,ppm,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Cr,ppm,58,0,10.0,10.0,1.0,24,41.4,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Cs,ppm,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Cu,ppm,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Dy,ppm,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Er,ppm,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Eu,ppm,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Fe2O3T,wt%,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Ga,ppm,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Gd,ppm,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Ge,ppm,58,0,1.0,1.0,1.0,2,3.4,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Hf,ppm,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Ho,ppm,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,In,ppm,58,0,0.2,0.2,1.0,56,96.6,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,K2O,wt%,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,La,ppm,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Li,ppm,58,0,10.0,10.0,1.0,4,6.9,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Lu,ppm,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,MgO,wt%,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,MnO,wt%,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Mo,ppm,58,0,2.0,2.0,1.0,39,67.2,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Nb,ppm,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Nd,ppm,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Ni,ppm,58,0,5.0,5.0,1.0,6,10.3,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,P2O5,wt%,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Pb,ppm,58,0,5.0,5.0,1.0,10,17.2,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Pr,ppm,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Rb,ppm,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,S,wt%,58,0,0.01,0.01,1.0,29,50.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Sb,ppm,58,0,0.1,0.1,1.0,7,12.1,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Sc,ppm,58,0,5.0,5.0,1.0,1,1.7,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,SiO2,wt%,58,2,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Sm,ppm,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Sn,ppm,58,0,1.0,1.0,1.0,12,20.7,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Sr,ppm,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Ta,ppm,58,0,0.5,0.5,1.0,1,1.7,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Tb,ppm,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Th,ppm,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,TiO2,wt%,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Tl,ppm,58,0,0.5,0.5,1.0,54,93.1,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Tm,ppm,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,U,ppm,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,V,ppm,58,0,5.0,5.0,1.0,3,5.2,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,W,ppm,58,0,1.0,1.0,1.0,30,51.7,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Y,ppm,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Yb,ppm,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Zn,ppm,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPAES_MS_55,Zr,ppm,58,0,,,,0,0.0,,,ICP-AES + ICP-MS,total
+S2,C_ICPOES_MS-49,Ag,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Al2O3,wt%,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,As,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Ba,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Be,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Bi,ppm,37,0,0.01,0.01,1.0,3,8.1,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,CaO,wt%,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Cd,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Ce,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Co,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Cr,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Cs,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Cu,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Fe2O3T,wt%,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Ga,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Hf,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,In,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,K2O,wt%,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,La,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Li,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Lu,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,MgO,wt%,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,MnO,wt%,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Mo,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Na2O,wt%,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Nb,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Ni,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,P2O5,wt%,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Pb,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Rb,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,S,wt%,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Sb,ppm,37,0,0.05,0.05,1.0,18,48.6,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Sc,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Se,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Sn,ppm,37,0,0.2,0.2,1.0,1,2.7,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Sr,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Ta,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Tb,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Te,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Th,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,TiO2,wt%,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Tl,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,U,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,V,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,W,ppm,37,0,0.1,0.1,1.0,8,21.6,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Y,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Yb,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Zn,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-49,Zr,ppm,37,0,,,,0,0.0,,,ICP-OES + ICP-MS,near-total
+S2,C_ICPOES_MS-60,Ag,ppm,115,0,1.0,1.0,1.0,85,73.9,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Al2O3,wt%,115,0,,,,0,0.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,As,ppm,115,0,5.0,5.0,1.0,109,94.8,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,B,ppm,115,0,10.0,10.0,1.0,15,13.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Ba,ppm,115,0,,,,0,0.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Be,ppm,115,0,5.0,5.0,1.0,115,100.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Bi,ppm,115,0,0.1,0.1,1.0,65,56.5,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,CaO,wt%,115,0,,,,0,0.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Cd,ppm,115,0,0.2,0.2,1.0,92,80.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Ce,ppm,115,0,,,,0,0.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Co,ppm,115,0,,,,0,0.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Cr,ppm,115,0,,,,0,0.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Cs,ppm,115,0,0.1,0.1,1.0,10,8.7,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Cu,ppm,115,0,,,,0,0.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Dy,ppm,115,0,,,,0,0.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Er,ppm,115,0,,,,0,0.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Eu,ppm,115,0,,,,0,0.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Fe2O3T,wt%,115,0,,,,0,0.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Ga,ppm,115,0,,,,0,0.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Gd,ppm,115,0,,,,0,0.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Ge,ppm,115,0,1.0,1.0,1.0,3,2.6,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Hf,ppm,115,0,1.0,1.0,1.0,46,40.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Ho,ppm,115,0,0.05,0.05,1.0,3,2.6,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,In,ppm,115,0,0.2,0.2,1.0,111,96.5,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,K2O,wt%,115,0,,,,0,0.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,La,ppm,115,0,,,,0,0.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Li,ppm,115,0,10.0,10.0,1.0,81,70.4,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Lu,ppm,115,0,0.05,0.05,1.0,11,9.6,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,MgO,wt%,115,0,,,,0,0.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,MnO,wt%,115,0,,,,0,0.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Mo,ppm,115,0,2.0,2.0,1.0,107,93.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Nb,ppm,115,0,0.1,0.1,1.0,4,3.5,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Nd,ppm,115,0,,,,0,0.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Ni,ppm,115,0,,,,0,0.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,P2O5,wt%,115,0,0.022914,0.022914,1.0,6,5.2,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Pb,ppm,115,0,5.0,5.0,1.0,90,78.3,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Pr,ppm,115,0,,,,0,0.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Rb,ppm,115,0,,,,0,0.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,S,wt%,81,0,0.1,0.1,1.0,44,54.3,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Sb,ppm,115,0,0.1,0.1,1.0,89,77.4,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Sc,ppm,115,0,5.0,5.0,1.0,14,12.2,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Se,ppm,115,0,5.0,5.0,1.0,82,71.3,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,SiO2,wt%,115,0,,,,0,0.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Sm,ppm,115,0,,,,0,0.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Sn,ppm,115,0,1.0,1.0,1.0,81,70.4,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Sr,ppm,115,0,,,,0,0.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Ta,ppm,115,0,0.5,0.5,1.0,89,77.4,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Tb,ppm,115,0,0.05,0.05,1.0,5,4.3,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Te,ppm,115,0,0.5,0.5,1.0,86,74.8,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Th,ppm,115,0,0.1,0.1,1.0,4,3.5,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,TiO2,wt%,115,0,,,,0,0.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Tl,ppm,115,0,0.5,0.5,1.0,111,96.5,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Tm,ppm,115,0,0.05,0.05,1.0,12,10.4,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,U,ppm,115,0,0.05,0.05,1.0,13,11.3,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,V,ppm,115,0,,,,0,0.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,W,ppm,115,0,1.0,1.0,1.0,112,97.4,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Y,ppm,115,0,,,,0,0.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Yb,ppm,115,0,0.1,0.1,1.0,1,0.9,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Zn,ppm,115,0,,,,0,0.0,,,ICP-OES + ICP-MS,total
+S2,C_ICPOES_MS-60,Zr,ppm,115,0,,,,0,0.0,,,ICP-OES + ICP-MS,total
+S2,C_ISE-CL,Cl,ppm,115,0,100.0,100.0,1.0,7,6.1,,,Ion-selective electrode,total
+S2,C_ISE-F,F,ppm,34,0,100.0,100.0,1.0,16,47.1,,,Ion-selective electrode,total
+S2,C_NIS-FA_ICPMS-PGE,Au,ppb,37,0,1.0,1.0,1.0,1,2.7,,,"Fire assay (NiS), INAA/ICP-MS finish",total
+S2,C_NIS-FA_ICPMS-PGE,Ir,ppb,37,0,,,,0,0.0,,,"Fire assay (NiS), INAA/ICP-MS finish",total
+S2,C_NIS-FA_ICPMS-PGE,Os,ppb,37,0,10.0,10.0,1.0,18,48.6,,,"Fire assay (NiS), INAA/ICP-MS finish",total
+S2,C_NIS-FA_ICPMS-PGE,Pd,ppb,37,0,,,,0,0.0,,,"Fire assay (NiS), INAA/ICP-MS finish",total
+S2,C_NIS-FA_ICPMS-PGE,Pt,ppb,37,0,,,,0,0.0,,,"Fire assay (NiS), INAA/ICP-MS finish",total
+S2,C_NIS-FA_ICPMS-PGE,Rh,ppb,37,0,1.0,1.0,1.0,2,5.4,,,"Fire assay (NiS), INAA/ICP-MS finish",total
+S2,C_NIS-FA_ICPMS-PGE,Ru,ppb,37,0,1.0,1.0,1.0,9,24.3,,,"Fire assay (NiS), INAA/ICP-MS finish",total
+S2,C_ORGANIC-C,C_org,wt%,34,0,0.01,0.01,1.0,22,64.7,,,Calculated (total C - carbonate C),total
+S2,C_Se Hyd,Se,ppm,58,0,0.2,0.2,1.0,36,62.1,,,"AAS, hydride generation (HGAAS)",near-total
+S2,C_TITR-FEO,FeO,wt%,173,0,,,,0,0.0,,,Titration (dichromate),total
+S2,C_TOTAL-C,C,wt%,78,0,0.01,0.01,1.0,3,3.8,,,"Combustion, infrared (C, S)",total
+S2,C_TOTAL-H2O,H2O,wt%,115,0,,,,0,0.0,,,Gravimetry (Penfield-type H2O),total
+S2,C_TOTAL-H2O,H2O+,wt%,115,0,,,,0,0.0,,,Gravimetry (Penfield-type H2O),total
+S2,C_TOTAL-H2O,H2O-,wt%,115,0,0.1,0.1,1.0,8,7.0,,,Gravimetry (Penfield-type H2O),total
+S2,C_TOTAL-S,S,wt%,173,0,0.005,0.05,2.0,55,31.8,,,"Combustion, infrared (C, S)",total
+S2,C_WDXRF-MAJORS,Al2O3,wt%,173,0,,,,0,0.0,,,"XRF, wavelength dispersive (WDXRF)",total
+S2,C_WDXRF-MAJORS,BaO,wt%,115,0,0.01,0.01,1.0,36,31.3,,,"XRF, wavelength dispersive (WDXRF)",total
+S2,C_WDXRF-MAJORS,CaO,wt%,173,0,,,,0,0.0,,,"XRF, wavelength dispersive (WDXRF)",total
+S2,C_WDXRF-MAJORS,Cr2O3,wt%,173,0,0.01,0.01,1.0,45,26.0,,,"XRF, wavelength dispersive (WDXRF)",total
+S2,C_WDXRF-MAJORS,Fe2O3,wt%,34,0,,,,0,0.0,,,"XRF, wavelength dispersive (WDXRF)",total
+S2,C_WDXRF-MAJORS,K2O,wt%,173,0,,,,0,0.0,,,"XRF, wavelength dispersive (WDXRF)",total
+S2,C_WDXRF-MAJORS,LOI,wt%,173,0,0.01,0.01,1.0,57,32.9,,,"XRF, wavelength dispersive (WDXRF)",total
+S2,C_WDXRF-MAJORS,MgO,wt%,173,0,,,,0,0.0,,,"XRF, wavelength dispersive (WDXRF)",total
+S2,C_WDXRF-MAJORS,MnO,wt%,173,0,,,,0,0.0,,,"XRF, wavelength dispersive (WDXRF)",total
+S2,C_WDXRF-MAJORS,Na2O,wt%,173,0,,,,0,0.0,,,"XRF, wavelength dispersive (WDXRF)",total
+S2,C_WDXRF-MAJORS,P2O5,wt%,173,0,,,,0,0.0,,,"XRF, wavelength dispersive (WDXRF)",total
+S2,C_WDXRF-MAJORS,SiO2,wt%,173,0,,,,0,0.0,,,"XRF, wavelength dispersive (WDXRF)",total
+S2,C_WDXRF-MAJORS,SrO,wt%,115,0,0.01,0.01,1.0,5,4.3,,,"XRF, wavelength dispersive (WDXRF)",total
+S2,C_WDXRF-MAJORS,TiO2,wt%,173,0,,,,0,0.0,,,"XRF, wavelength dispersive (WDXRF)",total
+S2,C_WDXRF-MAJORS,V2O5,wt%,115,0,0.01,0.01,1.0,9,7.8,,,"XRF, wavelength dispersive (WDXRF)",total
+S2,FUS_ICP,Al2O3,wt%,160,0,,,,0,0.0,,,ICP-OES,total
+S2,FUS_ICP,Ba,ppm,160,0,,,,0,0.0,,,ICP-OES,total
+S2,FUS_ICP,Be,ppm,160,0,1.0,1.0,1.0,111,69.4,,,ICP-OES,total
+S2,FUS_ICP,CaO,wt%,160,0,,,,0,0.0,,,ICP-OES,total
+S2,FUS_ICP,K2O,wt%,160,0,,,,0,0.0,,,ICP-OES,total
+S2,FUS_ICP,LOI,wt%,157,0,,,,0,0.0,,,ICP-OES,total
+S2,FUS_ICP,MgO,wt%,160,0,,,,0,0.0,,,ICP-OES,total
+S2,FUS_ICP,MnO,wt%,160,0,,,,0,0.0,,,ICP-OES,total
+S2,FUS_ICP,Na2O,wt%,160,0,,,,0,0.0,,,ICP-OES,total
+S2,FUS_ICP,P2O5,wt%,160,0,,,,0,0.0,,,ICP-OES,total
+S2,FUS_ICP,SiO2,wt%,160,0,,,,0,0.0,,,ICP-OES,total
+S2,FUS_ICP,Sr,ppm,160,0,,,,0,0.0,,,ICP-OES,total
+S2,FUS_ICP,TiO2,wt%,160,0,,,,0,0.0,,,ICP-OES,total
+S2,FUS_ICP,V,ppm,160,0,,,,0,0.0,,,ICP-OES,total
+S2,FUS_ICP,Y,ppm,160,0,1.0,1.0,1.0,3,1.9,,,ICP-OES,total
+S2,FUS_ICP,Zr,ppm,160,0,,,,0,0.0,,,ICP-OES,total
+S2,FUS_MS,Bi,ppm,160,0,0.1,0.1,1.0,105,65.6,,,ICP-MS,total
+S2,FUS_MS,Ce,ppm,160,0,,,,0,0.0,,,ICP-MS,total
+S2,FUS_MS,Cs,ppm,160,0,0.1,0.1,1.0,1,0.6,,,ICP-MS,total
+S2,FUS_MS,Dy,ppm,160,0,,,,0,0.0,,,ICP-MS,total
+S2,FUS_MS,Er,ppm,160,0,,,,0,0.0,,,ICP-MS,total
+S2,FUS_MS,Eu,ppm,160,0,,,,0,0.0,,,ICP-MS,total
+S2,FUS_MS,Ga,ppm,160,0,,,,0,0.0,,,ICP-MS,total
+S2,FUS_MS,Gd,ppm,160,0,,,,0,0.0,,,ICP-MS,total
+S2,FUS_MS,Ge,ppm,160,0,,,,0,0.0,,,ICP-MS,total
+S2,FUS_MS,Hf,ppm,160,0,,,,0,0.0,,,ICP-MS,total
+S2,FUS_MS,Ho,ppm,160,0,,,,0,0.0,,,ICP-MS,total
+S2,FUS_MS,In,ppm,160,0,0.1,0.1,1.0,140,87.5,,,ICP-MS,total
+S2,FUS_MS,La,ppm,160,0,,,,0,0.0,,,ICP-MS,total
+S2,FUS_MS,Lu,ppm,160,0,,,,0,0.0,,,ICP-MS,total
+S2,FUS_MS,Mo,ppm,160,0,2.0,2.0,1.0,149,93.1,,,ICP-MS,total
+S2,FUS_MS,Nb,ppm,160,0,,,,0,0.0,,,ICP-MS,total
+S2,FUS_MS,Nd,ppm,160,0,,,,0,0.0,,,ICP-MS,total
+S2,FUS_MS,Pr,ppm,160,0,,,,0,0.0,,,ICP-MS,total
+S2,FUS_MS,Rb,ppm,160,0,,,,0,0.0,,,ICP-MS,total
+S2,FUS_MS,Sm,ppm,160,0,,,,0,0.0,,,ICP-MS,total
+S2,FUS_MS,Sn,ppm,160,0,1.0,1.0,1.0,95,59.4,,,ICP-MS,total
+S2,FUS_MS,Ta,ppm,160,0,,,,0,0.0,,,ICP-MS,total
+S2,FUS_MS,Tb,ppm,160,0,,,,0,0.0,,,ICP-MS,total
+S2,FUS_MS,Th,ppm,160,0,,,,0,0.0,,,ICP-MS,total
+S2,FUS_MS,Tl,ppm,160,0,0.05,0.05,1.0,34,21.2,,,ICP-MS,total
+S2,FUS_MS,Tm,ppm,160,0,,,,0,0.0,,,ICP-MS,total
+S2,FUS_MS,U,ppm,160,0,,,,0,0.0,,,ICP-MS,total
+S2,FUS_MS,Yb,ppm,160,0,,,,0,0.0,,,ICP-MS,total
+S2,INAA,As,ppm,158,0,1.0,1.0,1.0,128,81.0,,,Neutron activation (INAA),total
+S2,INAA,Au,ppb,158,0,1.0,1.0,1.0,36,22.8,,,Neutron activation (INAA),total
+S2,INAA,Br,ppm,158,0,0.5,0.5,1.0,147,93.0,,,Neutron activation (INAA),total
+S2,INAA,Co,ppm,158,0,,,,0,0.0,,,Neutron activation (INAA),total
+S2,INAA,Cr,ppm,158,0,,,,0,0.0,,,Neutron activation (INAA),total
+S2,INAA,Hg,ppm,158,0,1.0,1.0,1.0,158,100.0,,,Neutron activation (INAA),total
+S2,INAA,Ir,ppb,158,0,1.0,1.0,1.0,158,100.0,,,Neutron activation (INAA),total
+S2,INAA,Sb,ppm,158,0,0.1,0.1,1.0,119,75.3,,,Neutron activation (INAA),total
+S2,INAA,Sc,ppm,158,0,,,,0,0.0,,,Neutron activation (INAA),total
+S2,INAA,Se,ppm,158,0,0.5,0.5,1.0,122,77.2,,,Neutron activation (INAA),total
+S2,INAA,W,ppm,158,0,1.0,1.0,1.0,158,100.0,,,Neutron activation (INAA),total
+S2,MULT INAA _ TD_ICP,Ag,ppm,158,0,0.5,0.5,1.0,43,27.2,,,INAA or ICP-OES (lab did not specify),near-total
+S2,MULT INAA _ TD_ICP,Zn,ppm,158,0,,,,0,0.0,,,INAA or ICP-OES (lab did not specify),near-total
+S2,NI_FINA,Au,ppb,148,0,,,,0,0.0,,,"Fire assay (NiS), INAA finish",total
+S2,NI_FINA,Ir,ppb,148,0,,,,0,0.0,,,"Fire assay (NiS), INAA finish",total
+S2,NI_FINA,Os,ppb,148,0,2.0,2.0,1.0,145,98.0,,,"Fire assay (NiS), INAA finish",total
+S2,NI_FINA,Pd,ppb,148,0,2.0,2.0,1.0,8,5.4,,,"Fire assay (NiS), INAA finish",total
+S2,NI_FINA,Pt,ppb,148,0,5.0,5.0,1.0,13,8.8,,,"Fire assay (NiS), INAA finish",total
+S2,NI_FINA,Re,ppb,148,0,5.0,5.0,1.0,127,85.8,,,"Fire assay (NiS), INAA finish",total
+S2,NI_FINA,Rh,ppb,148,0,0.2,0.2,1.0,2,1.4,,,"Fire assay (NiS), INAA finish",total
+S2,NI_FINA,Ru,ppb,148,0,5.0,5.0,1.0,46,31.1,,,"Fire assay (NiS), INAA finish",total
+S2,TD_ICP,Cd,ppm,158,0,0.5,0.5,1.0,119,75.3,,,ICP-OES,near-total
+S2,TD_ICP,Cu,ppm,158,17,,,,0,0.0,,,ICP-OES,near-total
+S2,TD_ICP,Ni,ppm,158,0,,,,0,0.0,,,ICP-OES,near-total
+S2,TD_ICP,Pb,ppm,158,0,5.0,5.0,1.0,85,53.8,,,ICP-OES,near-total
+S2,TD_ICP,S,wt%,158,0,,,,0,0.0,,,ICP-OES,near-total
+S4,calculated,Fe2O3T,wt%,218,0,,,,0,0.0,,,,
+S4,not reported (GEOROC precompiled file),Al2O3,wt%,357,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),As,ppm,102,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Au,ppb,61,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Ba,ppm,204,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),CO2,wt%,189,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),CaO,wt%,357,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Ce,ppm,226,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Cl,ppm,57,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Co,ppm,163,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Cr,ppm,137,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Cs,ppm,158,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Cu,ppm,116,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Dy,ppm,18,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Er,ppm,18,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Eu,ppm,194,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),F,ppm,57,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Fe2O3,wt%,259,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Fe2O3T,wt%,139,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),FeO,wt%,259,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Ga,ppm,13,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Gd,ppm,18,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),H2O,wt%,261,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),H2O+,wt%,178,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),H2O-,wt%,128,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Hf,ppm,192,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Ho,ppm,18,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Ir,ppb,32,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),K2O,wt%,356,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),LOI,wt%,114,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),La,ppm,254,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Lu,ppm,191,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),MgO,wt%,361,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),MnO,wt%,355,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Mo,ppm,57,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Na2O,wt%,356,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Nb,ppm,154,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Nd,ppm,192,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Ni,ppm,176,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Os,ppb,37,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),P2O5,wt%,355,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Pb,ppm,19,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Pd,ppb,32,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Pr,ppm,18,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Pt,ppb,32,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Rb,ppm,212,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Re,ppb,36,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Rh,ppb,32,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Ru,ppb,32,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),S,wt%,107,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Sb,ppm,102,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Sc,ppm,177,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Se,ppm,88,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),SiO2,wt%,357,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Sm,ppm,249,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Sn,ppm,57,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Sr,ppm,184,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Ta,ppm,191,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Tb,ppm,186,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Th,ppm,177,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),TiO2,wt%,356,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Tm,ppm,18,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),U,ppm,128,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),V,ppm,29,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Y,ppm,146,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Yb,ppm,204,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Zn,ppm,99,0,,,,0,0.0,,,Not reported in source file,unknown
+S4,not reported (GEOROC precompiled file),Zr,ppm,173,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,calculated,Fe2O3T,wt%,13,0,,,,0,0.0,,,,
+S5,not reported (GEOROC precompiled file),Al2O3,wt%,45,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),As,ppm,16,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Au,ppb,16,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Ba,ppm,3,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),CaO,wt%,42,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Ce,ppm,10,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Co,ppm,20,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Cr,ppm,1,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Cr2O3,wt%,27,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Cs,ppm,3,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Cu,ppm,16,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Eu,ppm,11,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Fe2O3,wt%,13,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Fe2O3T,wt%,45,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),FeO,wt%,24,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Hf,ppm,4,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Ir,ppb,16,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),K2O,wt%,14,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),La,ppm,11,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Lu,ppm,11,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),MgO,wt%,45,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),MnO,wt%,43,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Na2O,wt%,21,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Nd,ppm,9,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Ni,ppm,16,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),NiO,wt%,18,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Os,ppb,16,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Pb,ppm,119,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Pd,ppb,16,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Pt,ppb,16,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Rb,ppm,10,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Re,ppb,16,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Rh,ppb,16,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Ru,ppb,16,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),S,wt%,16,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Sb,ppm,16,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Sc,ppm,11,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Se,ppm,16,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),SiO2,wt%,48,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Sm,ppm,14,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Sr,ppm,10,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Ta,ppm,2,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Tb,ppm,11,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Th,ppm,52,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),TiO2,wt%,40,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),U,ppm,119,0,,,,0,0.0,,,Not reported in source file,unknown
+S5,not reported (GEOROC precompiled file),Yb,ppm,11,0,,,,0,0.0,,,Not reported in source file,unknown
+S6,ECL1501-1:ICP:MS-LA,Ba,ppm,55,0,,,,0,0.0,,,LA-ICP-MS,total
+S6,ECL1501-1:ICP:MS-LA,Ce,ppm,55,0,,,,0,0.0,,,LA-ICP-MS,total
+S6,ECL1501-1:ICP:MS-LA,Co,ppm,55,0,,,,0,0.0,,,LA-ICP-MS,total
+S6,ECL1501-1:ICP:MS-LA,Cr,ppm,55,0,,,,0,0.0,,,LA-ICP-MS,total
+S6,ECL1501-1:ICP:MS-LA,Cs,ppm,55,0,,,,0,0.0,,,LA-ICP-MS,total
+S6,ECL1501-1:ICP:MS-LA,Dy,ppm,55,0,,,,0,0.0,,,LA-ICP-MS,total
+S6,ECL1501-1:ICP:MS-LA,Er,ppm,55,0,,,,0,0.0,,,LA-ICP-MS,total
+S6,ECL1501-1:ICP:MS-LA,Eu,ppm,55,0,,,,0,0.0,,,LA-ICP-MS,total
+S6,ECL1501-1:ICP:MS-LA,Gd,ppm,55,0,,,,0,0.0,,,LA-ICP-MS,total
+S6,ECL1501-1:ICP:MS-LA,Hf,ppm,55,0,,,,0,0.0,,,LA-ICP-MS,total
+S6,ECL1501-1:ICP:MS-LA,Ho,ppm,55,0,,,,0,0.0,,,LA-ICP-MS,total
+S6,ECL1501-1:ICP:MS-LA,La,ppm,55,0,,,,0,0.0,,,LA-ICP-MS,total
+S6,ECL1501-1:ICP:MS-LA,Lu,ppm,55,0,,,,0,0.0,,,LA-ICP-MS,total
+S6,ECL1501-1:ICP:MS-LA,Nb,ppm,55,0,,,,0,0.0,,,LA-ICP-MS,total
+S6,ECL1501-1:ICP:MS-LA,Ni,ppm,55,0,,,,0,0.0,,,LA-ICP-MS,total
+S6,ECL1501-1:ICP:MS-LA,Pb,ppm,55,0,,,,0,0.0,,,LA-ICP-MS,total
+S6,ECL1501-1:ICP:MS-LA,Pr,ppm,55,0,,,,0,0.0,,,LA-ICP-MS,total
+S6,ECL1501-1:ICP:MS-LA,Rb,ppm,55,0,,,,0,0.0,,,LA-ICP-MS,total
+S6,ECL1501-1:ICP:MS-LA,Sc,ppm,55,0,,,,0,0.0,,,LA-ICP-MS,total
+S6,ECL1501-1:ICP:MS-LA,Sm,ppm,55,0,,,,0,0.0,,,LA-ICP-MS,total
+S6,ECL1501-1:ICP:MS-LA,Sr,ppm,55,0,,,,0,0.0,,,LA-ICP-MS,total
+S6,ECL1501-1:ICP:MS-LA,Ta,ppm,55,0,,,,0,0.0,,,LA-ICP-MS,total
+S6,ECL1501-1:ICP:MS-LA,Tb,ppm,55,0,,,,0,0.0,,,LA-ICP-MS,total
+S6,ECL1501-1:ICP:MS-LA,Th,ppm,55,0,,,,0,0.0,,,LA-ICP-MS,total
+S6,ECL1501-1:ICP:MS-LA,Tm,ppm,55,0,,,,0,0.0,,,LA-ICP-MS,total
+S6,ECL1501-1:ICP:MS-LA,U,ppm,55,0,,,,0,0.0,,,LA-ICP-MS,total
+S6,ECL1501-1:ICP:MS-LA,V,ppm,55,0,,,,0,0.0,,,LA-ICP-MS,total
+S6,ECL1501-1:ICP:MS-LA,Y,ppm,55,0,,,,0,0.0,,,LA-ICP-MS,total
+S6,ECL1501-1:ICP:MS-LA,Yb,ppm,55,0,,,,0,0.0,,,LA-ICP-MS,total
+S6,ECL1501-1:ICP:MS-LA,Zr,ppm,55,0,,,,0,0.0,,,LA-ICP-MS,total
+S6,ECL1501-1:XRF,Al2O3,wt%,55,0,,,,0,0.0,,,XRF (method details per source),total
+S6,ECL1501-1:XRF,CaO,wt%,55,0,,,,0,0.0,,,XRF (method details per source),total
+S6,ECL1501-1:XRF,Fe2O3T,wt%,55,0,,,,0,0.0,,,XRF (method details per source),total
+S6,ECL1501-1:XRF,K2O,wt%,55,0,,,,0,0.0,,,XRF (method details per source),total
+S6,ECL1501-1:XRF,MgO,wt%,55,0,,,,0,0.0,,,XRF (method details per source),total
+S6,ECL1501-1:XRF,MnO,wt%,55,0,,,,0,0.0,,,XRF (method details per source),total
+S6,ECL1501-1:XRF,Na2O,wt%,55,0,,,,0,0.0,,,XRF (method details per source),total
+S6,ECL1501-1:XRF,P2O5,wt%,55,0,,,,0,0.0,,,XRF (method details per source),total
+S6,ECL1501-1:XRF,SiO2,wt%,55,0,,,,0,0.0,,,XRF (method details per source),total
+S6,ECL1501-1:XRF,TiO2,wt%,55,0,,,,0,0.0,,,XRF (method details per source),total
+S6,ECL1501-2:,LOI,wt%,55,0,,,,0,0.0,,,Gravimetry (LOI),total
+S7,As_Hyd,As,ppm,36,0,0.6,0.6,1.0,6,16.7,0.6 parts per million (As),,"AAS, hydride generation (HGAAS)",near-total
+S7,CV_AA,Hg,ppm,36,0,0.01,0.01,1.0,36,100.0,,,"AAS, cold vapor (CVAAS)",near-total
+S7,Coulometric_Crbnt_C,C_carb,wt%,30,0,,,,0,0.0,,,Coulometry (carbonate C),total
+S7,ICPAES_MS,Ag,ppm,36,0,1.0,1.0,1.0,32,88.9,1 parts per million (Ag),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,Al2O3,wt%,36,0,,,,0,0.0,0.01 weight percent (Al),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,Ba,ppm,36,0,,,,0,0.0,5 parts per million (Ba),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,Be,ppm,36,0,,,,0,0.0,0.1 parts per million (Be),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,Bi,ppm,36,0,0.04,0.04,1.0,30,83.3,0.04 parts per million (Bi),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,CaO,wt%,36,0,,,,0,0.0,0.01 weight percent (Ca),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,Cd,ppm,36,0,0.1,0.1,1.0,28,77.8,0.1 parts per million (Cd),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,Ce,ppm,36,0,,,,0,0.0,0.05 parts per million (Ce),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,Co,ppm,36,0,,,,0,0.0,0.1 parts per million (Co),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,Cr,ppm,36,0,,,,0,0.0,1 parts per million (Cr),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,Cs,ppm,36,0,5.0,5.0,1.0,36,100.0,5 parts per million (Cs),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,Cu,ppm,36,0,,,,0,0.0,0.5 parts per million (Cu),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,Fe2O3T,wt%,36,0,,,,0,0.0,0.01 weight percent (Fe),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,Ga,ppm,36,0,,,,0,0.0,0.05 parts per million (Ga),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,In,ppm,36,0,0.02,0.02,1.0,9,25.0,0.02 parts per million (In),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,K2O,wt%,36,0,,,,0,0.0,0.01 weight percent (K),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,La,ppm,36,0,,,,0,0.0,0.5 parts per million (La),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,Li,ppm,36,0,,,,0,0.0,1 parts per million (Li),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,MgO,wt%,36,0,,,,0,0.0,0.01 weight percent (Mg),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,MnO,wt%,36,0,,,,0,0.0,5 parts per million (Mn),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,Mo,ppm,36,0,,,,0,0.0,0.05 parts per million (Mo),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,Na2O,wt%,36,0,,,,0,0.0,0.01 weight percent (Na),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,Nb,ppm,36,0,,,,0,0.0,0.1 parts per million (Nb),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,Ni,ppm,36,0,,,,0,0.0,0.5 parts per million (Ni),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,P2O5,wt%,36,0,,,,0,0.0,50 parts per million (P),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,Pb,ppm,36,0,,,,0,0.0,0.5 parts per million (Pb),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,Rb,ppm,36,0,,,,0,0.0,0.2 parts per million (Rb),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,S,wt%,36,0,0.01,0.01,1.0,15,41.7,0.01 weight percent (S),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,Sb,ppm,36,0,0.05,0.05,1.0,5,13.9,0.05 parts per million (Sb),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,Sc,ppm,36,0,,,,0,0.0,0.1 parts per million (Sc),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,Sn,ppm,36,0,,,,0,0.0,0.1 parts per million (Sn),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,Sr,ppm,36,0,,,,0,0.0,0.5 parts per million (Sr),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,Te,ppm,36,0,0.1,0.1,1.0,32,88.9,0.1 parts per million (Te),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,Th,ppm,36,0,0.2,0.2,1.0,5,13.9,0.2 parts per million (Th),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,TiO2,wt%,36,0,,,,0,0.0,0.01 weight percent (Ti),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,Tl,ppm,36,0,0.1,0.1,1.0,36,100.0,0.1 parts per million (Tl),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,U,ppm,36,0,0.1,0.1,1.0,10,27.8,0.1 parts per million (U),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,V,ppm,36,0,,,,0,0.0,1 parts per million (V),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,W,ppm,36,0,,,,0,0.0,0.1 parts per million (W),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,Y,ppm,36,0,,,,0,0.0,0.1 parts per million (Y),,ICP-AES + ICP-MS,near-total
+S7,ICPAES_MS,Zn,ppm,36,0,,,,0,0.0,1 parts per million (Zn),,ICP-AES + ICP-MS,near-total
+S7,Se_Hyd,Se,ppm,36,0,0.2,0.2,1.0,30,83.3,0.2 parts per million (Se),,"AAS, hydride generation (HGAAS)",near-total

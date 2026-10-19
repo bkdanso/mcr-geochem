@@ -1,0 +1,188 @@
+{
+  "version": "1.0.0",
+  "build_date": "2026-10-19",
+  "qa_checker_version": "1.0.0",
+  "n_samples": 3524,
+  "n_determinations": 168748,
+  "n_best_values": 145596,
+  "n_analytes": 88,
+  "n_method_codes": 89,
+  "n_excluded": 10043,
+  "samples_by_source": {
+    "S1": 2237,
+    "S2": 331,
+    "S4": 661,
+    "S5": 204,
+    "S6": 55,
+    "S7": 36
+  },
+  "samples_by_state": {
+    "MI": 1057,
+    "MN": 1695,
+    "WI": 772
+  },
+  "samples_by_type": {
+    "mineral_grain": 204,
+    "whole_rock": 3320
+  },
+  "samples_by_mcr_class": {
+    "post_rift_sedimentary": 34,
+    "rift_igneous": 3076,
+    "rift_sedimentary": 414
+  },
+  "samples_by_rock_class": {
+    "igneous_intrusive": 1690,
+    "igneous_volcanic": 1310,
+    "metamorphic": 52,
+    "sedimentary": 418,
+    "unspecified": 2,
+    "vein_or_ore": 36
+  },
+  "samples_by_mcr_match": {
+    "map": 443,
+    "map+context": 6,
+    "text": 671,
+    "text+map": 2404
+  },
+  "pct_censored_best": 26.3,
+  "determination_flags": {
+    "SEMI_QUANTITATIVE": 46375,
+    "BDL": 42788,
+    "BDL_UNINFORMATIVE": 16361,
+    "METHOD_NOT_REPORTED": 11401,
+    "PARTIAL_DIGESTION": 1934,
+    "ZERO_VALUE": 452,
+    "ABOVE_UPPER_LIMIT": 294,
+    "POSSIBLE_UNIT_ERROR": 161,
+    "AUTHOR_CORRECTED": 1
+  },
+  "sample_flags": {
+    "COORD_APPROXIMATE": 750,
+    "ALTERED_AI": 283,
+    "MAJOR_TOTAL_LOW": 260,
+    "POSSIBLE_DUPLICATE": 239,
+    "ALTERED_LOI": 184,
+    "MAJOR_TOTAL_HIGH": 149,
+    "ALTERED_SOURCE": 87,
+    "ALTERED_CIA": 39,
+    "SI_ELEMENT_SUSPECT": 9
+  },
+  "n_altered_likely": 518,
+  "n_igneous_wholerock": 2821,
+  "n_igneous_altered_likely": 488,
+  "n_duplicate_groups": 110,
+  "n_samples_in_duplicate_groups": 239,
+  "critical_metals": {
+    "Ni": {
+      "n": 2782,
+      "n_detected": 2650,
+      "n_bdl": 115,
+      "n_bdl_uninformative": 0,
+      "median_detected": 120.0,
+      "unit": "ppm"
+    },
+    "Cu": {
+      "n": 2667,
+      "n_detected": 2601,
+      "n_bdl": 34,
+      "n_bdl_uninformative": 0,
+      "median_detected": 108.0,
+      "unit": "ppm"
+    },
+    "Co": {
+      "n": 2733,
+      "n_detected": 2693,
+      "n_bdl": 40,
+      "n_bdl_uninformative": 0,
+      "median_detected": 47.0,
+      "unit": "ppm"
+    },
+    "Pt": {
+      "n": 1304,
+      "n_detected": 579,
+      "n_bdl": 725,
+      "n_bdl_uninformative": 501,
+      "median_detected": 16.0,
+      "unit": "ppb"
+    },
+    "Pd": {
+      "n": 1304,
+      "n_detected": 648,
+      "n_bdl": 656,
+      "n_bdl_uninformative": 502,
+      "median_detected": 12.0,
+      "unit": "ppb"
+    },
+    "Au": {
+      "n": 2243,
+      "n_detected": 922,
+      "n_bdl": 1321,
+      "n_bdl_uninformative": 818,
+      "median_detected": 5.0,
+      "unit": "ppb"
+    }
+  },
+  "major_totals": {
+    "n": 1828,
+    "within_range": 1396,
+    "median": 99.62
+  },
+  "counts_by_source": [
+    {
+      "source_id": "S1",
+      "samples_read": 6496,
+      "determinations_read": 341776,
+      "samples_in_study_states": 6496,
+      "samples_kept_mcr": 2237,
+      "determinations_kept": 125952
+    },
+    {
+      "source_id": "S2",
+      "samples_read": 390,
+      "determinations_read": 31874,
+      "samples_in_study_states": 390,
+      "samples_kept_mcr": 331,
+      "determinations_kept": 27267
+    },
+    {
+      "source_id": "S3",
+      "samples_read": 777,
+      "determinations_read": 95847,
+      "samples_in_study_states": 777,
+      "samples_kept_mcr": 0,
+      "determinations_kept": 0
+    },
+    {
+      "source_id": "S4",
+      "samples_read": 1357,
+      "determinations_read": 31171,
+      "samples_in_study_states": 718,
+      "samples_kept_mcr": 661,
+      "determinations_kept": 10310
+    },
+    {
+      "source_id": "S5",
+      "samples_read": 4450,
+      "determinations_read": 42783,
+      "samples_in_study_states": 974,
+      "samples_kept_mcr": 204,
+      "determinations_kept": 1091
+    },
+    {
+      "source_id": "S6",
+      "samples_read": 55,
+      "determinations_read": 2255,
+      "samples_in_study_states": 55,
+      "samples_kept_mcr": 55,
+      "determinations_kept": 2255
+    },
+    {
+      "source_id": "S7",
+      "samples_read": 42,
+      "determinations_read": 1884,
+      "samples_in_study_states": 42,
+      "samples_kept_mcr": 36,
+      "determinations_kept": 1614
+    }
+  ]
+}

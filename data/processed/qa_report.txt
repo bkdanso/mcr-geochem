@@ -1,0 +1,106 @@
+MCR-GeoChem v1.0.0 QA report   (built 2026-10-19, mcrqa 1.0.0)
+Plain-language note: this file lists every check the pipeline ran. Read the 'Spot checks'
+section during verification; the rest is reference.
+
+1. ROW COUNTS BY STAGE
+source_id  samples_read  determinations_read  samples_in_study_states  samples_kept_mcr  determinations_kept
+       S1          6496               341776                     6496              2237               125952
+       S2           390                31874                      390               331                27267
+       S3           777                95847                      777                 0                    0
+       S4          1357                31171                      718               661                10310
+       S5          4450                42783                      974               204                 1091
+       S6            55                 2255                       55                55                 2255
+       S7            42                 1884                       42                36                 1614
+
+Total kept: 3,524 samples, 168,748 determinations (145,596 best values, 88 analytes).
+Excluded: 10,043 samples (data/processed/excluded_samples.csv, one reason each).
+
+2. RIFT MEMBERSHIP: HOW EACH KEPT SAMPLE WAS MATCHED
+map             443
+map+context       6
+text            671
+text+map       2404
+  text = source names a rift unit; map = sample sits on an SGMC rift map unit (docs/mcr_units.csv);
+  context = rift named only in locality or project. 'map' and 'context' are lower confidence.
+
+3. COMPOSITION OF THE DATASET
+  samples_by_state: {'MI': 1057, 'MN': 1695, 'WI': 772}
+  samples_by_type: {'mineral_grain': 204, 'whole_rock': 3320}
+  samples_by_mcr_class: {'post_rift_sedimentary': 34, 'rift_igneous': 3076, 'rift_sedimentary': 414}
+  samples_by_rock_class: {'igneous_intrusive': 1690, 'igneous_volcanic': 1310, 'metamorphic': 52, 'sedimentary': 418, 'unspecified': 2, 'vein_or_ore': 36}
+
+4. FLAGS
+  Determinations:
+    SEMI_QUANTITATIVE        46,375  Semi-quantitative method (e.g., DC-arc emission spectrography); use for screening only.
+    BDL                      42,788  Below detection limit: value unknown, less than the detection limit.
+    BDL_UNINFORMATIVE        16,361  Below detection, but the detection limit is so high the result says little about the rock.
+    METHOD_NOT_REPORTED      11,401  The source file does not give the analytical method.
+    PARTIAL_DIGESTION         1,934  Partial digestion (e.g., aqua regia): may under-report elements in resistant minerals.
+    ZERO_VALUE                  452  Reported as exactly zero; in compilations this usually means 'not detected' with no limit given.
+    ABOVE_UPPER_LIMIT           294  Above the method's upper limit: true value is higher than reported.
+    POSSIBLE_UNIT_ERROR         161  Far above what unmineralized rock contains; check units (ppm vs ppb, element vs oxide).
+    AUTHOR_CORRECTED              1  Value corrected by the dataset authors; the original is kept in value_source (see docs/corrections.csv).
+  Samples:
+    COORD_APPROXIMATE           750  Coordinates are approximate (one decimal place, or a locality range centroid).
+    ALTERED_AI                  283  Ishikawa alteration index outside the least-altered range.
+    MAJOR_TOTAL_LOW             260  Sum of major oxides + LOI below the accepted range.
+    POSSIBLE_DUPLICATE          239  Same place and near-identical SiO2 and MgO (or same name) as a sample in another source.
+    ALTERED_LOI                 184  Loss on ignition above threshold: likely hydrated or carbonated.
+    MAJOR_TOTAL_HIGH            149  Sum of major oxides + LOI above the accepted range.
+    ALTERED_SOURCE               87  The source describes the sample as altered.
+    ALTERED_CIA                  39  Chemical Index of Alteration above threshold: feldspar likely weathered to clay.
+    SI_ELEMENT_SUSPECT            9  SiO2 in an igneous rock is in the range expected if Si (element) was reported as SiO2.
+  Igneous whole-rock samples: 2,821; flagged likely altered: 488
+  Possible cross-source duplicate groups: 110 (239 samples). Kept and flagged, not deleted.
+
+5. CRITICAL METALS (best values)
+  Ni: n=2,782 detected=2,650 below-detection=115 (uninformative limit 0); median detected 120.0 ppm
+  Cu: n=2,667 detected=2,601 below-detection=34 (uninformative limit 0); median detected 108.0 ppm
+  Co: n=2,733 detected=2,693 below-detection=40 (uninformative limit 0); median detected 47.0 ppm
+  Pt: n=1,304 detected=579 below-detection=725 (uninformative limit 501); median detected 16.0 ppb
+  Pd: n=1,304 detected=648 below-detection=656 (uninformative limit 502); median detected 12.0 ppb
+  Au: n=2,243 detected=922 below-detection=1,321 (uninformative limit 818); median detected 5.0 ppb
+
+6. RANGE CHECKS
+  Major-oxide totals (8+ oxides): n=1,828, within 96.0-102.5 wt%: 1,396, median 99.62
+analyte unit  count       min     median          max
+     Au  ppb    922  0.000000   5.000000  44100.00000
+     Co  ppm   2693  0.000000  47.000000    750.00000
+     Cr  ppm   2622  0.000000 124.000000   3102.00000
+     Cu  ppm   2601  0.000000 108.000000 252600.00000
+ Fe2O3T  wt%   2765  0.071485  10.894314     89.43443
+    K2O  wt%   2414  0.000000   0.843220     12.04600
+    LOI  wt%   1119 -2.001730   1.830000     22.00000
+    MgO  wt%   2893  0.010000   5.157313     34.82430
+   Na2O  wt%   2432  0.000000   2.574680     10.78400
+     Ni  ppm   2650  0.000000 120.000000  89200.00000
+     Pd  ppb    648  0.000000  12.000000 123000.00000
+     Pt  ppb    579  0.000000  16.000000  17918.00000
+      S  wt%    838  0.000000   0.120000     36.39000
+   SiO2  wt%   2091  0.090000  48.134250     90.92025
+
+7. SPOT CHECKS (verify each against the source; links in spot_checks.csv)
+  MCRG-S1-W210634                    Pt            4600 ppb  | source shows: 4.6 ppm (method ES_SQ) | highest detected Pt in the USGS NGDB set (extreme)
+  MCRG-S1-W210634                    Pd           <1000 ppb  | source shows: -1.0 ppm (method ES_SQ) | highest detected Pt in the USGS NGDB set (extreme)
+  MCRG-S1-W210634                    Cu              24 ppm  | source shows: 24.0 ppm (method EDX) | highest detected Pt in the USGS NGDB set (extreme)
+  MCRG-S1-W210634                    Ni              30 ppm  | source shows: 30.0 ppm (method AA_F_HF) | highest detected Pt in the USGS NGDB set (extreme)
+  MCRG-S1-C100666                    SiO2       47.7064 wt%  | source shows: 22.3 pct (method WDX_Fuse) | Portage Lake basalt majors (Si as element converted to SiO2)
+  MCRG-S1-C100666                    MgO        7.34627 wt%  | source shows: 4.43 pct (method WDX_Fuse) | Portage Lake basalt majors (Si as element converted to SiO2)
+  MCRG-S1-C100666                    Fe2O3T      11.795 wt%  | source shows: 8.25 pct (method WDX_Fuse) | Portage Lake basalt majors (Si as element converted to SiO2)
+  MCRG-S1-W175024                    Cu          125000 ppm  | source shows: 125000.0 ppm (method AA_F_HF) | Nonesuch Shale copper (rift sediment, White Pine host)
+  MCRG-S1-AHK811                     Pt          <30000 ppb  | source shows: -30.0 ppm (method ES_SQ) | legacy below-detection Pt with a very high limit (hard case)
+  MCRG-S1-AHK811                     Au             <20 ppb  | source shows: -0.02 ppm (method AA_F_HBr) | legacy below-detection Pt with a very high limit (hard case)
+  MCRG-S2-1002841                    Pd           10200 ppb  | source shows: 10200 ppb (method C_FA_TRACE_AU-PD-PT) | USGS Duluth drill core, highest Pd; Pd/Pt = nan, unusually high: confirm the source has no typo
+  MCRG-S2-1002841                    Pt              <5 ppb  | source shows: <5 ppb (method C_FA_TRACE_AU-PD-PT) | USGS Duluth drill core, highest Pd; Pd/Pt = nan, unusually high: confirm the source has no typo
+  MCRG-S2-1002841                    Cu          192000 ppm  | source shows: 192000 ppm (method C_ICPOES_MS-60) | USGS Duluth drill core, highest Pd; Pd/Pt = nan, unusually high: confirm the source has no typo
+  MCRG-S4-104473                     SiO2          67.5 wt%  | source shows: 67.5 wt% (method not reported (GEOROC precompiled file)) | GEOROC North Shore Volcanic Group
+  MCRG-S4-104473                     TiO2          0.95 wt%  | source shows: 0.95 wt% (method not reported (GEOROC precompiled file)) | GEOROC North Shore Volcanic Group
+  MCRG-S4-104473                     Zr             600 ppm  | source shows: 600 ppm (method not reported (GEOROC precompiled file)) | GEOROC North Shore Volcanic Group
+  MCRG-S6-9550                       SiO2         46.21 wt%  | source shows: 46.21 WT% (method ECL1501-1:XRF) | EarthChem Portage Lake sample 9550
+  MCRG-S6-9550                       Fe2O3T       12.81 wt%  | source shows: 12.81 WT% (method ECL1501-1:XRF) | EarthChem Portage Lake sample 9550
+  MCRG-S6-9550                       Ni           235.1 ppm  | source shows: 235.1 PPM (method ECL1501-1:ICP:MS-LA) | EarthChem Portage Lake sample 9550
+  MCRG-S7-C-392223                   Cu             141 ppm  | source shows: 141.0 ppm (method ICPAES_MS) | Woodruff (2019) troctolite FR-3
+  MCRG-S7-C-392223                   Ni             296 ppm  | source shows: 296.0 ppm (method ICPAES_MS) | Woodruff (2019) troctolite FR-3
+  MCRG-S7-C-392223                   Al2O3      17.0433 wt%  | source shows: 9.02 wt% (method ICPAES_MS) | Woodruff (2019) troctolite FR-3
+  MCRG-S5-OLIVINES-2150              MgO           30.4 wt%  | source shows: 30.4 wt% (method not reported (GEOROC precompiled file)) | GEOROC olivine grain (mineral chemistry)
+  MCRG-S5-OLIVINES-2150              SiO2         36.83 wt%  | source shows: 36.83 wt% (method not reported (GEOROC precompiled file)) | GEOROC olivine grain (mineral chemistry)

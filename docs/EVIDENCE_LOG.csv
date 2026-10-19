@@ -1,0 +1,4 @@
+date,artifact_or_event,type,venue_or_host,link_or_doi,status,prong_tags,metrics_snapshot,files_saved,notes
+,MCR-GeoChem v1.0.0 dataset,dataset,Zenodo,,pending,,0 downloads at release,zenodo_dataset_record.pdf,Authors Danso & Abdullah; verified 2026-10-19
+,MCR-GeoChem v1.0.0 method and detection-limit crosswalk,dataset,Zenodo,,pending,,0 downloads at release,zenodo_crosswalk_record.pdf,
+,mcrqa 1.0.0 QA checker,software,GitHub + Zenodo,https://github.com/bkdanso/mcr-geochem,pending,,0 stars at release,github_release.pdf; zenodo_software_record.pdf,

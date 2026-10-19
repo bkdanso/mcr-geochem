@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this dataset or software, please cite it as below, and cite the original sources listed in docs/PROVENANCE.md."
+type: dataset
+title: "MCR-GeoChem: harmonized whole-rock and mineral geochemistry of the Midcontinent Rift (Michigan, Minnesota, Wisconsin)"
+version: "1.0.0"
+date-released: "2026-10-19"
+authors:
+  - family-names: "Danso"
+    given-names: "Bezali Kwame"
+    affiliation: "Independent Researcher, East Lansing, Michigan, USA"
+    email: "dansobez@msu.edu"
+    orcid: "https://orcid.org/0009-0006-1201-4129"
+  - family-names: "Abdullah"
+    given-names: "Saadatu"
+    affiliation: "Independent Researcher, Athens, Georgia, US"
+license: CC-BY-SA-4.0
+repository-code: "https://github.com/bkdanso/mcr-geochem"
+keywords:
+  - "geochemistry"
+  - "Midcontinent Rift"
+  - "Keweenawan"
+  - "Duluth Complex"
+  - "critical minerals"
+  - "platinum-group elements"
+  - "nickel"
+  - "copper"
+  - "data harmonization"
+  - "quality assurance"
