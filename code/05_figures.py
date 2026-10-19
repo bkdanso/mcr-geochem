@@ -29,6 +29,18 @@ plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 10, "axes.edgeco
                      "figure.facecolor": SURF, "axes.facecolor": SURF, "savefig.facecolor": SURF})
 
 
+PAPER = {"on": False}
+
+
+def title(ax, text, **kw):
+    if not PAPER["on"]:
+        ax.set_title(text, **kw)
+
+
+def out(name):
+    return os.path.join(FIG, ("paper_" if PAPER["on"] else "") + name)
+
+
 def stamp(fig, final):
     if not final:
         fig.text(0.99, 0.99, "DRAFT - not verified", ha="right", va="top", fontsize=9, color="#b0302f",
@@ -36,6 +48,8 @@ def stamp(fig, final):
 
 
 def caption(fig, text):
+    if PAPER["on"]:
+        return
     fig.text(0.01, 0.01, text, ha="left", va="bottom", fontsize=7.5, color=INK2)
 
 
@@ -67,14 +81,15 @@ def fig_map(s, st, final):
     for sp in ax.spines.values():
         sp.set_visible(False)
     ax.legend(loc="lower left", frameon=False, fontsize=8.5, labelcolor=INK)
-    ax.set_title(f"MCR-GeoChem v{st['version']}: {st['n_samples']:,} Midcontinent Rift samples",
+    title(ax, f"MCR-GeoChem v{st['version']}: {st['n_samples']:,} Midcontinent Rift samples",
                  loc="left", color=INK, fontsize=12, pad=18)
-    ax.text(0.0, 1.0, "Shaded: USGS State Geologic Map Compilation rift units used for membership",
-            transform=ax.transAxes, fontsize=8, color=INK2, va="bottom")
+    if not PAPER["on"]:
+        ax.text(0.0, 1.0, "Shaded: USGS State Geologic Map Compilation rift units used for membership",
+                transform=ax.transAxes, fontsize=8, color=INK2, va="bottom")
     caption(fig, "Sources: USGS NGDB 1962-2023 (doi:10.5066/P1FXE9GK); GEOROC (doi:10.25625/WSTPOX, 10.25625/SGFTFN); "
                  "EarthChem (doi:10.26022/IEDA/111501); SGMC (doi:10.3133/ds1052).")
     stamp(fig, final)
-    fig.savefig(os.path.join(FIG, "fig1_sample_map.png"), dpi=200, bbox_inches="tight")
+    fig.savefig(out("fig1_sample_map.png"), dpi=200, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -104,12 +119,12 @@ def fig_censoring(st, final):
         ax.spines[sp].set_visible(False)
     ax.set_xlim(0, max(cm[a]["n"] for a in order) * 1.18)
     ax.legend(loc="upper center", bbox_to_anchor=(0.45, -0.2), ncol=3, frameon=False, fontsize=8.2)
-    ax.set_title("Critical-metal results: measured vs. below detection", loc="left", color=INK, fontsize=12)
+    title(ax, "Critical-metal results: measured vs. below detection", loc="left", color=INK, fontsize=12)
     caption(fig, "'Limit too high': detection limit above the mcrqa threshold (e.g. >10 ppb for Pt, Pd, Au), "
                  "mostly legacy emission spectrography.")
     fig.subplots_adjust(bottom=0.32)
     stamp(fig, final)
-    fig.savefig(os.path.join(FIG, "fig2_critical_metals_censoring.png"), dpi=200, bbox_inches="tight")
+    fig.savefig(out("fig2_critical_metals_censoring.png"), dpi=200, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -130,15 +145,72 @@ def fig_flags(st, final):
     for sp in ("top", "right", "left"):
         ax.spines[sp].set_visible(False)
     ax.set_xlabel(f"Samples flagged (of {st['n_samples']:,})")
-    ax.set_title("Sample-level QA flags from the mcrqa checker", loc="left", color=INK, fontsize=12)
+    title(ax, "Sample-level QA flags from the mcrqa checker", loc="left", color=INK, fontsize=12)
     stamp(fig, final)
-    fig.savefig(os.path.join(FIG, "fig3_sample_qa_flags.png"), dpi=200, bbox_inches="tight")
+    fig.savefig(out("fig3_sample_qa_flags.png"), dpi=200, bbox_inches="tight")
     plt.close(fig)
+
+
+def fig_methods(final):
+    c = pd.read_csv(os.path.join(P, "method_crosswalk.csv"))
+    c["family"] = c.technique.str.split(r"[,(]").str[0].str.strip().replace(
+        {"Not reported in source file": "Not reported (GEOROC)", "Calculated": "Calculated"})
+    g = c.groupby("family").n_determinations.sum().sort_values()
+    g = g[g >= 500]
+    fig, ax = plt.subplots(figsize=(8, 4.2))
+    ax.barh(g.index, g.values, color=S1, height=0.6)
+    for i, v in enumerate(g.values):
+        ax.text(v + 400, i, f"{v:,}", va="center", fontsize=8.5, color=INK2)
+    ax.grid(axis="x", color=GRID, linewidth=0.6)
+    ax.set_axisbelow(True)
+    for sp in ("top", "right", "left"):
+        ax.spines[sp].set_visible(False)
+    ax.set_xlabel("Determinations in MCR-GeoChem v1.0")
+    title(ax, "Analytical technique families after crosswalk harmonization", loc="left", color=INK, fontsize=12)
+    fig.subplots_adjust(bottom=0.2)
+    caption(fig, "Families with at least 500 determinations; full code-level mapping in method_crosswalk.csv.")
+    stamp(fig, final)
+    fig.savefig(out("fig4_technique_families.png"), dpi=200, bbox_inches="tight")
+    plt.close(fig)
+
+
+def fig_tas(s, final):
+    l = pd.read_parquet(os.path.join(P, "mcr_geochem_analyses_long.parquet"))
+    b = l[l.is_best_value & l.value.notna() & l.analyte.isin(["SiO2", "Na2O", "K2O"])]
+    w = b.pivot_table(index="mcr_uid", columns="analyte", values="value", aggfunc="first").dropna()
+    m = s.set_index("mcr_uid")
+    w = w.join(m[["rock_class", "altered_likely", "sample_type"]], how="inner")
+    w = w[(w.sample_type == "whole_rock") & w.rock_class.str.startswith("igneous_")]
+    w["alk"] = w.Na2O + w.K2O
+    fig, ax = plt.subplots(figsize=(7.2, 5.2))
+    for rc, col, lab in [("igneous_volcanic", S1, "Volcanic"), ("igneous_intrusive", S2, "Intrusive")]:
+        d = w[w.rock_class == rc]
+        fresh, alt = d[~d.altered_likely.astype(bool)], d[d.altered_likely.astype(bool)]
+        ax.scatter(fresh.SiO2, fresh.alk, s=10, color=col, edgecolor=SURF, linewidth=0.3,
+                   label=f"{lab}, not flagged (n={len(fresh):,})", zorder=3)
+        ax.scatter(alt.SiO2, alt.alk, s=12, facecolor="none", edgecolor=col, linewidth=0.7,
+                   label=f"{lab}, flagged altered (n={len(alt):,})", zorder=2)
+    ax.set_xlim(35, 80)
+    ax.set_ylim(0, 14)
+    ax.set_xlabel("SiO$_2$ (wt%)")
+    ax.set_ylabel("Na$_2$O + K$_2$O (wt%)")
+    ax.grid(color=GRID, linewidth=0.6)
+    ax.set_axisbelow(True)
+    for sp in ("top", "right"):
+        ax.spines[sp].set_visible(False)
+    ax.legend(frameon=False, fontsize=8, loc="upper left")
+    title(ax, "Total alkali vs. silica, rift igneous whole rocks (best values)", loc="left", color=INK, fontsize=11.5)
+    caption(fig, "Open symbols: mcrqa ALTERED_* flag (LOI > 3 wt%, CIA > 60, or Ishikawa AI outside 20-65, or source description).")
+    stamp(fig, final)
+    fig.savefig(out("fig5_tas_alteration.png"), dpi=200, bbox_inches="tight")
+    plt.close(fig)
+    return len(w)
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--final", action="store_true", help="remove the DRAFT stamp (after verification)")
+    ap.add_argument("--paper", action="store_true", help="also write untitled versions for the preprint")
     a = ap.parse_args()
     os.makedirs(FIG, exist_ok=True)
     st = json.load(open(os.path.join(P, "stats.json")))
@@ -146,6 +218,13 @@ def main():
     fig_map(s, st, a.final)
     fig_censoring(st, a.final)
     fig_flags(st, a.final)
+    fig_methods(a.final)
+    fig_tas(s, a.final)
+    if a.paper:
+        PAPER["on"] = True
+        fig_map(s, st, a.final); fig_censoring(st, a.final); fig_flags(st, a.final)
+        fig_methods(a.final); fig_tas(s, a.final)
+        PAPER["on"] = False
     print("figures written to paper/figures/")
 
 
