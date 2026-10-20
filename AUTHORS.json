@@ -26,8 +26,12 @@
       "orcid": "",
       "email": "",
       "affiliation": "Independent Researcher, Athens, Georgia, USA",
-      "roles": [],
-      "corresponding": false
+      "roles": [
+        "Validation",
+        "Visualization"
+      ],
+      "corresponding": false,
+      "contribution_text": "Validation (cross-checking of the geophysical aspects) and Visualization (review of the sample map and plotted figures)"
     }
   ],
   "collaborators": []

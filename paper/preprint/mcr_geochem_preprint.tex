@@ -5,6 +5,7 @@
 \usepackage{mathpazo}
 \usepackage{amsmath,amssymb}
 \usepackage{graphicx}
+\usepackage{float}
 \usepackage{dcolumn}
 \usepackage{bm}
 \usepackage{microtype}
@@ -427,7 +428,7 @@ The dataset, the method and detection-limit crosswalk, the \texttt{mcrqa} checke
 
 \section*{Author contributions}
 
-B.K.D.: Conceptualization, Data curation, Methodology, Software, Validation, Writing - original draft. All authors approved the final manuscript.
+B.K.D.: Conceptualization, Data curation, Methodology, Software, Validation, Writing - original draft. S.A.: Validation (cross-checking of the geophysical aspects) and Visualization (review of the sample map and plotted figures). All authors approved the final manuscript.
 
 \section*{Use of AI tools}
 
@@ -445,7 +446,7 @@ We thank the U.S. Geological Survey for the National Geochemical Database and re
 
 Table~\ref{tab:columns} lists the core columns of the samples and long tables. The full codebook, including the wide, crosswalk, detection-limit, and exclusion tables, is distributed with the data.
 
-\begin{table}[!htbp]
+\begin{table}[H]
 \caption{Core columns of the samples and long tables.}
 \label{tab:columns}
 \footnotesize
@@ -481,7 +482,7 @@ long & qa\_flags & Value-level flags \\
 
 Table~\ref{tab:flagdefs} defines every flag emitted by \texttt{mcrqa} v1.0.0, as returned by \texttt{mcrqa flags}.
 
-\begin{table}[!htbp]
+\begin{table}[H]
 \caption{Flags emitted by \texttt{mcrqa}.}
 \label{tab:flagdefs}
 \footnotesize
@@ -518,7 +519,7 @@ POSSIBLE\_DUPLICATE & Same place and near-identical SiO2 and MgO (or same name) 
 
 Table~\ref{tab:topcodes} shows the 20 method codes with the most determinations and their crosswalk entries.
 
-\begin{table}[!htbp]
+\begin{table}[H]
 \caption{The 20 most frequent source method codes and their crosswalk classification.}
 \label{tab:topcodes}
 \footnotesize
@@ -554,7 +555,7 @@ S1 & FA\_MS & Fire assay, ICP-MS finish & NiS fire assay & total & 1{,}486 \\
 
 Table~\ref{tab:excl} summarizes the 10{,}043 samples read but not retained, grouped by reason. Every excluded sample is listed individually, with its reason, in \texttt{excluded\_samples.csv}.
 
-\begin{table}[!htbp]
+\begin{table}[H]
 \caption{Excluded samples by reason.}
 \label{tab:excl}
 \begin{ruledtabular}
