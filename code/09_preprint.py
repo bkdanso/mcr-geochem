@@ -291,6 +291,57 @@ def main():
             print(r.stdout[-3000:])
             raise SystemExit("pdflatex failed")
     print("wrote paper/preprint/mcr_geochem_preprint.pdf")
+    coversheet(authors, st)
+
+
+def coversheet(authors, st):
+    """EarthArXiv coversheet (page 1): title, authors with affiliations and emails, peer-review status."""
+    sub = json.load(open(os.path.join(PP, "submission.json")))
+    title = ("MCR-GeoChem: A harmonized, quality-flagged open compilation of whole-rock and mineral geochemistry "
+             "for the 1.1~Ga Midcontinent Rift in Michigan, Minnesota, and Wisconsin")
+    rows = []
+    for i, au in enumerate(authors, 1):
+        line = f"\\textbf{{{tex(au['name'])}}}" + ("$^{*}$" if au.get("corresponding") else "")
+        line += f"\\\\ {tex(au['affiliation'])}"
+        if au.get("email"):
+            line += f"\\\\ Email: \\href{{mailto:{au['email']}}}{{{au['email']}}}"
+        if au.get("orcid"):
+            line += f"\\\\ ORCID: \\href{{https://orcid.org/{au['orcid']}}}{{{au['orcid']}}}"
+        m = sub.get("mastodon", {}).get(au["name"])
+        if m:
+            line += f"\\\\ Mastodon: {tex(m)}"
+        rows.append(line)
+    if sub["status"] == "postprint":
+        stmt = (f"This manuscript is a postprint. It has been peer reviewed and published in \\textit{{{tex(sub['journal'])}}}, "
+                f"\\href{{https://doi.org/{sub['journal_doi']}}}{{doi:{sub['journal_doi']}}}. It has been posted to {sub['server']}.")
+    else:
+        stmt = (f"This manuscript is a \\textbf{{preprint}} and has \\textbf{{not been peer reviewed}}. It has been submitted to \\mbox{{{sub['server']}}}. ")
+        stmt += (f"It has also been submitted for peer review to \\textit{{{tex(sub['journal'])}}}; subsequent versions may have slightly different content."
+                 if sub.get("journal") else "It has not yet been submitted to a journal for peer review. Subsequent versions of this manuscript may have slightly different content.")
+    zd = json.load(open(os.path.join(ROOT, "release", "zenodo_drafts.json")))
+    body = "\n".join([
+        "\\documentclass[11pt]{article}", "\\usepackage[T1]{fontenc}", "\\usepackage{mathpazo}",
+        "\\usepackage[margin=1in]{geometry}", "\\usepackage[hidelinks]{hyperref}", "\\pagestyle{empty}",
+        "\\begin{document}", "\\begin{center}", "{\\Large\\bfseries " + title + "\\par}", "\\vspace{1.5em}",
+        "\\par\\vspace{1em}".join(rows), "\\end{center}", "\\vspace{1.5em}",
+        "\\noindent $^{*}$Corresponding author.", "\\vspace{2em}", "",
+        "\\noindent\\fbox{\\parbox{\\dimexpr\\linewidth-2\\fboxsep-2\\fboxrule}{\\vspace{4pt}" + stmt + "\\vspace{4pt}}}",
+        "\\vspace{2em}", "",
+        "\\noindent\\textbf{Data and code.} Dataset: \\href{https://doi.org/" + zd["dataset"]["doi"] + "}{doi:" + zd["dataset"]["doi"] + "}; "
+        "method and detection-limit crosswalk: \\href{https://doi.org/" + zd["crosswalk"]["doi"] + "}{doi:" + zd["crosswalk"]["doi"] + "}; "
+        "mcrqa checker and pipeline: \\href{https://doi.org/" + zd["software"]["doi"] + "}{doi:" + zd["software"]["doi"] + "}; "
+        "repository: \\url{https://github.com/bkdanso/mcr-geochem}.",
+        "\\end{document}"])
+    open(os.path.join(PP, "coversheet.tex"), "w", encoding="utf-8").write(body)
+    for _ in range(2):
+        r = subprocess.run(["pdflatex", "-interaction=nonstopmode", "-halt-on-error", "coversheet.tex"],
+                           cwd=PP, capture_output=True, text=True, errors="replace")
+        if r.returncode:
+            print(r.stdout[-2000:])
+            raise SystemExit("coversheet failed")
+    subprocess.run(["pdfunite", "coversheet.pdf", "mcr_geochem_preprint.pdf", "mcr_geochem_preprint_eartharxiv.pdf"],
+                   cwd=PP, check=True)
+    print("wrote paper/preprint/mcr_geochem_preprint_eartharxiv.pdf (coversheet + manuscript)")
 
 
 if __name__ == "__main__":

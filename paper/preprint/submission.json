@@ -1,0 +1,8 @@
+{
+  "_comment": "Peer-review status for the EarthArXiv coversheet. status: preprint | postprint. Fill journal when submitted; journal_doi for a postprint; mastodon handles optional (e.g. @name@mastodon.social).",
+  "status": "preprint",
+  "server": "EarthArXiv",
+  "journal": "",
+  "journal_doi": "",
+  "mastodon": {}
+}
