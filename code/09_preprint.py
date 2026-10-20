@@ -249,7 +249,8 @@ def main():
         ("long", "is\_best\_value, best\_value\_basis", "One best value per sample and analyte (Eq.~\\ref{eq:best})"),
         ("long", "method\_id, technique, digestion, extent", "Key into the crosswalk and its harmonized fields"),
         ("long", "analyte\_source, unit\_source, value\_source", "Exactly as written in the source"),
-        ("long", "harmonize\_rule, derived, author\_corrected", "Conversion applied; calculated value; documented correction"),
+        ("long", "harmonize\_rule, derived", "Conversion applied; calculated value"),
+        ("long", "author\_corrected, author\_note", "Author review: correction applied, or value flagged suspect, with reason"),
         ("long", "qa\_flags", "Value-level flags"),
     ]
     A = ["\\appendix", "\\section{Column dictionary}",

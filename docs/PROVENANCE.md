@@ -1,8 +1,8 @@
-# Provenance log: MCR-GeoChem v1.0.0
+# Provenance log: MCR-GeoChem v1.0.1
 
 *Plain-language note: this page records exactly where every input file came from, when it was downloaded, and its license. The machine-readable version is `data/raw/provenance_log.csv`. A checksum (SHA-256) is a fingerprint: if a re-downloaded file has the same checksum, it is byte-for-byte identical.*
 
-Build date: 2026-10-19. Pipeline: `code/01_fetch.py` to `code/06_provenance.py`.
+Build date: 2026-10-20. Pipeline: `code/01_fetch.py` to `code/06_provenance.py`.
 
 ## Row counts by source
 

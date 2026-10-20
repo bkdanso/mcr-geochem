@@ -1,4 +1,4 @@
-MCR-GeoChem v1.0.0 QA report   (built 2026-10-19, mcrqa 1.0.0)
+MCR-GeoChem v1.0.1 QA report   (built 2026-10-20, mcrqa 1.0.0)
 Plain-language note: this file lists every check the pipeline ran. Read the 'Spot checks'
 section during verification; the rest is reference.
 
@@ -39,7 +39,7 @@ text+map       2404
     ZERO_VALUE                  452  Reported as exactly zero; in compilations this usually means 'not detected' with no limit given.
     ABOVE_UPPER_LIMIT           294  Above the method's upper limit: true value is higher than reported.
     POSSIBLE_UNIT_ERROR         161  Far above what unmineralized rock contains; check units (ppm vs ppb, element vs oxide).
-    AUTHOR_CORRECTED              1  Value corrected by the dataset authors; the original is kept in value_source (see docs/corrections.csv).
+    SOURCE_VALUE_SUSPECT          1  Published value kept as reported but judged suspect by the dataset authors pending confirmation from the source (see docs/corrections.csv and author_note).
   Samples:
     COORD_APPROXIMATE           750  Coordinates are approximate (one decimal place, or a locality range centroid).
     ALTERED_AI                  283  Ishikawa alteration index outside the least-altered range.
@@ -90,9 +90,9 @@ analyte unit  count       min     median          max
   MCRG-S1-W175024                    Cu          125000 ppm  | source shows: 125000.0 ppm (method AA_F_HF) | Nonesuch Shale copper (rift sediment, White Pine host)
   MCRG-S1-AHK811                     Pt          <30000 ppb  | source shows: -30.0 ppm (method ES_SQ) | legacy below-detection Pt with a very high limit (hard case)
   MCRG-S1-AHK811                     Au             <20 ppb  | source shows: -0.02 ppm (method AA_F_HBr) | legacy below-detection Pt with a very high limit (hard case)
-  MCRG-S2-1002841                    Pd           10200 ppb  | source shows: 10200 ppb (method C_FA_TRACE_AU-PD-PT) | USGS Duluth drill core, highest Pd; Pd/Pt = nan, unusually high: confirm the source has no typo
-  MCRG-S2-1002841                    Pt              <5 ppb  | source shows: <5 ppb (method C_FA_TRACE_AU-PD-PT) | USGS Duluth drill core, highest Pd; Pd/Pt = nan, unusually high: confirm the source has no typo
-  MCRG-S2-1002841                    Cu          192000 ppm  | source shows: 192000 ppm (method C_ICPOES_MS-60) | USGS Duluth drill core, highest Pd; Pd/Pt = nan, unusually high: confirm the source has no typo
+  MCRG-S2-1002826                    Pd          123000 ppb  | source shows: 123000 ppb (method C_FA_TRACE_AU-PD-PT) | USGS Duluth drill core, highest Pd; Pd/Pt = 1000, unusually high: confirm the source has no typo
+  MCRG-S2-1002826                    Pt             123 ppb  | source shows: 123 ppb (method C_FA_TRACE_AU-PD-PT) | USGS Duluth drill core, highest Pd; Pd/Pt = 1000, unusually high: confirm the source has no typo
+  MCRG-S2-1002826                    Cu           55400 ppm  | source shows: 55400 ppm (method C_ICPOES_MS-60) | USGS Duluth drill core, highest Pd; Pd/Pt = 1000, unusually high: confirm the source has no typo
   MCRG-S4-104473                     SiO2          67.5 wt%  | source shows: 67.5 wt% (method not reported (GEOROC precompiled file)) | GEOROC North Shore Volcanic Group
   MCRG-S4-104473                     TiO2          0.95 wt%  | source shows: 0.95 wt% (method not reported (GEOROC precompiled file)) | GEOROC North Shore Volcanic Group
   MCRG-S4-104473                     Zr             600 ppm  | source shows: 600 ppm (method not reported (GEOROC precompiled file)) | GEOROC North Shore Volcanic Group

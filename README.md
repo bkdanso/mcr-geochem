@@ -1,6 +1,6 @@
 # MCR-GeoChem: harmonized geochemistry of the Midcontinent Rift (Michigan, Minnesota, Wisconsin)
 
-**Status:** Released v1.0.0 (2026-10-19) | **Maintainer:** Bezali Kwame Danso ([ORCID](https://orcid.org/0009-0006-1201-4129)) | **License:** data CC BY-SA 4.0, code MIT, docs CC BY 4.0
+**Status:** Released v1.0.1 (2026-10-20) | **Maintainer:** Bezali Kwame Danso ([ORCID](https://orcid.org/0009-0006-1201-4129)) | **License:** data CC BY-SA 4.0, code MIT, docs CC BY 4.0
 
 **In plain terms:** The 1.1-billion-year-old Midcontinent Rift around Lake Superior hosts nickel, copper, cobalt, and platinum-group metals, all on the 2025 U.S. critical minerals list. The rock chemistry needed to study them is scattered across federal and international databases that use different units, lab methods, and ways of writing "too small to measure." MCR-GeoChem puts 3,524 rift samples from Michigan, Minnesota, and Wisconsin into one documented, quality-flagged table, and ships the method crosswalk and the QA checker that made it.
 
@@ -8,7 +8,7 @@
 
 New here? Read [docs/START_HERE.md](docs/START_HERE.md) first. Terms are explained in [docs/GLOSSARY.md](docs/GLOSSARY.md).
 
-MCR-GeoChem v1.0.0 merges the USGS National Geochemical Database 1962-2023 release, two USGS Duluth Complex data releases, GEOROC 2.0 precompiled rock and mineral compilations, and an EarthChem Library dataset into a long table of 168,748 determinations (88 analytes) with consistent units (oxides wt%, traces ppm, Au and PGE ppb), decoded below- and above-limit values, a best value per sample and analyte, an analytical-method crosswalk covering 89 method codes, a detection-limit table, rift-membership labels tied to the USGS State Geologic Map Compilation, and sample- and value-level QA flags from the bundled `mcrqa` checker. It is built for USGS Midcontinent Rift and Earth MRI work, state surveys, universities, and explorers who need an open, citable starting table.
+MCR-GeoChem v1.0.1 merges the USGS National Geochemical Database 1962-2023 release, two USGS Duluth Complex data releases, GEOROC 2.0 precompiled rock and mineral compilations, and an EarthChem Library dataset into a long table of 168,748 determinations (88 analytes) with consistent units (oxides wt%, traces ppm, Au and PGE ppb), decoded below- and above-limit values, a best value per sample and analyte, an analytical-method crosswalk covering 89 method codes, a detection-limit table, rift-membership labels tied to the USGS State Geologic Map Compilation, and sample- and value-level QA flags from the bundled `mcrqa` checker. It is built for USGS Midcontinent Rift and Earth MRI work, state surveys, universities, and explorers who need an open, citable starting table.
 
 ![Sample map](paper/figures/fig1_sample_map.png)
 
@@ -67,6 +67,6 @@ Read [docs/LIMITATIONS.md](docs/LIMITATIONS.md) before using or citing the data.
 
 ## Citation
 
-See [CITATION.cff](CITATION.cff). Dataset DOI: 10.5281/zenodo.23501580. Method and detection-limit crosswalk: 10.5281/zenodo.23501707. mcrqa QA checker and pipeline: 10.5281/zenodo.23501711.
+See [CITATION.cff](CITATION.cff). Dataset DOI: 10.5281/zenodo.23516434. Method and detection-limit crosswalk: 10.5281/zenodo.23501707. mcrqa QA checker and pipeline: 10.5281/zenodo.23516437.
 
 Cite the original sources too (table above). AI assistance (Claude) was used for code and documentation under the authors' direction; the authors made the analytic decisions and verified the outputs.

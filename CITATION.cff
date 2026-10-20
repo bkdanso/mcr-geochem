@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use this dataset or software, please cite it as below, and cite the original sources listed in docs/PROVENANCE.md."
 type: dataset
 title: "MCR-GeoChem: harmonized whole-rock and mineral geochemistry of the Midcontinent Rift (Michigan, Minnesota, Wisconsin)"
-version: "1.0.0"
-date-released: "2026-10-19"
+version: "1.0.1"
+date-released: "2026-10-20"
 authors:
   - family-names: "Danso"
     given-names: "Bezali Kwame"
@@ -15,7 +15,7 @@ authors:
     affiliation: "Independent Researcher, Athens, Georgia, USA"
 license: CC-BY-SA-4.0
 repository-code: "https://github.com/bkdanso/mcr-geochem"
-doi: "10.5281/zenodo.23501580"
+doi: "10.5281/zenodo.23516434"
 keywords:
   - "geochemistry"
   - "Midcontinent Rift"

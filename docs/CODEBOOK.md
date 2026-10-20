@@ -1,4 +1,4 @@
-# Codebook: MCR-GeoChem v1.0
+# Codebook: MCR-GeoChem v1.0.1
 
 *Plain-language note: this page explains every column in every table. If you open a file and wonder what a column means, look it up here. Units are always stated.*
 
@@ -80,6 +80,7 @@
 | `derived` | True for calculated values (Fe2O3T from Fe2O3 + FeO) |
 | `analyte_source`, `unit_source`, `value_source` | Exactly what the source file says |
 | `harmonize_rule` | The conversion applied |
+| `author_corrected`, `author_note` | Author review: whether a correction was applied, and the note for a corrected or suspect-flagged value (see `docs/corrections.csv`) |
 | `qa_flags` | Determination-level flags |
 
 ## `mcr_geochem_wide.csv`

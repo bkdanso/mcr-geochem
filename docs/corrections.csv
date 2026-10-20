@@ -1,2 +1,2 @@
-mcr_uid,analyte,unit,original_value,corrected_value,reason,decided_by,date
-MCRG-S2-1002826,Pd,ppb,123000,123,"Source reports Pd 123000 ppb with Pt 123 ppb (Pd/Pt ~1000); judged a transcription error in the source (Pd normalized to 123 ppb). Original kept in value_source.",Bezali Kwame Danso,2026-10-19
+mcr_uid,analyte,unit,original_value,corrected_value,action,reason,decided_by,date
+MCRG-S2-1002826,Pd,ppb,123000,,flag,"Source reports Pd 123000 ppb with Pt 123 ppb (Pd/Pt ~1000). Possible transcription error, but other NorthMet west-pit samples also show Pd >> Pt, so the published value is retained and flagged suspect until the data release authors confirm.",Bezali Kwame Danso and Saadatu Abdullah,2026-10-20

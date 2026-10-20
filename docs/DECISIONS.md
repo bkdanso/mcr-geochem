@@ -20,9 +20,9 @@
 | V3 | Alteration thresholds | LOI > 3 wt%, CIA > 60, Ishikawa AI outside 20-65 |
 | V4 | Cross-source duplicates | Keep all, flagged with `duplicate_group` |
 
-## Author correction (2026-10-19, Bezali Kwame Danso)
+## Author review of a source value (revised 2026-10-20, Bezali Kwame Danso and Saadatu Abdullah)
 
-- USGS Duluth sample `MCRG-S2-1002826`: the source file reports Pd = 123,000 ppb with Pt = 123 ppb (Pd/Pt about 1,000). The author judged this a transcription error and normalized Pd to **123 ppb**. The original source value (123000) stays in `value_source`, the row carries the flag `AUTHOR_CORRECTED`, and the correction is listed in `docs/corrections.csv`. The USGS data contact (Heather L. Parks, doi:10.5066/P13UFQYF) should be asked to confirm: four other NorthMet west-pit samples in the same release also have Pd far above Pt (e.g. 1002841: Pd 10,200 ppb, Pt <5 ppb), so the published value may be genuine. Revert by deleting the row in docs/corrections.csv and rebuilding.
+- USGS Duluth sample `MCRG-S2-1002826` reports Pd = 123,000 ppb with Pt = 123 ppb (Pd/Pt about 1,000). v1.0.0 normalized Pd to 123 ppb. On co-author review, v1.0.1 reverts this: the published value is **retained** and flagged `SOURCE_VALUE_SUSPECT`, because other NorthMet west-pit samples in the same release (e.g. 1002841: Pd 10,200 ppb, Pt <5 ppb) also show Pd far above Pt. Confirmation is to be requested from the USGS data contact (Heather L. Parks, doi:10.5066/P13UFQYF). Recorded in `docs/corrections.csv` (action = flag).
 
 ## Verification
 

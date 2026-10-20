@@ -20,7 +20,7 @@ from mcrqa import FLAG_DOC, flag_analyses, flag_samples, load_rules  # noqa: E40
 from mcrqa import __version__ as QA_VERSION  # noqa: E402
 
 OUT = os.path.join(ROOT, "data", "processed")
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 WIDE_ANALYTES = ["SiO2", "TiO2", "Al2O3", "Fe2O3T", "Fe2O3", "FeO", "MnO", "MgO", "CaO", "Na2O", "K2O", "P2O5",
                  "LOI", "H2O", "CO2", "S", "C", "Ni", "Cu", "Co", "Cr", "V", "Sc", "Zn", "Pb", "Ag", "As", "Mo",
                  "Au", "Pt", "Pd", "Rh", "Ru", "Ir", "Os", "Re", "Rb", "Sr", "Ba", "Cs", "Y", "Zr", "Hf", "Nb", "Ta",
@@ -115,6 +115,8 @@ def main():
     long = flag_analyses(long, samples, rules)
     ac = long["author_corrected"].fillna(False).astype(bool)
     long.loc[ac, "qa_flags"] = [";".join(sorted(set(filter(None, f.split(";"))) | {"AUTHOR_CORRECTED"})) for f in long.loc[ac, "qa_flags"]]
+    sus = long["author_note"].fillna("").str.startswith("flag") & ~ac
+    long.loc[sus, "qa_flags"] = [";".join(sorted(set(filter(None, f.split(";"))) | {"SOURCE_VALUE_SUSPECT"})) for f in long.loc[sus, "qa_flags"]]
     print("flagging samples ...")
     samples = flag_samples(samples, long, rules)
     samples["dataset_version"] = VERSION

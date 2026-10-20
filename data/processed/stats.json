@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "build_date": "2026-10-19",
+  "version": "1.0.1",
+  "build_date": "2026-10-20",
   "qa_checker_version": "1.0.0",
   "n_samples": 3524,
   "n_determinations": 168748,
@@ -54,7 +54,7 @@
     "ZERO_VALUE": 452,
     "ABOVE_UPPER_LIMIT": 294,
     "POSSIBLE_UNIT_ERROR": 161,
-    "AUTHOR_CORRECTED": 1
+    "SOURCE_VALUE_SUSPECT": 1
   },
   "sample_flags": {
     "COORD_APPROXIMATE": 750,

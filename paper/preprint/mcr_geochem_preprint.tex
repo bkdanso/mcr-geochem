@@ -28,7 +28,7 @@
 \affiliation{Independent Researcher, Athens, Georgia, USA}
 
 \begin{abstract}
-Nickel, copper, cobalt, and the platinum-group metals are all on the final 2025 U.S. List of Critical Minerals, and the 1.1-billion-year-old Midcontinent Rift around Lake Superior hosts some of the largest domestic resources of them. The rock chemistry needed to study these systems is public but fragmented: it is spread across the U.S. Geological Survey (USGS) National Geochemical Database, project-level USGS data releases, the GEOROC compilation, and individual EarthChem datasets, each with its own units, method codes, and conventions for values below or above analytical limits. We present MCR-GeoChem v1.0.0, an open, versioned, reproducible compilation of 3{,}524 Midcontinent Rift samples and 168{,}748 geochemical determinations (88 analytes) from Michigan, Minnesota, and Wisconsin. Every value is converted to a common unit scheme (oxides in wt\%, trace elements in ppm, Au and platinum-group elements in ppb) while retaining its original form; censored values are decoded into an explicit qualifier and limit; 89 source method codes are mapped to a common vocabulary of technique, digestion, and completeness; and each sample carries a rift-membership label tied to the USGS State Geologic Map Compilation. An open checker, \texttt{mcrqa}, adds value- and sample-level flags for below-detection results, uninformative detection limits, semi-quantitative and partial-digestion methods, unit errors, oxide-total problems, likely post-magmatic alteration, coordinate quality, and cross-source duplicates. The compilation shows that 27\% of determinations derive from legacy semi-quantitative emission spectrography, that 501 of 1{,}304 platinum results are below-detection values whose limits are too high to constrain the rock, and that 488 of 2{,}821 igneous whole-rock samples carry at least one alteration flag. The full pipeline rebuilds the release from public sources with identical results. The dataset, the method and detection-limit crosswalk, and the checker are released under open licenses to support critical-mineral research in the Lake Superior region.
+Nickel, copper, cobalt, and the platinum-group metals are all on the final 2025 U.S. List of Critical Minerals, and the 1.1-billion-year-old Midcontinent Rift around Lake Superior hosts some of the largest domestic resources of them. The rock chemistry needed to study these systems is public but fragmented: it is spread across the U.S. Geological Survey (USGS) National Geochemical Database, project-level USGS data releases, the GEOROC compilation, and individual EarthChem datasets, each with its own units, method codes, and conventions for values below or above analytical limits. We present MCR-GeoChem v1.0.1, an open, versioned, reproducible compilation of 3{,}524 Midcontinent Rift samples and 168{,}748 geochemical determinations (88 analytes) from Michigan, Minnesota, and Wisconsin. Every value is converted to a common unit scheme (oxides in wt\%, trace elements in ppm, Au and platinum-group elements in ppb) while retaining its original form; censored values are decoded into an explicit qualifier and limit; 89 source method codes are mapped to a common vocabulary of technique, digestion, and completeness; and each sample carries a rift-membership label tied to the USGS State Geologic Map Compilation. An open checker, \texttt{mcrqa}, adds value- and sample-level quality flags, described in the Methods. The compilation shows that 27\% of determinations derive from legacy semi-quantitative emission spectrography, that 501 of 1{,}304 platinum results are below-detection values whose limits are too high to constrain the rock, and that 488 of 2{,}821 igneous whole-rock samples carry at least one alteration flag. The full pipeline rebuilds the release from public sources with identical results. The dataset, the method and detection-limit crosswalk, and the checker are released under open licenses to support critical-mineral research in the Lake Superior region.
 
 \noindent\textbf{Keywords:} Midcontinent Rift, Keweenawan, Duluth Complex, critical minerals, platinum-group elements, geochemical data harmonization, detection limits, data quality
 \end{abstract}
@@ -43,7 +43,7 @@ Every one of these efforts begins with the same step: assembling the existing ro
 
 These problems are well recognized in geochemistry. Community reviews call for machine-readable data with explicit units, methods, uncertainties, and provenance~\cite{klocking2023}, in line with the FAIR principles~\cite{wilkinson2016}. Statistical treatment of censored (below-detection) data is a mature field~\cite{helsel2012}, and the USGS ``best value'' approach provides a ranked choice among multiple determinations of the same element in one sample~\cite{granitto2019}. What has been missing for the MCR is a single open table that applies these practices across the major public sources, documents every decision, and flags rather than hides the quality problems that remain.
 
-This paper describes MCR-GeoChem v1.0.0, built to fill that gap. Its contributions are:
+This paper describes MCR-GeoChem v1.0.1, built to fill that gap. Its contributions are:
 (i) a harmonized compilation of 3{,}524 samples and 168{,}748 determinations from 6 public sources, restricted to Midcontinent Rift rocks in Michigan, Minnesota, and Wisconsin by a documented membership rule;
 (ii) a crosswalk that maps 89 analytical-method codes to a common vocabulary, with a method-by-analyte detection-limit table;
 (iii) an open quality-assurance checker, \texttt{mcrqa}, usable on any geochemistry table; and
@@ -56,7 +56,7 @@ The paper is organized as follows. Sec.~\ref{sec:geology} summarizes the geologi
 
 The Midcontinent Rift is a failed intracontinental rift that formed around 1.1~Ga and extends more than 2000~km from Kansas through the Lake Superior basin and south through Michigan~\cite{cannon1989,stein2014}. Seismic reflection profiling beneath Lake Superior imaged a very thick succession of rift volcanic and sedimentary rocks~\cite{cannon1989}, and it has been proposed that the rift was part of a larger plate-boundary system~\cite{stein2014}. Exposed rift rocks in the three study states comprise four broad groups~\cite{ojakangas2001}: (1) flood basalts and associated felsic volcanic rocks, including the Portage Lake Volcanics of the Keweenaw Peninsula, the Porcupine Volcanics and Powder Mill Group of Michigan and Wisconsin, the Chengwatana Volcanic Group, and the North Shore Volcanic Group of Minnesota; (2) large mafic intrusions, above all the Duluth Complex, together with the Beaver Bay Complex, the Mellen Complex, and numerous sills and dikes; (3) rift-basin sedimentary rocks of the Oronto Group (Copper Harbor Conglomerate, Nonesuch Shale, Freda Sandstone) and their equivalents; and (4) late- to post-rift sandstones of the Bayfield Group and Jacobsville Sandstone. Basalt geochemistry has been correlated across the rift to identify multiple mantle sources~\cite{nicholson1997}, and U--Pb geochronology shows that the Duluth Complex was emplaced during the main magmatic stage around 1.1~Ga~\cite{paces1993}, with much of its volume intruded rapidly~\cite{swansonhysell2021}.
 
-The scope of v1.0.0 is the rift as exposed or drilled in Michigan, Minnesota, and Wisconsin. Rift rocks in Ontario and the buried southern segment of the rift are outside the study area by design. Following the economic relevance of the province, all rift rocks are included, not only igneous rocks, and each sample carries a class label (rift igneous, rift sedimentary, or post-rift sedimentary) so users can select the subset they need.
+The scope of v1.0.1 is the rift as exposed or drilled in Michigan, Minnesota, and Wisconsin; the locations of the compiled samples are shown in Fig.~\ref{fig:map}. Rift rocks in Ontario and the buried southern segment of the rift are outside the study area by design. Following the economic relevance of the province, all rift rocks are included, not only igneous rocks, and each sample carries a class label (rift igneous, rift sedimentary, or post-rift sedimentary) so users can select the subset they need.
 
 \section{Data sources}
 \label{sec:sources}
@@ -64,7 +64,7 @@ The scope of v1.0.0 is the rift as exposed or drilled in Michigan, Minnesota, an
 Table~\ref{tab:sources} lists the sources, their licenses, and the number of samples read, located in the study states, and retained. All are openly accessible. Sources S1, S2, S3, and S7 are USGS data releases in the U.S. public domain; S4--S6 are licensed CC~BY-SA~4.0.
 
 \begin{table*}[t]
-\caption{Sources of MCR-GeoChem v1.0.0. ``Read'': samples read from the source; ``MI/MN/WI'': located in the study states; ``Kept'': retained as Midcontinent Rift samples; ``Determinations'': values retained before the derived Fe$_2$O$_3^{\mathrm{T}}$ values are added. PD: U.S. public domain.}
+\caption{Sources of MCR-GeoChem v1.0.1. ``Read'': samples read from the source; ``MI/MN/WI'': located in the study states; ``Kept'': retained as Midcontinent Rift samples; ``Determinations'': values retained before the derived Fe$_2$O$_3^{\mathrm{T}}$ values are added. PD: U.S. public domain.}
 \label{tab:sources}
 \begin{ruledtabular}
 \begin{tabular}{llrrrrr}
@@ -86,7 +86,7 @@ S7 & USGS Woodruff (2019)~\cite{woodruff2019} & PD & 42 & 42 & 36 & 1{,}614 \\
 
 \textbf{S2, USGS Duluth Complex release.} Parks \textit{et al.}~\cite{parks2025} report 390 drill-core and hand samples from the Duluth Complex and its footwall, with qualifier, numeric, and method columns for every element and a method dictionary.
 
-\textbf{S3, USGS Earth MRI geochemistry v12.0.} The Earth MRI release~\cite{emri2025} contains 777 rock samples in the three states. None are rift rocks (they are Archean, Paleoproterozoic, or Paleozoic), so S3 contributes no samples to v1.0.0; it remains in the pipeline so that later versions are screened automatically.
+\textbf{S3, USGS Earth MRI geochemistry v12.0.} The Earth MRI release~\cite{emri2025} contains 777 rock samples in the three states. None are rift rocks (they are Archean, Paleoproterozoic, or Paleozoic), so S3 contributes no samples to v1.0.1; it remains in the pipeline so that later versions are screened automatically.
 
 \textbf{S4, GEOROC Continental Flood Basalts, Midcontinent Rift System--Keweenawan.} The GEOROC precompiled file (generated 1 September 2026)~\cite{georoc_cfb} holds 1{,}357 published whole-rock analyses from the whole rift, including Ontario; 718 fall in the three study states.
 
@@ -242,9 +242,9 @@ The same physical sample can appear in more than one source, for example a Dulut
 \end{equation}
 where $\varphi,\lambda$ are latitude and longitude, ID is the field or laboratory identifier normalized to upper-case alphanumerics, and $\delta$ is the relative difference. Linked samples are grouped by union--find. Duplicates are flagged and given a group identifier, not removed.
 
-\subsection{Author corrections}
+\subsection{Author review of source values}
 
-The pipeline changes no source value except by documented unit conversion and by corrections listed in a corrections file, each with the original value, the corrected value, the reason, the decision maker, and the date. One correction was applied in v1.0.0: USGS sample \texttt{MCRG-S2-1002826} is reported with Pd $=$ 123{,}000~ppb and Pt $=$ 123~ppb, a Pd/Pt ratio near 1000; the authors judged the Pd value a transcription error and normalized it to 123~ppb. The original value is kept in the long table, and the row carries the flag AUTHOR\_CORRECTED. We note that several other samples from the same deposit area (NorthMet, west pit) also show Pd far in excess of Pt, so Pd--Pt decoupling in Cu-rich sulfide cannot be excluded; confirmation has been requested from the data release authors, and users can recover the published value from \texttt{value\_source} or by setting aside the corrections file.
+The pipeline changes no source value except by documented unit conversion. Values that the authors judge suspect are listed in a review file with the reason, the decision makers, and the date; they are retained as published and flagged, unless a correction is confirmed. One value is flagged in v1.0.1: USGS sample \texttt{MCRG-S2-1002826} is reported with Pd $=$ 123{,}000~ppb and Pt $=$ 123~ppb, a Pd/Pt ratio near 1000. This could be a transcription error, but several other samples from the same deposit area (NorthMet, west pit) also show Pd far in excess of Pt, so Pd--Pt decoupling in Cu-rich sulfide cannot be excluded. The published value is therefore retained, carries the flag SOURCE\_VALUE\_SUSPECT, and confirmation has been requested from the data release authors.
 
 \subsection{Software and reproducibility}
 
@@ -255,14 +255,14 @@ The pipeline is a set of numbered Python scripts using pandas~\cite{mckinney2010
 
 \subsection{Dataset composition}
 
-MCR-GeoChem v1.0.0 contains 3{,}524 samples: 1{,}695 in Minnesota, 1{,}057 in Michigan, and 772 in Wisconsin (Fig.~\ref{fig:map}). Of these, 3{,}320 are whole-rock analyses and 204 are in-situ mineral analyses from GEOROC, dominated by zircon (119) with plagioclase, clinopyroxene, olivine, and sulfides. By rift class, 3{,}076 samples are rift igneous, 414 rift sedimentary, and 34 post-rift sedimentary; by rock class, 1{,}690 are intrusive and 1{,}310 volcanic. Drill core supplies 1{,}173 samples and natural outcrop 869. The long table holds 168{,}748 determinations of 88 analytes, of which 145{,}596 are best values; 26.3\% of best values are below detection. The NGDB supplies most samples (2{,}237), followed by GEOROC rock analyses (661), the 2025 USGS Duluth release (331), GEOROC minerals (204), EarthChem (55), and the Woodruff release (36).
+MCR-GeoChem v1.0.1 contains 3{,}524 samples: 1{,}695 in Minnesota, 1{,}057 in Michigan, and 772 in Wisconsin (Fig.~\ref{fig:map}). Of these, 3{,}320 are whole-rock analyses and 204 are in-situ mineral analyses from GEOROC, dominated by zircon (119) with plagioclase, clinopyroxene, olivine, and sulfides. By rift class, 3{,}076 samples are rift igneous, 414 rift sedimentary, and 34 post-rift sedimentary; by rock class, 1{,}690 are intrusive and 1{,}310 volcanic. Drill core supplies 1{,}173 samples and natural outcrop 869. The long table holds 168{,}748 determinations of 88 analytes, of which 145{,}596 are best values; 26.3\% of best values are below detection. The NGDB supplies most samples (2{,}237), followed by GEOROC rock analyses (661), the 2025 USGS Duluth release (331), GEOROC minerals (204), EarthChem (55), and the Woodruff release (36).
 
 Membership was decided by a named rift unit in the source for 3{,}075 samples (2{,}404 of them also on a rift map unit), and by the map alone for 443 samples (Table~\ref{tab:units}). Of all samples read, 10{,}043 were excluded, most commonly because the source names a non-rift unit (for example Michigamme Slate, Biwabik Iron Formation, or Giants Range Granite) or a non-rift age, or because the coordinates fall outside the three states (most GEOROC rift samples outside the study area are in Ontario).
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=\columnwidth]{../figures/paper_fig1_sample_map.png}
-\caption{Locations of the 3{,}524 MCR-GeoChem v1.0.0 samples, grouped by source family, over the Mesoproterozoic rift map units of the USGS State Geologic Map Compilation used for membership (gray). State outlines are U.S. Census TIGER/Line 2023 boundaries, which include Great Lakes waters.}
+\caption{Locations of the 3{,}524 MCR-GeoChem v1.0.1 samples, grouped by source family, over the Mesoproterozoic rift map units of the USGS State Geologic Map Compilation used for membership (gray). State outlines are U.S. Census TIGER/Line 2023 boundaries, which include Great Lakes waters.}
 \label{fig:map}
 \end{figure}
 
@@ -325,7 +325,7 @@ Au & ppb & 2{,}243 & 922 & 1{,}321 & 818 & 5 \\
 
 Table~\ref{tab:flags} lists the flag counts and Fig.~\ref{fig:flags} the sample-level flags. At the value level, the most common flags are SEMI\_QUANTITATIVE (46{,}375), BDL (42{,}788), BDL\_UNINFORMATIVE (16{,}361), and METHOD\_NOT\_REPORTED (11{,}401). Only 161 values exceed the unit-error ceilings; inspection shows most are genuine ore samples (for example native-copper and chalcocite ore from the Nonesuch Shale) in which sulfur was not reported, so the sulfide exemption could not apply.
 
-Of the 1{,}828 samples with a computable oxide total, 1{,}396 fall within 96--102.5~wt\% (median 99.62~wt\%). At the sample level, 750 samples have approximate coordinates (nearly all from GEOROC), and 239 samples in 110 groups are probable cross-source duplicates. Among igneous whole rocks, 488 of 2{,}821 (17\%) carry an alteration flag. The Ishikawa index fires most often (283), followed by LOI (184), source descriptions (87), and CIA (39). Fig.~\ref{fig:tas} shows that flagged samples are concentrated at low alkali contents in mafic and ultramafic cumulates and at scattered positions off the main magmatic trend, as expected for samples whose alkalis were mobilized after crystallization.
+Of the 1{,}828 samples with a computable oxide total, 1{,}396 fall within 96--102.5~wt\% (median 99.62~wt\%). At the sample level, 750 samples have approximate coordinates (nearly all from GEOROC), and 239 samples in 110 groups are probable cross-source duplicates. Among igneous whole rocks, 488 of 2{,}821 (17\%) carry an alteration flag. The Ishikawa index fires most often (283), followed by LOI (184), source descriptions (87), and CIA (39). Fig.~\ref{fig:tas} shows that flagged samples are concentrated at low alkali contents in mafic and ultramafic cumulates and at scattered positions off the main magmatic trend. These patterns may reflect post-magmatic alteration, although low alkali contents in cumulates may also reflect their primary mineral composition.
 
 \begin{table*}[t]
 \caption{Flag counts from \texttt{mcrqa}: value-level flags (left) over 168{,}748 determinations and sample-level flags (right) over 3{,}524 samples.}
@@ -342,7 +342,7 @@ PARTIAL\_DIGESTION & 1{,}934 & ALTERED\_LOI & 184 \\
 ZERO\_VALUE & 452 & MAJOR\_TOTAL\_HIGH & 149 \\
 ABOVE\_UPPER\_LIMIT & 294 & ALTERED\_SOURCE & 87 \\
 POSSIBLE\_UNIT\_ERROR & 161 & ALTERED\_CIA & 39 \\
-AUTHOR\_CORRECTED & 1 & SI\_ELEMENT\_SUSPECT & 9 \\
+SOURCE\_VALUE\_SUSPECT & 1 & SI\_ELEMENT\_SUSPECT & 9 \\
 \end{tabular}
 \end{ruledtabular}
 \end{table*}
@@ -364,9 +364,9 @@ AUTHOR\_CORRECTED & 1 & SI\_ELEMENT\_SUSPECT & 9 \\
 \section{Technical validation}
 \label{sec:validation}
 
-\textbf{Reproducibility.} The complete pipeline was rerun in an empty folder, downloading every source again. The rerun reproduced every headline count (samples, determinations, best values, analytes, method codes, exclusions, state totals, alteration and duplicate counts, and critical-metal statistics) and produced byte-identical samples, wide, and crosswalk tables. The single author correction (Sec.~\ref{sec:methods}) is applied deterministically from the corrections file after harmonization, so it does not affect reproducibility.
+\textbf{Reproducibility.} The complete pipeline was rerun in an empty folder, downloading every source again. The rerun reproduced every headline count (samples, determinations, best values, analytes, method codes, exclusions, state totals, alteration and duplicate counts, and critical-metal statistics) and produced byte-identical samples, wide, and crosswalk tables. The author-review flag (Sec.~\ref{sec:methods}) is applied deterministically from the review file after harmonization, so it does not affect reproducibility.
 
-\textbf{Spot checks against the sources.} Values chosen to include easy cases, hard cases, and extremes from every source were compared with the original records (Table~\ref{tab:spots}). All matched after the documented conversions; for example, NGDB Si $=$ 22.3\% becomes SiO$_2$ $=$ 47.71~wt\% by Eq.~(\ref{eq:oxide}), and an NGDB Pt value of $-30$~ppm is decoded as Pt $<$ 30{,}000~ppb. The same review flagged the Duluth palladium value corrected in Sec.~\ref{sec:methods}, whose Pd/Pt ratio near 1000 was implausible. A verification checklist distributed with the release adds five randomly selected best values (fixed random seed) and a review of excluded samples for independent checking by users.
+\textbf{Spot checks against the sources.} Values chosen to include easy cases, hard cases, and extremes from every source were compared with the original records (Table~\ref{tab:spots}). All matched after the documented conversions; for example, NGDB Si $=$ 22.3\% becomes SiO$_2$ $=$ 47.71~wt\% by Eq.~(\ref{eq:oxide}), and an NGDB Pt value of $-30$~ppm is decoded as Pt $<$ 30{,}000~ppb. The same review identified the Duluth palladium value flagged as suspect in Sec.~\ref{sec:methods}. A verification checklist distributed with the release adds five randomly selected best values (fixed random seed) and a review of excluded samples for independent checking by users.
 
 \begin{table*}[t]
 \caption{Spot checks of harmonized values against the source records. All matched after the documented conversion. Identifiers omit the \texttt{MCRG-} prefix.}
@@ -385,12 +385,12 @@ S1-C100666 & Fe2O3T & 11.8 wt\% & 8.25 pct & WDX\_Fuse \\
 S1-W175024 & Cu & 125{,}000 ppm & 125000.0 ppm & AA\_F\_HF \\
 S1-AHK811 & Pt & $<$30{,}000 ppb & -30.0 ppm & ES\_SQ \\
 S1-AHK811 & Au & $<$20 ppb & -0.02 ppm & AA\_F\_HBr \\
-S2-1002841 & Pd & 10{,}200 ppb & 10200 ppb & C\_FA\_TRACE\_AU-PD-PT \\
-S2-1002841 & Pt & $<$5 ppb & $<$5 ppb & C\_FA\_TRACE\_AU-PD-PT \\
-S2-1002841 & Cu & 192{,}000 ppm & 192000 ppm & C\_ICPOES\_MS-60 \\
+S2-1002826 & Pd & 123{,}000 ppb & 123000.0 ppb & C\_FA\_TRACE\_AU-PD-PT \\
+S2-1002826 & Pt & 123 ppb & 123.0 ppb & C\_FA\_TRACE\_AU-PD-PT \\
+S2-1002826 & Cu & 55{,}400 ppm & 55400.0 ppm & C\_ICPOES\_MS-60 \\
 S4-104473 & SiO2 & 67.5 wt\% & 67.5 wt\% & not reported (GEOROC p \\
 S4-104473 & TiO2 & 0.95 wt\% & 0.95 wt\% & not reported (GEOROC p \\
-S4-104473 & Zr & 600 ppm & 600 ppm & not reported (GEOROC p \\
+S4-104473 & Zr & 600 ppm & 600.0 ppm & not reported (GEOROC p \\
 S6-9550 & SiO2 & 46.21 wt\% & 46.21 WT\% & ECL1501-1:XRF \\
 S6-9550 & Fe2O3T & 12.81 wt\% & 12.81 WT\% & ECL1501-1:XRF \\
 S6-9550 & Ni & 235.1 ppm & 235.1 PPM & ECL1501-1:ICP:MS-LA \\
@@ -420,15 +420,15 @@ For regional statistics, keep one sample per \texttt{duplicate\_group}, use \tex
 \section{Concluding remarks}
 \label{sec:conclusions}
 
-MCR-GeoChem v1.0.0 provides, for the first time to our knowledge, an open, documented, and quality-flagged geochemistry table for the Midcontinent Rift in Michigan, Minnesota, and Wisconsin. It assembles 3{,}524 samples and 168{,}748 determinations from six public sources, decodes their units and censoring conventions, maps 89 method codes to a common vocabulary, and labels every sample's rift membership and quality. The compilation makes visible what is otherwise hidden when sources are merged naively: more than a quarter of the record is semi-quantitative; most below-detection precious-metal results cannot constrain the rocks; about one igneous sample in six shows signs of alteration; and the same drill core appears in more than one federal release. Because every flag is explicit and every decision documented, users can apply their own filters rather than inherit hidden ones. Version 1.1 will add state-survey tables, GEOROC methods from the GEOROC 2.0 interface, and additional mineral chemistry; the open checker can be applied to any of these additions, and to other provinces, before they are merged.
+MCR-GeoChem v1.0.1 provides, for the first time to our knowledge, an open, documented, and quality-flagged geochemistry table for the Midcontinent Rift in Michigan, Minnesota, and Wisconsin. It assembles 3{,}524 samples and 168{,}748 determinations from six public sources, decodes their units and censoring conventions, maps 89 method codes to a common vocabulary, and labels every sample's rift membership and quality. The compilation makes visible what is otherwise hidden when sources are merged naively: more than a quarter of the record is semi-quantitative; most below-detection precious-metal results cannot constrain the rocks; about one igneous sample in six shows signs of alteration; and the same drill core appears in more than one federal release. Because every flag is explicit and every decision documented, users can apply their own filters rather than inherit hidden ones. Version 1.1 will add state-survey tables, GEOROC methods from the GEOROC 2.0 interface, and additional mineral chemistry; the open checker can be applied to any of these additions, and to other provinces, before they are merged.
 
 \section*{Data and code availability}
 
-The MCR-GeoChem v1.0.0 dataset, with its codebook, provenance log, and QA report, is archived on Zenodo at \href{https://doi.org/10.5281/zenodo.23501580}{doi:10.5281/zenodo.23501580}. The method and detection-limit crosswalk is archived at \href{https://doi.org/10.5281/zenodo.23501707}{doi:10.5281/zenodo.23501707}, and the \texttt{mcrqa} checker with the full pipeline at \href{https://doi.org/10.5281/zenodo.23501711}{doi:10.5281/zenodo.23501711}. The development repository is \url{https://github.com/bkdanso/mcr-geochem} (release v1.0.0). Data are licensed CC~BY-SA~4.0, as required by the share-alike terms of the GEOROC and EarthChem inputs; code is MIT-licensed; documentation is CC~BY~4.0. Users should also cite the original sources~\cite{granitto2026,parks2025,emri2025,georoc_cfb,georoc_min,davis2022,woodruff2019}.
+The MCR-GeoChem v1.0.1 dataset, with its codebook, provenance log, and QA report, is archived on Zenodo at \href{https://doi.org/10.5281/zenodo.23516434}{doi:10.5281/zenodo.23516434}. The method and detection-limit crosswalk is archived at \href{https://doi.org/10.5281/zenodo.23501707}{doi:10.5281/zenodo.23501707}, and the \texttt{mcrqa} checker with the full pipeline at \href{https://doi.org/10.5281/zenodo.23516437}{doi:10.5281/zenodo.23516437}. The development repository is \url{https://github.com/bkdanso/mcr-geochem} (release v1.0.1). Data are licensed CC~BY-SA~4.0, as required by the share-alike terms of the GEOROC and EarthChem inputs; code is MIT-licensed; documentation is CC~BY~4.0. Users should also cite the original sources~\cite{granitto2026,parks2025,emri2025,georoc_cfb,georoc_min,davis2022,woodruff2019}.
 
 \section*{Author contributions}
 
-B.K.D.: Conceptualization, Data curation, Methodology, Software, Validation, Writing - original draft. S.A.: Validation (cross-checking of the geophysical aspects) and Visualization (review of the sample map and plotted figures). All authors approved the final manuscript.
+B.K.D.: Conceptualization, Data curation, Methodology, Software, Validation, Writing - original draft. S.A.: Visualization (review of the sample map and plotted figures) and Writing (review and editing). All authors approved the final manuscript.
 
 \section*{Use of AI tools}
 
@@ -472,7 +472,8 @@ long & censor, detection\_limit & Qualifier and limit of Eq.~\ref{eq:censor} \\
 long & is\_best\_value, best\_value\_basis & One best value per sample and analyte (Eq.~\ref{eq:best}) \\
 long & method\_id, technique, digestion, extent & Key into the crosswalk and its harmonized fields \\
 long & analyte\_source, unit\_source, value\_source & Exactly as written in the source \\
-long & harmonize\_rule, derived, author\_corrected & Conversion applied; calculated value; documented correction \\
+long & harmonize\_rule, derived & Conversion applied; calculated value \\
+long & author\_corrected, author\_note & Author review: correction applied, or value flagged suspect, with reason \\
 long & qa\_flags & Value-level flags \\
 \end{tabular}
 \end{ruledtabular}
@@ -497,6 +498,7 @@ SEMI\_QUANTITATIVE & Semi-quantitative method (e.g., DC-arc emission spectrograp
 PARTIAL\_DIGESTION & Partial digestion (e.g., aqua regia): may under-report elements in resistant minerals. \\
 METHOD\_NOT\_REPORTED & The source file does not give the analytical method. \\
 IMPLAUSIBLE\_VALUE & Physically impossible after unit harmonization (negative, $>$100 wt\%, $>$1,000,000 ppm). \\
+SOURCE\_VALUE\_SUSPECT & Published value kept as reported but judged suspect by the dataset authors pending confirmation from the source (see docs/corrections.csv and author\_note). \\
 AUTHOR\_CORRECTED & Value corrected by the dataset authors; the original is kept in value\_source (see docs/corrections.csv). \\
 ZERO\_VALUE & Reported as exactly zero; in compilations this usually means 'not detected' with no limit given. \\
 POSSIBLE\_UNIT\_ERROR & Far above what unmineralized rock contains; check units (ppm vs ppb, element vs oxide). \\

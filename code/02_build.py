@@ -25,7 +25,7 @@ import harmonize as H  # noqa: E402
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW = os.path.join(ROOT, "data", "raw")
 OUT = os.path.join(ROOT, "data", "processed")
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 STUDY_STATES = {"MI": "26", "MN": "27", "WI": "55"}
 
 SOURCES = {

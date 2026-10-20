@@ -27,6 +27,7 @@ FLAG_DOC = {
     "PARTIAL_DIGESTION": "Partial digestion (e.g., aqua regia): may under-report elements in resistant minerals.",
     "METHOD_NOT_REPORTED": "The source file does not give the analytical method.",
     "IMPLAUSIBLE_VALUE": "Physically impossible after unit harmonization (negative, >100 wt%, >1,000,000 ppm).",
+    "SOURCE_VALUE_SUSPECT": "Published value kept as reported but judged suspect by the dataset authors pending confirmation from the source (see docs/corrections.csv and author_note).",
     "AUTHOR_CORRECTED": "Value corrected by the dataset authors; the original is kept in value_source (see docs/corrections.csv).",
     "ZERO_VALUE": "Reported as exactly zero; in compilations this usually means 'not detected' with no limit given.",
     "POSSIBLE_UNIT_ERROR": "Far above what unmineralized rock contains; check units (ppm vs ppb, element vs oxide).",

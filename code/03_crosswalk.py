@@ -151,21 +151,26 @@ def main():
     cw.to_csv(os.path.join(OUT, "method_crosswalk.csv"), index=False)
     print(f"method_crosswalk.csv: {len(cw)} method codes")
 
-    # ---- author corrections (docs/corrections.csv): documented, value_source keeps the original
+    # ---- author review (docs/corrections.csv): action "correct" changes the value (original kept in
+    # value_source); action "flag" keeps the published value and marks it suspect pending source confirmation
     corr_path = os.path.join(ROOT, "docs", "corrections.csv")
     longdf["author_corrected"] = False
+    longdf["author_note"] = ""
     if os.path.exists(corr_path):
         corr = pd.read_csv(corr_path)
         for c in corr.itertuples(index=False):
             m = (longdf.mcr_uid == c.mcr_uid) & (longdf.analyte == c.analyte) & (longdf.unit == c.unit) & \
                 np.isclose(longdf.value.astype(float), float(c.original_value))
             if m.sum() == 0:
-                raise SystemExit(f"correction not applied (no match): {c.mcr_uid} {c.analyte} {c.original_value}")
-            longdf.loc[m, "value"] = float(c.corrected_value)
-            longdf.loc[m, "harmonize_rule"] = longdf.loc[m, "harmonize_rule"] + \
-                f"; AUTHOR CORRECTION {c.date}: {c.original_value} -> {c.corrected_value} {c.unit} ({c.decided_by})"
-            longdf.loc[m, "author_corrected"] = True
-            print(f"applied correction: {c.mcr_uid} {c.analyte} {c.original_value} -> {c.corrected_value} {c.unit} ({m.sum()} row)")
+                raise SystemExit(f"author review entry not applied (no match): {c.mcr_uid} {c.analyte} {c.original_value}")
+            action = getattr(c, "action", "correct")
+            if action == "correct":
+                longdf.loc[m, "value"] = float(c.corrected_value)
+                longdf.loc[m, "harmonize_rule"] = longdf.loc[m, "harmonize_rule"] + \
+                    f"; AUTHOR CORRECTION {c.date}: {c.original_value} -> {c.corrected_value} {c.unit} ({c.decided_by})"
+                longdf.loc[m, "author_corrected"] = True
+            longdf.loc[m, "author_note"] = f"{action} ({c.date}, {c.decided_by}): {c.reason}"
+            print(f"author review [{action}]: {c.mcr_uid} {c.analyte} {c.original_value} {c.unit} ({m.sum()} row)")
 
     # ---- best value: one per sample x analyte
     longdf["method_id"] = longdf["source_id"] + ":" + longdf["method_code_source"]
@@ -193,7 +198,7 @@ def main():
                             is_best_value=True, derived=True, analyte_source="Fe2O3 + FeO",
                             unit_source="wt%", value_source="", harmonize_rule="Fe2O3T = Fe2O3 + 1.1113*FeO",
                             technique="Calculated", digestion="", extent="total",
-                            best_value_basis="derived (no measured Fe2O3T)", author_corrected=False))
+                            best_value_basis="derived (no measured Fe2O3T)", author_corrected=False, author_note=""))
     der["source_id"] = der["mcr_uid"].str.split("-").str[1]
     der["method_id"] = der["source_id"] + ":calculated"
     longdf = pd.concat([longdf, der], ignore_index=True)
@@ -234,7 +239,7 @@ def main():
     print(f"detection_limits.csv: {len(dl)} method x analyte rows")
 
     cols = ["mcr_uid", "source_id", "analyte", "value", "unit", "censor", "detection_limit", "is_best_value",
-            "best_value_basis", "author_corrected", "method_id", "method_code_source", "technique", "digestion", "extent", "derived",
+            "best_value_basis", "author_corrected", "author_note", "method_id", "method_code_source", "technique", "digestion", "extent", "derived",
             "analyte_source", "unit_source", "value_source", "harmonize_rule"]
     longdf = longdf[cols].sort_values(["mcr_uid", "analyte", "is_best_value"], ascending=[True, True, False])
     longdf.to_parquet(os.path.join(OUT, "_stage_long2.parquet"), index=False)
