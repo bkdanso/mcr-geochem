@@ -212,6 +212,9 @@ def main():
     st = json.load(open(os.path.join(P, "stats.json")))
     authors = json.load(open(os.path.join(ROOT, "AUTHORS.json")))
     S = flat_stats(st, authors, a.final, a.doi, a.github_user)
+    zp = os.path.join(ROOT, "release", "zenodo_drafts.json")
+    zd = json.load(open(zp)) if os.path.exists(zp) else {}
+    S["other_dois"] = ("Method and detection-limit crosswalk: " + zd["crosswalk"]["doi"] + ". mcrqa QA checker and pipeline: " + zd["software"]["doi"] + ".") if zd else ""
     render("README.md.tmpl", os.path.join(ROOT, "README.md"), S)
     render("LIMITATIONS.md.tmpl", os.path.join(ROOT, "docs", "LIMITATIONS.md"), S)
     render("TALK_TRACK.md.tmpl", os.path.join(ROOT, "docs", "TALK_TRACK.md"), S)

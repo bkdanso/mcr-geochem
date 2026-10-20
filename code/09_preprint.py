@@ -139,6 +139,8 @@ def main():
         f_ai=fmt(sf.get("ALTERED_AI", 0)), f_loi=fmt(sf.get("ALTERED_LOI", 0)), f_src=fmt(sf.get("ALTERED_SOURCE", 0)), f_cia=fmt(sf.get("ALTERED_CIA", 0)),
         n_tas=fmt(n_tas), n_tests=n_tests,
     )
+    zd = json.load(open(os.path.join(ROOT, "release", "zenodo_drafts.json")))
+    S.update(doi_dataset=zd["dataset"]["doi"], doi_crosswalk=zd["crosswalk"]["doi"], doi_software=zd["software"]["doi"])
     for sid in ("S1", "S2", "S4", "S5", "S6", "S7"):
         S[f"k_{sid}"] = fmt(k[sid]["samples_kept_mcr"])
 

@@ -1,6 +1,6 @@
 # MCR-GeoChem: harmonized geochemistry of the Midcontinent Rift (Michigan, Minnesota, Wisconsin)
 
-**Status:** v1.0.0, verified by the authors 2026-10-19; Zenodo DOI pending | **Maintainer:** Bezali Kwame Danso ([ORCID](https://orcid.org/0009-0006-1201-4129)) | **License:** data CC BY-SA 4.0, code MIT, docs CC BY 4.0
+**Status:** Released v1.0.0 (2026-10-19) | **Maintainer:** Bezali Kwame Danso ([ORCID](https://orcid.org/0009-0006-1201-4129)) | **License:** data CC BY-SA 4.0, code MIT, docs CC BY 4.0
 
 **In plain terms:** The 1.1-billion-year-old Midcontinent Rift around Lake Superior hosts nickel, copper, cobalt, and platinum-group metals, all on the 2025 U.S. critical minerals list. The rock chemistry needed to study them is scattered across federal and international databases that use different units, lab methods, and ways of writing "too small to measure." MCR-GeoChem puts 3,524 rift samples from Michigan, Minnesota, and Wisconsin into one documented, quality-flagged table, and ships the method crosswalk and the QA checker that made it.
 
@@ -67,6 +67,6 @@ Read [docs/LIMITATIONS.md](docs/LIMITATIONS.md) before using or citing the data.
 
 ## Citation
 
-See [CITATION.cff](CITATION.cff). DOI: pending first Zenodo release
+See [CITATION.cff](CITATION.cff). Dataset DOI: 10.5281/zenodo.23501580. Method and detection-limit crosswalk: 10.5281/zenodo.23501707. mcrqa QA checker and pipeline: 10.5281/zenodo.23501711.
 
 Cite the original sources too (table above). AI assistance (Claude) was used for code and documentation under the authors' direction; the authors made the analytic decisions and verified the outputs.

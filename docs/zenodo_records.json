@@ -1,0 +1,17 @@
+{
+  "dataset": {
+    "id": 23501580,
+    "doi": "10.5281/zenodo.23501580",
+    "url": "https://zenodo.org/deposit/23501580"
+  },
+  "crosswalk": {
+    "id": 23501707,
+    "doi": "10.5281/zenodo.23501707",
+    "url": "https://zenodo.org/deposit/23501707"
+  },
+  "software": {
+    "id": 23501711,
+    "doi": "10.5281/zenodo.23501711",
+    "url": "https://zenodo.org/deposit/23501711"
+  }
+}

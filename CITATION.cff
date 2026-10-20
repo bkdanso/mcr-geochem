@@ -15,6 +15,7 @@ authors:
     affiliation: "Independent Researcher, Athens, Georgia, USA"
 license: CC-BY-SA-4.0
 repository-code: "https://github.com/bkdanso/mcr-geochem"
+doi: "10.5281/zenodo.23501580"
 keywords:
   - "geochemistry"
   - "Midcontinent Rift"

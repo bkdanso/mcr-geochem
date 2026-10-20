@@ -12,7 +12,7 @@
 
 **Who can use it.** USGS and state survey geologists, university researchers, and exploration teams working on critical minerals in the Lake Superior region.
 
-**Where it is.** On GitHub and Zenodo with a permanent DOI: pending first Zenodo release.
+**Where it is.** On GitHub and Zenodo with a permanent DOI: 10.5281/zenodo.23501580.
 
 ## Two-sentence version
 
