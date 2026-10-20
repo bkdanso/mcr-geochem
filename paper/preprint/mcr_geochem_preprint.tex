@@ -24,7 +24,7 @@
 \email{dansobez@msu.edu}
 \affiliation{Independent Researcher, East Lansing, Michigan, USA}
 \author{Saadatu Abdullah}
-\affiliation{Independent Researcher, Athens, Georgia, US}
+\affiliation{Independent Researcher, Athens, Georgia, USA}
 
 \begin{abstract}
 Nickel, copper, cobalt, and the platinum-group metals are all on the final 2025 U.S. List of Critical Minerals, and the 1.1-billion-year-old Midcontinent Rift around Lake Superior hosts some of the largest domestic resources of them. The rock chemistry needed to study these systems is public but fragmented: it is spread across the U.S. Geological Survey (USGS) National Geochemical Database, project-level USGS data releases, the GEOROC compilation, and individual EarthChem datasets, each with its own units, method codes, and conventions for values below or above analytical limits. We present MCR-GeoChem v1.0.0, an open, versioned, reproducible compilation of 3{,}524 Midcontinent Rift samples and 168{,}748 geochemical determinations (88 analytes) from Michigan, Minnesota, and Wisconsin. Every value is converted to a common unit scheme (oxides in wt\%, trace elements in ppm, Au and platinum-group elements in ppb) while retaining its original form; censored values are decoded into an explicit qualifier and limit; 89 source method codes are mapped to a common vocabulary of technique, digestion, and completeness; and each sample carries a rift-membership label tied to the USGS State Geologic Map Compilation. An open checker, \texttt{mcrqa}, adds value- and sample-level flags for below-detection results, uninformative detection limits, semi-quantitative and partial-digestion methods, unit errors, oxide-total problems, likely post-magmatic alteration, coordinate quality, and cross-source duplicates. The compilation shows that 27\% of determinations derive from legacy semi-quantitative emission spectrography, that 501 of 1{,}304 platinum results are below-detection values whose limits are too high to constrain the rock, and that 488 of 2{,}821 igneous whole-rock samples carry at least one alteration flag. The full pipeline rebuilds the release from public sources with identical results. The dataset, the method and detection-limit crosswalk, and the checker are released under open licenses to support critical-mineral research in the Lake Superior region.
@@ -433,17 +433,24 @@ B.K.D.: Conceptualization, Data curation, Methodology, Software, Validation, Wri
 
 An AI assistant (Claude, Anthropic) was used to write pipeline code, documentation, and drafts of this manuscript under the authors' direction. The authors made all analytic decisions, verified the outputs against the sources, and take responsibility for the content.
 
+\begin{acknowledgments}
+We thank the U.S. Geological Survey for the National Geochemical Database and related data releases, the DIGIS team at the University of G\"ottingen for GEOROC, and the EarthChem Library and the data authors for making their data openly available.
+\end{acknowledgments}
+
+\clearpage
+\onecolumngrid
 \appendix
 
 \section{Column dictionary}
 
 Table~\ref{tab:columns} lists the core columns of the samples and long tables. The full codebook, including the wide, crosswalk, detection-limit, and exclusion tables, is distributed with the data.
 
-\begin{table*}[t]
+\begin{table}[!htbp]
 \caption{Core columns of the samples and long tables.}
 \label{tab:columns}
+\footnotesize
 \begin{ruledtabular}
-\begin{tabular}{llp{9.2cm}}
+\begin{tabular}{llp{8.6cm}}
 Table & Column(s) & Meaning \\
 \hline
 samples & mcr\_uid & Permanent identifier, MCRG-<source>-<source id> \\
@@ -468,17 +475,18 @@ long & harmonize\_rule, derived, author\_corrected & Conversion applied; calcula
 long & qa\_flags & Value-level flags \\
 \end{tabular}
 \end{ruledtabular}
-\end{table*}
+\end{table}
 
 \section{QA flag definitions}
 
 Table~\ref{tab:flagdefs} defines every flag emitted by \texttt{mcrqa} v1.0.0, as returned by \texttt{mcrqa flags}.
 
-\begin{table*}[t]
+\begin{table}[!htbp]
 \caption{Flags emitted by \texttt{mcrqa}.}
 \label{tab:flagdefs}
+\footnotesize
 \begin{ruledtabular}
-\begin{tabular}{lp{12.4cm}}
+\begin{tabular}{lp{11.6cm}}
 Flag & Definition \\
 \hline
 BDL & Below detection limit: value unknown, less than the detection limit. \\
@@ -504,17 +512,18 @@ COORD\_STATE\_MISMATCH & State given in the source differs from the state at the
 POSSIBLE\_DUPLICATE & Same place and near-identical SiO2 and MgO (or same name) as a sample in another source. \\
 \end{tabular}
 \end{ruledtabular}
-\end{table*}
+\end{table}
 
 \section{Most frequent method codes}
 
 Table~\ref{tab:topcodes} shows the 20 method codes with the most determinations and their crosswalk entries.
 
-\begin{table*}[t]
+\begin{table}[!htbp]
 \caption{The 20 most frequent source method codes and their crosswalk classification.}
 \label{tab:topcodes}
+\footnotesize
 \begin{ruledtabular}
-\begin{tabular}{llp{4.6cm}p{3.2cm}lr}
+\begin{tabular}{llp{4.0cm}p{3.4cm}lr}
 Source & Code & Technique & Digestion & Extent & Determinations \\
 \hline
 S1 & ES\_SQ & Emission spectrography, semi-quantitative (DC-arc) & ignition & semi-quantitative & 46{,}375 \\
@@ -539,13 +548,13 @@ S1 & GV & Gravimetry & heat or combust & total & 1{,}511 \\
 S1 & FA\_MS & Fire assay, ICP-MS finish & NiS fire assay & total & 1{,}486 \\
 \end{tabular}
 \end{ruledtabular}
-\end{table*}
+\end{table}
 
 \section{Excluded samples}
 
 Table~\ref{tab:excl} summarizes the 10{,}043 samples read but not retained, grouped by reason. Every excluded sample is listed individually, with its reason, in \texttt{excluded\_samples.csv}.
 
-\begin{table}[t]
+\begin{table}[!htbp]
 \caption{Excluded samples by reason.}
 \label{tab:excl}
 \begin{ruledtabular}
@@ -561,10 +570,8 @@ no chemistry values & 200 \\
 \end{ruledtabular}
 \end{table}
 
-\begin{acknowledgments}
-We thank the U.S. Geological Survey for the National Geochemical Database and related data releases, the DIGIS team at the University of G\"ottingen for GEOROC, and the EarthChem Library and the data authors for making their data openly available.
-\end{acknowledgments}
-
+\clearpage
+\twocolumngrid
 \begin{thebibliography}{99}
 \bibitem{usgs2025list} U.S. Geological Survey. Interior Department releases final 2025 List of Critical Minerals. USGS Science Snippet, November 2025. \url{https://www.usgs.gov/news/science-snippet/interior-department-releases-final-2025-list-critical-minerals}
 \bibitem{ripley2014} Edward M. Ripley. Ni-Cu-PGE mineralization in the Partridge River, South Kawishiwi, and Eagle intrusions: A review of contrasting styles of sulfide-rich occurrences in the Midcontinent Rift System. \textit{Econ. Geol.}, 109(2):309--324, 2014. \href{https://doi.org/10.2113/econgeo.109.2.309}{doi:10.2113/econgeo.109.2.309}

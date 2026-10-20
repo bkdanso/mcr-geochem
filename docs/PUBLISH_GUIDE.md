@@ -40,7 +40,7 @@ The title, description, and keywords for each Zenodo record are ready to copy fr
 
 1. On Zenodo click **New upload**.
 2. Drag in `MCR-GeoChem_v1.0.0_dataset.zip` and `MCR-GeoChem_v1.0.0_raw_inputs_snapshot.zip`.
-3. Resource type: **Dataset**. Title, description, keywords: copy from `release/zenodo_dataset.json`. Creators, in this order (as in `AUTHORS.json`): **Danso, Bezali Kwame** (ORCID 0009-0006-1201-4129; Independent Researcher, East Lansing, Michigan, USA) and **Abdullah, Saadatu** (Independent Researcher, Athens, Georgia, US). Add Saadatu's ORCID if she has one. Version: `1.0.0`. License: **Creative Commons Attribution Share Alike 4.0 International**.
+3. Resource type: **Dataset**. Title, description, keywords: copy from `release/zenodo_dataset.json`. Creators, in this order (as in `AUTHORS.json`): **Danso, Bezali Kwame** (ORCID 0009-0006-1201-4129; Independent Researcher, East Lansing, Michigan, USA) and **Abdullah, Saadatu** (Independent Researcher, Athens, Georgia, USA). Add Saadatu's ORCID if she has one. Version: `1.0.0`. License: **Creative Commons Attribution Share Alike 4.0 International**.
 4. Related works: add the GitHub repository URL ("Is supplemented by") and the QA checker DOI ("Is supplemented by").
 5. Click **Publish**. Write down the **dataset DOI**.
 

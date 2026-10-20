@@ -4,7 +4,7 @@
 
 **In plain terms:** The 1.1-billion-year-old Midcontinent Rift around Lake Superior hosts nickel, copper, cobalt, and platinum-group metals, all on the 2025 U.S. critical minerals list. The rock chemistry needed to study them is scattered across federal and international databases that use different units, lab methods, and ways of writing "too small to measure." MCR-GeoChem puts 3,524 rift samples from Michigan, Minnesota, and Wisconsin into one documented, quality-flagged table, and ships the method crosswalk and the QA checker that made it.
 
-**Authors:** Bezali Kwame Danso ([ORCID](https://orcid.org/0009-0006-1201-4129)), Independent Researcher, East Lansing, Michigan, USA; Saadatu Abdullah, Independent Researcher, Athens, Georgia, US
+**Authors:** Bezali Kwame Danso ([ORCID](https://orcid.org/0009-0006-1201-4129)), Independent Researcher, East Lansing, Michigan, USA; Saadatu Abdullah, Independent Researcher, Athens, Georgia, USA
 
 New here? Read [docs/START_HERE.md](docs/START_HERE.md) first. Terms are explained in [docs/GLOSSARY.md](docs/GLOSSARY.md).
 

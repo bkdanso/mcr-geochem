@@ -9,7 +9,7 @@
 | Which rocks go in? | All rift rocks, labeled: intrusions, lavas, and rift sediments (rift_igneous / rift_sedimentary / post_rift_sedimentary) |
 | Dataset license | Whole table CC BY-SA 4.0 (required by GEOROC and EarthChem share-alike); code MIT; docs CC BY 4.0 |
 | State survey data | v1.0 = USGS + GEOROC + EarthChem; state survey tables in v1.1 (docs/STATE_SOURCES.md) |
-| Author block | Bezali Kwame Danso (ORCID 0009-0006-1201-4129), Independent Researcher, East Lansing, Michigan, USA; co-author Saadatu Abdullah, Independent Researcher, Athens, Georgia, US |
+| Author block | Bezali Kwame Danso (ORCID 0009-0006-1201-4129), Independent Researcher, East Lansing, Michigan, USA; co-author Saadatu Abdullah, Independent Researcher, Athens, Georgia, USA |
 
 ## Verification decisions (2026-10-19, recommended options accepted by the author)
 

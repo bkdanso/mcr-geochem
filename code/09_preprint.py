@@ -29,9 +29,9 @@ def tex(s):
             .replace("_", "\\_").replace("#", "\\#").replace("$", "\\$").replace("<", "$<$").replace(">", "$>$"))
 
 
-def table(label, caption, colspec, header, rows, wide=False, note=""):
+def table(label, caption, colspec, header, rows, wide=False, note="", pos="t", small=False):
     env = "table*" if wide else "table"
-    L = [f"\\begin{{{env}}}[t]", f"\\caption{{{caption}}}", f"\\label{{{label}}}", "\\begin{ruledtabular}",
+    L = [f"\\begin{{{env}}}[{pos}]", f"\\caption{{{caption}}}", f"\\label{{{label}}}"] + (["\\footnotesize"] if small else []) + ["\\begin{ruledtabular}",
          f"\\begin{{tabular}}{{{colspec}}}", " & ".join(header) + " \\\\", "\\hline"]
     L += [" & ".join(r) + " \\\\" for r in rows]
     L += ["\\end{tabular}", "\\end{ruledtabular}"]
@@ -250,24 +250,24 @@ def main():
     ]
     A = ["\\appendix", "\\section{Column dictionary}",
          "Table~\\ref{tab:columns} lists the core columns of the samples and long tables. The full codebook, including the wide, crosswalk, detection-limit, and exclusion tables, is distributed with the data.",
-         table("tab:columns", "Core columns of the samples and long tables.", "llp{9.2cm}", ["Table", "Column(s)", "Meaning"],
-               [[a_, b_, c_] for a_, b_, c_ in cols], wide=True),
+         table("tab:columns", "Core columns of the samples and long tables.", "llp{8.6cm}", ["Table", "Column(s)", "Meaning"],
+               [[a_, b_, c_] for a_, b_, c_ in cols], wide=False, pos="!htbp", small=True),
          "\\section{QA flag definitions}",
          "Table~\\ref{tab:flagdefs} defines every flag emitted by \\texttt{mcrqa} v1.0.0, as returned by \\texttt{mcrqa flags}.",
-         table("tab:flagdefs", "Flags emitted by \\texttt{mcrqa}.", "lp{12.4cm}", ["Flag", "Definition"],
-               [[tex(kk), tex(v)] for kk, v in FLAG_DOC.items()], wide=True),
+         table("tab:flagdefs", "Flags emitted by \\texttt{mcrqa}.", "lp{11.6cm}", ["Flag", "Definition"],
+               [[tex(kk), tex(v)] for kk, v in FLAG_DOC.items()], wide=False, pos="!htbp", small=True),
          "\\section{Most frequent method codes}",
          "Table~\\ref{tab:topcodes} shows the 20 method codes with the most determinations and their crosswalk entries.",
-         table("tab:topcodes", "The 20 most frequent source method codes and their crosswalk classification.", "llp{4.6cm}p{3.2cm}lr",
+         table("tab:topcodes", "The 20 most frequent source method codes and their crosswalk classification.", "llp{4.0cm}p{3.4cm}lr",
                ["Source", "Code", "Technique", "Digestion", "Extent", "Determinations"],
                [[r.source_id, tex(r.method_code_source[:24]), tex(r.technique), tex(r.digestion), tex(r.extent), fmt(int(r.n_determinations))]
-                for r in cw.sort_values("n_determinations", ascending=False).head(20).itertuples()], wide=True)]
+                for r in cw.sort_values("n_determinations", ascending=False).head(20).itertuples()], wide=False, pos="!htbp", small=True)]
     exc = pd.read_csv(os.path.join(P, "excluded_samples.csv"), low_memory=False)
     exc["reason"] = exc.exclusion_reason.str.replace(r":.*", "", regex=True).str.replace(r" \(.*", "", regex=True)
     eg = exc.groupby(["reason"]).size().sort_values(ascending=False)
     A += ["\\section{Excluded samples}",
           "Table~\\ref{tab:excl} summarizes the " + fmt(len(exc)) + " samples read but not retained, grouped by reason. Every excluded sample is listed individually, with its reason, in \\texttt{excluded\\_samples.csv}.",
-          table("tab:excl", "Excluded samples by reason.", "lr", ["Reason", "Samples"], [[tex(kk), fmt(int(v))] for kk, v in eg.items()])]
+          table("tab:excl", "Excluded samples by reason.", "lr", ["Reason", "Samples"], [[tex(kk), fmt(int(v))] for kk, v in eg.items()], pos="!htbp")]
     S["APPENDIX"] = "\n\n".join(A)
     bib = ["\\begin{thebibliography}{99}"] + [f"\\bibitem{{{kk}}} {txt}" for kk, txt in BIB] + ["\\end{thebibliography}"]
     S["BIBLIOGRAPHY"] = "\n".join(bib)
