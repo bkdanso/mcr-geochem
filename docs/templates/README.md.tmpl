@@ -27,6 +27,12 @@ paper/preprint/  preprint (REVTeX source and PDF), built from the release tables
 
 ## Run it
 
+**Easiest (nothing to install):** on this GitHub page click the green **Code** button → **Codespaces** → **Create codespace on main**. VS Code opens in your browser with everything installed; in its terminal type `mcrqa flags` or `./run_all.sh`.
+
+**On your own computer:** double-click `START_WINDOWS.bat` (Windows) or `START_MAC.command` (Mac). The first run installs what is needed, then shows a simple menu.
+
+**Manually:**
+
 ```
 pip install -r requirements.txt
 ./run_all.sh            # or run code/01_fetch.py ... code/08_package.py in order

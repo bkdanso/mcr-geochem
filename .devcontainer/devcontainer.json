@@ -1,0 +1,11 @@
+{
+  "name": "MCR-GeoChem",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "postCreateCommand": "pip install -r requirements.txt && pip install -e . && python -m pytest -q tests",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python", "mechatroniks.rainbow-csv"],
+      "settings": {"python.defaultInterpreterPath": "/usr/local/bin/python"}
+    }
+  }
+}

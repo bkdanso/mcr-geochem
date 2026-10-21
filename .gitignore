@@ -13,3 +13,5 @@ __pycache__/
 .pytest_cache/
 .env
 *.token
+qa_results/
+.venv/
