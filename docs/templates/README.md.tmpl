@@ -6,6 +6,8 @@
 
 **Authors:** {author_list}
 
+{preprint_line}
+
 New here? Read [docs/START_HERE.md](docs/START_HERE.md) first. Terms are explained in [docs/GLOSSARY.md](docs/GLOSSARY.md).
 
 MCR-GeoChem v{version} merges the USGS National Geochemical Database 1962-2023 release, two USGS Duluth Complex data releases, GEOROC 2.0 precompiled rock and mineral compilations, and an EarthChem Library dataset into a long table of {n_det:,} determinations ({n_analytes} analytes) with consistent units (oxides wt%, traces ppm, Au and PGE ppb), decoded below- and above-limit values, a best value per sample and analyte, an analytical-method crosswalk covering {n_methods} method codes, a detection-limit table, rift-membership labels tied to the USGS State Geologic Map Compilation, and sample- and value-level QA flags from the bundled `mcrqa` checker. It is built for USGS Midcontinent Rift and Earth MRI work, state surveys, universities, and explorers who need an open, citable starting table.
@@ -73,6 +75,6 @@ Read [docs/LIMITATIONS.md](docs/LIMITATIONS.md) before using or citing the data.
 
 ## Citation
 
-See [CITATION.cff](CITATION.cff). Dataset DOI: {doi_line}. {other_dois}
+See [CITATION.cff](CITATION.cff). Please cite the preprint ({preprint_doi_md}) and the dataset. Dataset DOI: {doi_line}. {other_dois}
 
 Cite the original sources too (table above). AI assistance (Claude) was used for code and documentation under the authors' direction; the authors made the analytic decisions and verified the outputs.

@@ -6,6 +6,8 @@
 
 **Authors:** Bezali Kwame Danso ([ORCID](https://orcid.org/0009-0006-1201-4129)), Independent Researcher, East Lansing, Michigan, USA; Saadatu Abdullah, Independent Researcher, Athens, Georgia, USA
 
+**Paper:** EarthArXiv preprint, posted 2026-10-21, [doi:10.31223/X5ZV47](https://doi.org/10.31223/X5ZV47) (not peer reviewed).
+
 New here? Read [docs/START_HERE.md](docs/START_HERE.md) first. Terms are explained in [docs/GLOSSARY.md](docs/GLOSSARY.md).
 
 MCR-GeoChem v1.0.1 merges the USGS National Geochemical Database 1962-2023 release, two USGS Duluth Complex data releases, GEOROC 2.0 precompiled rock and mineral compilations, and an EarthChem Library dataset into a long table of 168,748 determinations (88 analytes) with consistent units (oxides wt%, traces ppm, Au and PGE ppb), decoded below- and above-limit values, a best value per sample and analyte, an analytical-method crosswalk covering 89 method codes, a detection-limit table, rift-membership labels tied to the USGS State Geologic Map Compilation, and sample- and value-level QA flags from the bundled `mcrqa` checker. It is built for USGS Midcontinent Rift and Earth MRI work, state surveys, universities, and explorers who need an open, citable starting table.
@@ -73,6 +75,6 @@ Read [docs/LIMITATIONS.md](docs/LIMITATIONS.md) before using or citing the data.
 
 ## Citation
 
-See [CITATION.cff](CITATION.cff). Dataset DOI: 10.5281/zenodo.23516434. Method and detection-limit crosswalk: 10.5281/zenodo.23501707. mcrqa QA checker and pipeline: 10.5281/zenodo.23516437.
+See [CITATION.cff](CITATION.cff). Please cite the preprint ([doi:10.31223/X5ZV47](https://doi.org/10.31223/X5ZV47)) and the dataset. Dataset DOI: 10.5281/zenodo.23516434. Method and detection-limit crosswalk: 10.5281/zenodo.23501707. mcrqa QA checker and pipeline: 10.5281/zenodo.23516437.
 
 Cite the original sources too (table above). AI assistance (Claude) was used for code and documentation under the authors' direction; the authors made the analytic decisions and verified the outputs.

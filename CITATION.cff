@@ -16,6 +16,25 @@ authors:
 license: CC-BY-SA-4.0
 repository-code: "https://github.com/bkdanso/mcr-geochem"
 doi: "10.5281/zenodo.23516434"
+identifiers:
+  - type: doi
+    value: "10.31223/X5ZV47"
+    description: "Preprint describing this dataset (EarthArXiv)"
+preferred-citation:
+  type: article
+  title: "MCR-GeoChem: A harmonized, quality-flagged open compilation of whole-rock and mineral geochemistry for the 1.1 Ga Midcontinent Rift in Michigan, Minnesota, and Wisconsin"
+  authors:
+    - family-names: "Danso"
+      given-names: "Bezali Kwame"
+      orcid: "https://orcid.org/0009-0006-1201-4129"
+    - family-names: "Abdullah"
+      given-names: "Saadatu"
+  doi: "10.31223/X5ZV47"
+  url: "https://eartharxiv.org/repository/view/15631/"
+  journal: "EarthArXiv"
+  year: 2026
+  date-published: "2026-10-21"
+  notes: "Preprint (not peer reviewed)"
 keywords:
   - "geochemistry"
   - "Midcontinent Rift"

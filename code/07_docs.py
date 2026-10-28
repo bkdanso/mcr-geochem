@@ -150,6 +150,16 @@ def citation(S, authors, doi, gh, final):
     lines += ["license: CC-BY-SA-4.0", f'repository-code: "{gh}"']
     if doi:
         lines.append(f'doi: "{doi}"')
+    pp = S.get("preprint")
+    if pp:
+        lines += ["identifiers:", '  - type: doi', f'    value: "{pp["doi"]}"', f'    description: "Preprint describing this dataset ({pp["server"]})"',
+                  "preferred-citation:", "  type: article", f'  title: "{pp["title"]}"', "  authors:"]
+        for a in authors["authors"]:
+            lines += [f'    - family-names: "{a["family"]}"', f'      given-names: "{a["given"]}"']
+            if a.get("orcid"):
+                lines.append(f'      orcid: "https://orcid.org/{a["orcid"]}"')
+        lines += [f'  doi: "{pp["doi"]}"', f'  url: "{pp["url"]}"', f'  journal: "{pp["server"]}"', f'  year: {pp["posted"][:4]}',
+                  f'  date-published: "{pp["posted"]}"', '  notes: "Preprint (not peer reviewed)"']
     lines += ["keywords:", '  - "geochemistry"', '  - "Midcontinent Rift"', '  - "Keweenawan"', '  - "Duluth Complex"',
               '  - "critical minerals"', '  - "platinum-group elements"', '  - "nickel"', '  - "copper"', '  - "data harmonization"',
               '  - "quality assurance"']
@@ -158,7 +168,7 @@ def citation(S, authors, doi, gh, final):
     print("wrote CITATION.cff")
 
 
-def zenodo_meta(S, authors, gh):
+def zenodo_meta(S, authors, gh, pp=None):
     creators = []
     for a in authors["authors"]:
         c = {"name": f'{a["family"]}, {a["given"]}', "affiliation": a["affiliation"]}
@@ -166,7 +176,8 @@ def zenodo_meta(S, authors, gh):
             c["orcid"] = a["orcid"]
         creators.append(c)
     common = dict(creators=creators, version=S["version"], access_right="open", language="eng",
-                  related_identifiers=[{"identifier": gh, "relation": "isSupplementTo", "scheme": "url"}])
+                  related_identifiers=[{"identifier": gh, "relation": "isSupplementTo", "scheme": "url"}]
+                  + ([{"identifier": pp["doi"], "relation": "isDescribedBy", "scheme": "doi", "resource_type": "publication-preprint"}] if pp else []))
     os.makedirs(os.path.join(ROOT, "release"), exist_ok=True)
     srcs = ("Sources: USGS NGDB 1962-2023 (doi:10.5066/P1FXE9GK); USGS Duluth Complex (doi:10.5066/P13UFQYF); "
             "USGS Earth MRI v12 (doi:10.5066/P9WHRLXH); GEOROC CFB and Minerals (doi:10.25625/WSTPOX, doi:10.25625/SGFTFN); "
@@ -215,12 +226,17 @@ def main():
     zp = os.path.join(ROOT, "release", "zenodo_drafts.json")
     zd = json.load(open(zp)) if os.path.exists(zp) else {}
     S["other_dois"] = ("Method and detection-limit crosswalk: " + zd["crosswalk"]["doi"] + ". mcrqa QA checker and pipeline: " + zd["software"]["doi"] + ".") if zd else ""
+    ppp = os.path.join(ROOT, "docs", "preprint.json")
+    S["preprint"] = json.load(open(ppp)) if os.path.exists(ppp) else None
+    S["preprint_line"] = (f'**Paper:** {S["preprint"]["server"]} preprint, posted {S["preprint"]["posted"]}, '
+                          f'[doi:{S["preprint"]["doi"]}](https://doi.org/{S["preprint"]["doi"]}) (not peer reviewed).') if S["preprint"] else ""
+    S["preprint_doi_md"] = f'[doi:{S["preprint"]["doi"]}](https://doi.org/{S["preprint"]["doi"]})' if S["preprint"] else "forthcoming"
     render("README.md.tmpl", os.path.join(ROOT, "README.md"), S)
     render("LIMITATIONS.md.tmpl", os.path.join(ROOT, "docs", "LIMITATIONS.md"), S)
     render("TALK_TRACK.md.tmpl", os.path.join(ROOT, "docs", "TALK_TRACK.md"), S)
     checklist(S, a.final)
     citation(S, authors, a.doi, S["gh"], a.final)
-    zenodo_meta(S, authors, S["gh"])
+    zenodo_meta(S, authors, S["gh"], S["preprint"])
 
 
 if __name__ == "__main__":
