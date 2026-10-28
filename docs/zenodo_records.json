@@ -22,5 +22,11 @@
       "crosswalk": "10.5281/zenodo.23501707",
       "software": "10.5281/zenodo.23501711"
     }
+  },
+  "preprint": {
+    "doi": "10.31223/X5ZV47",
+    "server": "EarthArXiv",
+    "posted": "2026-10-21",
+    "linked_on_zenodo": "2026-10-28 (metadata-only edit, isDescribedBy; DOIs unchanged)"
   }
 }
